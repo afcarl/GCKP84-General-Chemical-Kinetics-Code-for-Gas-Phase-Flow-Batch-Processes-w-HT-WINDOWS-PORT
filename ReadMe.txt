@@ -95,22 +95,22 @@ END: Input File: "transport.inp"
 
 6. OUTPUT FILE: "./results/gckp86_example_*.out".
 
-6a. "gckp86_example_1.inp":  BROMINE DISSOCIATION IN A SHOCK TUBE                        CASE 1
-6b. "gckp86_example_2.inp":  HYD - AIR TEST WITH HEAT TRANSFER          STOICH           CASE 2
-6c. "gckp86_example_3.inp":  HYD - AIR TEST WITH HEAT TRANSFER       FULL MECH           CASE 3
-6d. "gckp86_example_4.inp":  HYD - OXYGEN CASE WITH HEAT TRANSFER                        CASE 4
-6e. "gckp86_example_5.inp":  CH4 - AIR RICH MECH. BATCH RXN WITH OTTO CYCLE HEAT LOSS    CASE 5
-6f. "gckp86_example_6.inp":  METHANE  AIR  TEST CASE  LEAN MECHANISM                     CASE 6
-6g. "gckp86_example_7.inp":  CH4 - AIR WITH AREA PROFILE OF CASE 6                       CASE 7
-6h. "gckp86_example_8.inp":  METHANOL - AIR  COMBUSTION                                  CASE 8
-6i. "gckp86_example_9.inp":  C3H8 - AIR WELL-STIRRED REACTOR +  ROCKET EXPANSION PROB.   CASE 9
-6j. "gckp86_example_10.inp": HIGH TEMPERATURE AIR IONIZATION                             CASE 10
-6k. "gckp86_example_11.inp": HIGH PRESSURE H2  -  CO REACTION                            CASE 11
-6l. "gckp86_example_12.inp": HYDROGEN - OXYGEN LOW TEMP PHOTOLYTIC IGNITION              CASE 12
-6m. "gckp86_example_13.inp": ETHANE PYROLYSIS     DUNKER TEST  CASE A                    CASE 13
-6n. "gckp86_example_14.inp": FORMALDEHYDE OXIDATION     DUNKER TEST  CASE B              CASE 14
-6o. "gckp86_example_15.inp": YETTER ET AL'S WET CO OXIDATION REDUCED MECH                CASE 15
-6p. "gckp86_example_16.inp": KRAMER ET AL'S WET CO OXIDATION COMPLETE MECHANISM          CASE 16
-6q. "gckp86_example_17.inp": HYDROGEN COMB. IN PURE AIR,  MACH =3.00 AND P=3.10 ATM.     CASE 17
-6r. "gckp86_example_18.inp": BENZENE - OXYGEN - AR SHOCK IGNITION                        CASE 18
+6a. "gckp86_example_1.out":  BROMINE DISSOCIATION IN A SHOCK TUBE                        CASE 1
+6b. "gckp86_example_2.out":  HYD - AIR TEST WITH HEAT TRANSFER          STOICH           CASE 2
+6c. "gckp86_example_3.out":  HYD - AIR TEST WITH HEAT TRANSFER       FULL MECH           CASE 3
+6d. "gckp86_example_4.out":  HYD - OXYGEN CASE WITH HEAT TRANSFER                        CASE 4
+6e. "gckp86_example_5.out":  CH4 - AIR RICH MECH. BATCH RXN WITH OTTO CYCLE HEAT LOSS    CASE 5
+6f. "gckp86_example_6.out":  METHANE  AIR  TEST CASE  LEAN MECHANISM                     CASE 6
+6g. "gckp86_example_7.out":  CH4 - AIR WITH AREA PROFILE OF CASE 6                       CASE 7
+6h. "gckp86_example_8.out":  METHANOL - AIR  COMBUSTION                                  CASE 8
+6i. "gckp86_example_9.out":  C3H8 - AIR WELL-STIRRED REACTOR +  ROCKET EXPANSION PROB.   CASE 9
+6j. "gckp86_example_10.out": HIGH TEMPERATURE AIR IONIZATION                             CASE 10
+6k. "gckp86_example_11.out": HIGH PRESSURE H2  -  CO REACTION                            CASE 11
+6l. "gckp86_example_12.out": HYDROGEN - OXYGEN LOW TEMP PHOTOLYTIC IGNITION              CASE 12
+6m. "gckp86_example_13.out": ETHANE PYROLYSIS     DUNKER TEST  CASE A                    CASE 13
+6n. "gckp86_example_14.out": FORMALDEHYDE OXIDATION     DUNKER TEST  CASE B              CASE 14
+6o. "gckp86_example_15.out": YETTER ET AL'S WET CO OXIDATION REDUCED MECH                CASE 15
+6p. "gckp86_example_16.out": KRAMER ET AL'S WET CO OXIDATION COMPLETE MECHANISM          CASE 16
+6q. "gckp86_example_17.out": HYDROGEN COMB. IN PURE AIR,  MACH =3.00 AND P=3.10 ATM.     CASE 17
+6r. "gckp86_example_18.out": BENZENE - OXYGEN - AR SHOCK IGNITION                        CASE 18
 
