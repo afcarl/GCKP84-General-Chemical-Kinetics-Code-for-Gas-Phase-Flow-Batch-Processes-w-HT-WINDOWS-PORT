@@ -1,0 +1,1009 @@
+TAPE                                                                            
+GCKP86               BROMINE DISSOCIATION IN A SHOCK TUBE                CASE 1 
+   M       +   BR2      =2.0BR                      6.99E+11  0.50      35500.  
+                                                                                
+XE                                                                              
+DISTANCE  AREA                                                                  
+ &PROB   ITPSZ=3,LSUBM=32200.,ETA=0.50,   SHOCK=.TRUE.,                         
+   PRINT= .05, .2, .5, 2., 4.,  NPRNTS = 5,                                     
+  ALLM1= F, PSTAT= T, MF=21,ATOLSP=1.E-10,EMAX=1.E-2,  &END                     
+   M       +   BR2      =2.0BR                  BR2      3.80                   
+                                                                                
+ &START   P=0.1227,MACH=3.2646,T=299.9    &END                                  
+BR2        .01                                                                  
+XE         .99                                                                  
+END                                                                             
+FINIS                                                                           
+  GCKP86  HYD - AIR TEST WITH HEAT TRANSFER          STOICH  CASE 2             
+NEW                                                                             
+   H       +   O2       =   OH      +   O            2.2E+14   0.        16790. 
+   O       +   H2       =   OH      +   H            1.8E+10   1.        8900.  
+   H2      +   OH       =   H2O     +   H            5.2E+13   0.        6500.  
+   OH      +   OH       =   O       +   H2O          6.3E+12   0.        1093.  
+   H       +   O2       =   HO2     +   M            1.5E+15    0.       -1000. 
+   O       +   O        =   O2      +   M            5.7E+13   0.        -1788. 
+   H       +   H        =   H2      +   M            8.3E+17   -1.         0.   
+   H       +   OH       =   H2O     +   M            8.4E+21   -2.       0.     
+   H2      +   HO2      =   H2O     +   OH           7.2E+11   0.        18700. 
+   M       +   H2O2     =2.0OH                       1.3E+17  0.        45500.  
+   H2      +   O2       =2.0OH                      1.00E+13  0.        43000.  
+   H       +   HO2      =   OH      +   OH           2.5E+14   0.        1900.  
+   O       +   HO2      =   OH      +   O2           5.0E+13   0.        1000.  
+   OH      +   HO2      =   H2O     +   O2           5.0E+13   0.        1000.  
+            2.0HO2      =   H2O2    +   O2          1.00E+12  0.        0.      
+   HO2     +   NO       =   NO2     +   OH           1.2E+13    0.      2380.   
+   O       +   NO2      =   NO      +   O2           1.0E+13     0.      596.   
+   NO      +   O        =   NO2     +   M           5.62E+15   0.        -1160. 
+   NO2     +   H        =   NO      +   OH           2.9E+14   0.         795.  
+   N       +   O2       =   NO      +   O             6.4E+9   1.        6250.  
+   O       +   N2       =   NO      +   N            1.8E+14   0.        76250. 
+   N       +   OH       =   NO      +   H            4.0E+13   0.        0.     
+   M       +   N2O      =   N2      +   O           1.42E+14   0.        51280. 
+   O       +   N2O      =   N2      +   O2          6.23E+13   0.        24520. 
+   O       +   N2O      =2.0NO                       3.1E+13   0.        21800. 
+            2.0NO2      =2.0NO      +   O2           4.0E+12   0.        26900. 
+   N       +   NO2      =2.0NO                       3.6E+12   0.        0.     
+   OH      +   N2       =   N2O     +   H            3.2E+12   0.        80280. 
+                                                                                
+CO2       AR                                                                    
+DISTANCE  AREA                          H2                                      
+ &PROB    ITPSZ=2,  CX0 = 2000.,  ALLM1 = F,                                    
+   PRINT= 3.048, 4.572, 6.096, 7.620, 15.24,  NPRNTS = 5,                       
+   EMAX=5.E-3,  MF= 21, PSTAT= T, ATOLSP=1.E-12,                                
+   HTRAN = T, QMREAD= T,  HT1= 5.863, HT0= -42.88   &END                        
+   H       +   O2       =   HO2     +   M       H2        5.0    O2        2.0  
+   SAME                                         H2O      32.5    N2       2.0   
+   H           H        =   H2      +   M       O2       2.0     H2       5.0   
+   SAME                                         H2O      15.0    N2       2.0   
+   M       +   H2O2     =2.0OH                  O2       0.78    H2O      6.0   
+   SAME                                         H2O2     6.6     H2       2.3   
+   H       +   OH       =   H2O     +   M       H2       4.0     N2       1.6   
+   SAME                                         H2O      20.0    O2       1.6   
+                                                                                
+ &START      P=0.9560,  T=1559., MACH=5.0,                                      
+  ERATIO =1, SCC= 0, SCH= 2, SCOX= 0,   &END                                    
+END                                                                             
+FINIS                                                                           
+  GCKP86  HYD - AIR TEST WITH HEAT TRANSFER       FULL MECH  CASE 3             
+CHANGE                                                                          
+            2.0HO2      =   H2O2    +   O2          1.80E+12  0.        0.      
+                                                                                
+ADD                                                                             
+   OH      +   H2O2     =   H2O     +   HO2          1.0E+13   0.        1800.  
+   O       +   H2O2     =   OH      +   HO2          8.0E+13   0.        1000.  
+   H       +   H2O2     =   H2O     +   OH           3.2E+14   0.        9000.  
+                                                                                
+END                                                                             
+DISTANCE  AREA      FPS                 H2                                      
+ &PROB   EXCHR = T, CX0= 2.15278, PRINT = 0.1, 0.2, 0.25, 0.5, NPRNTS=4, &END   
+                                                                                
+ &START        P=2023.09, T=2806.2, MACH=5.0,                                   
+  FLAIR = .029163, SCC= 0, SCH= 2, SCOX= 0,   &END                              
+END                                                                             
+FINIS                                                                           
+  GCKP86  HYD - OXYGEN CASE WITH HEAT TRANSFER               CASE 4             
+NEW                                                                             
+   H       +   O2       =   OH      +   O            2.2E+14   0.        16790. 
+   O       +   H2       =   OH      +   H            1.8E+10   1.        8900.  
+   H2      +   OH       =   H2O     +   H            5.2E+13   0.        6500.  
+   OH      +   OH       =   O       +   H2O          6.3E+12   0.        1093.  
+   H       +   O2       =   HO2     +   M            1.5E+15    0.       -1000. 
+   O       +   O        =   O2      +   M            5.7E+13   0.        -1788. 
+   H       +   H        =   H2      +   M            8.3E+17   -1.         0.   
+   H       +   OH       =   H2O     +   M            8.4E+21   -2.       0.     
+   H2      +   HO2      =   H2O     +   OH           7.2E+11   0.        18700. 
+   M       +   H2O2     =2.0OH                       1.3E+17  0.        45500.  
+   H2      +   O2       =2.0OH                      1.00E+13  0.        43000.  
+   H       +   HO2      =   OH      +   OH           2.5E+14   0.        1900.  
+   O       +   HO2      =   OH      +   O2           5.0E+13   0.        1000.  
+   OH      +   HO2      =   H2O     +   O2           5.0E+13   0.        1000.  
+            2.0HO2      =   H2O2    +   O2          1.80E+12  0.        0.      
+   OH      +   H2O2     =   H2O     +   HO2          1.0E+13   0.        1800.  
+   O       +   H2O2     =   OH      +   HO2          8.0E+13   0.        1000.  
+   H       +   H2O2     =   H2O     +   OH           3.2E+14   0.        9000.  
+                                                                                
+END                                                                             
+DISTANCE  PRESSURE            FPS       H2                                      
+ &PROB    ITPSZ=2,  CX0 = 5., CX1= .01,  ALLM1 = F,                             
+  PRINT = 6, 20, 22.81, 22.83, 22.84, 22.845,  NPRNTS = 6,                      
+    EMAX=5.E-6,  MF= 21, PSTAT= T, ATOLSP=1.E-13,                               
+    HTRAN = T, QMREAD = T,  HT1=5.863, HT0=-42.88    &END                       
+   H       +   O2       =   HO2     +   M       H2        5.0    O2        2.0  
+   SAME                                         H2O      32.5                   
+   H           H        =   H2      +   M       O2       2.0     H2       5.0   
+   SAME                                         H2O      15.0                   
+   M       +   H2O2     =2.0OH                  O2       0.78    H2O      6.0   
+   SAME                                         H2O2     6.6     H2       2.3   
+   H       +   OH       =   H2O     +   M       H2       4.0                    
+   SAME                                         H2O      20.0    O2       1.6   
+                                                                                
+ &START     T=1075., MACH=0.5,                                                  
+   AIRMW = 31.994,  FRO2 = 1,  AREA = 2000,                                     
+  ERATIO =1, SCC= 0, SCH= 2, SCOX= 0, NOXRAT=0, ARAT= 0, CRAT=0  &END           
+END                                                                             
+FINIS                                                                           
+  GCKP86 CH4 - AIR RICH MECH. BATCH RXN WITH OTTO CYCLE HEAT LOSS -  CASE 5     
+NEW                                                                             
+               CH4      =   CH3     +   H            2.0E+15   0.        104000.
+   H       +   CH4      =   CH3     +   H2          1.26E+14   0.        11900. 
+   O       +   CH4      =   CH3     +   OH           2.0E+13   0.        9200.  
+   OH      +   CH4      =   CH3     +   H2O          3.0E+13   0.        6000.  
+   CH      +   O2       =   HCO     +   O            1.0E+13   0.        0.     
+   CH2     +   O2       =   CH2O    +   O            1.0E+14   0.        3700.  
+   CH3     +   O2       =   CH2O    +   OH           1.7E+12   0.        14000. 
+   CH3     +   O        =   CH2O    +   H            6.8E+13   0.        0.     
+   CH2O    +   H        =   HCO     +   H2            2.E+13   0.        3300.  
+   CH2O    +   O        =   HCO     +   OH            5.E+13   0.        4570.  
+   CH2O    +   OH       =   HCO     +   H2O           5.E+15   0.        13000. 
+   M       +   CH2O     =   HCO     +   H            5.0E+16   0.        72000. 
+   O       +   HCO      =   H       +   CO2          5.3E+13   0.        0.     
+   HCO     +   O        =   CO      +   OH            3.E+13    0.        0.    
+   HCO     +   H        =   CO      +   H2            2.E+13    0.        0.    
+   HCO     +   OH       =   CO      +   H2O           3.E+13   0.        0.     
+   M       +   HCO      =   H       +   CO            3.E+14    0.       14700. 
+   CO      +   OH       =   CO2     +   H            4.0E+12   0.        8000.  
+   CO      +   O        =   CO2     +   M            2.8E+13   0.        -4540. 
+   CO      +   O2       =   CO2     +   O            1.2E+11    0.       35000. 
+   H       +   O2       =   OH      +   O            2.2E+14   0.        16790. 
+   O       +   H2       =   OH      +   H            1.8E+10   1.        8900.  
+   H2      +   OH       =   H2O     +   H            5.2E+13   0.        6500.  
+   OH      +   OH       =   O       +   H2O          6.3E+12   0.        1093.  
+   H       +   O2       =   HO2     +   M            1.5E+15    0.       -1000. 
+   O       +   O        =   O2      +   M            5.7E+13   0.        -1788. 
+   H       +   H        =   H2      +   M            8.3E+17   -1.         0.   
+   H       +   OH       =   H2O     +   M            8.4E+21   -2.       0.     
+   O       +   H        =   OH      +   M            6.2E+16  -.6         0.    
+   H       +   CH3      =   H2      +   CH2          2.7E+11  .67        25700. 
+   O       +   CH3      =   OH      +   CH2          1.9E+11   .68       25700. 
+   OH      +   CH3      =   H2O     +   CH2          2.7E+11   .67       25700. 
+   HO2     +   NO       =   NO2     +   OH           1.2E+13    0.      2380.   
+   O       +   NO2      =   NO      +   O2           1.0E+13     0.      596.   
+   NO      +   O        =   NO2     +   M           5.62E+15   0.        -1160. 
+   NO2     +   H        =   NO      +   OH           2.9E+14   0.         795.  
+   N       +   O2       =   NO      +   O             6.4E+9   1.        6250.  
+   O       +   N2       =   NO      +   N            1.8E+14   0.        76250. 
+   N       +   OH       =   NO      +   H            4.0E+13   0.        0.     
+   CH      +   N2       =   HCN     +   N            1.5E+11   0.        19000. 
+   CN      +   H2       =   HCN     +   H            6.0E+13   0.        5300.  
+   O       +   HCN      =   H       +   NCO          5.2E+12  .68        8100.  
+   OH      +   HCN      =   HNCO    +   H            4.0E+11   0.         2800. 
+   CN      +   O        =   CO      +   N            1.2E+13   0.           0.  
+   CN      +   OH       =   NCO     +   H            2.5E+14   0.        6000.  
+   CN      +   O2       =   NCO     +   O            3.2E+13   0.        1000.  
+   CN      +   CO2      =   NCO     +   CO           3.7E+12   0.         0.    
+   O       +   NCO      =   NO      +   CO           2.0E+13    0.        0.    
+   N       +   NCO      =   N2      +   CO           1.0E+13    0.        0.    
+   H       +   NCO      =   NH      +   CO           2.0E+13   0.        0.     
+   H2      +   NCO      =   HNCO    +   H            1.0E+14   0.        9000.  
+   HNCO    +   H        =   NH2     +   CO           1.0E+14   0.        8500.  
+   NH      +   OH       =   N       +   H2O          5.0E+11   .5        1999.  
+   CH      +   CO2      =   HCO     +   CO           3.7E+12   0.         0.    
+   CH      +   NO       =   N       +   HCO          1.0E+14   0.        0.     
+   CH      +   NO       =   O       +   HCN          1.0E+13   0.        0.     
+   H       +   CH2      =   H2      +   CH           2.9E+11   .7        26000. 
+   O       +   CH2      =   OH      +   CH           3.2E+11   .5        26000. 
+   OH      +   CH2      =   H2O     +   CH           5.0E+11   .5        6000.  
+   H       +   HO2      =   OH      +   OH           1.4E+14   0.        1070.  
+   H       +   HO2      =   O       +   H2O          1.0E+13   0.        1000.  
+   O       +   HO2      =   OH      +   O2           1.6E+13   0.        1070.  
+   OH      +   HO2      =   H2O     +   O2           7.9E+12   0.           0.  
+   CH3     +   OH       =   CH2O    +   H2           7.4E+12   0.         0.    
+   H2      +   HO2      =   H2O     +   OH           7.2E+11   0.        18700. 
+   HCO     +   O2       =   CO      +   HO2          3.0E+13   0.         0.    
+                                                                                
+END                                                                             
+TIME      PRESSURE                                                              
+ &PROB  EMAX= 5.E-5, ITPSZ=2, MF =21,  CX0=2, CX1=700,                          
+   PRINT = 5.E-5, 5.E-4,  5.5E-4, 5.8E-4, 5.85E-4, NPRNTS=5,                    
+  ALLM1= F, HTRAN= T, QMREAD= F, OTTO= T, BORE= 8.5, STROKE= 7, FREQ= 2500,     
+   TWALL = 1000,  PSTAT = T, ATOLSP=1.E-13,    &END                             
+   H       +   O2       =   HO2     +   M       O2        2.0    N2         2.0 
+   SAME                                         H2O       32.5   CO2        7.5 
+   SAME                                         CO        2.0    CH4        5.0 
+   SAME                                         H2        5.0                   
+   H       +   OH       =   H2O     +   M       O2        1.6    H2O       20.  
+   SAME                                         N2        1.6    CO2       7.5  
+   SAME                                         CO        1.6                   
+                                                                                
+ &START     T = 1510,           &END                                            
+CH4       .1725                                                                 
+O2        .1725                                                                 
+N2        .65492                                                                
+N         .00001                                                                
+CH        .00003                                                                
+CN        .00001                                                                
+CH2       .00001                                                                
+END                                                                             
+FINIS                                                                           
+      GCKP86    METHANE  AIR  TEST CASE  LEAN MECHANISM    CASE 6               
+NEW                                                                             
+               CH4      =   CH3     +   H            2.0E+15   0.        104000.
+   H       +   CH4      =   CH3     +   H2          1.26E+14   0.        11900. 
+   O       +   CH4      =   CH3     +   OH           2.0E+13   0.        9200.  
+   OH      +   CH4      =   CH3     +   H2O          3.0E+13   0.        6000.  
+   CH2     +   O2       =   CH2O    +   O            1.0E+14   0.        3700.  
+   CH3     +   O2       =   CH2O    +   OH           1.7E+12   0.        14000. 
+   CH3     +   O        =   CH2O    +   H            6.8E+13   0.        0.     
+   CH2O    +   H        =   HCO     +   H2            2.E+13   0.        3300.  
+   CH2O    +   O        =   HCO     +   OH            5.E+13   0.        4570.  
+   CH2O    +   OH       =   HCO     +   H2O           5.E+15   0.        13000. 
+   M       +   CH2O     =   HCO     +   H            5.0E+16   0.        72000. 
+   O       +   HCO      =   H       +   CO2          5.3E+13   0.        0.     
+   HCO     +   O        =   CO      +   OH            3.E+13    0.        0.    
+   HCO     +   H        =   CO      +   H2            2.E+13    0.        0.    
+   HCO     +   OH       =   CO      +   H2O           3.E+13   0.        0.     
+   M       +   HCO      =   H       +   CO            3.E+14    0.       14700. 
+   CO      +   OH       =   CO2     +   H            4.0E+12   0.        8000.  
+   CO      +   O        =   CO2     +   M            2.8E+13   0.        -4540. 
+   CO      +   O2       =   CO2     +   O            1.2E+11    0.       35000. 
+   H       +   O2       =   OH      +   O            2.2E+14   0.        16790. 
+   O       +   H2       =   OH      +   H            1.8E+10   1.        8900.  
+   H2      +   OH       =   H2O     +   H            5.2E+13   0.        6500.  
+   OH      +   OH       =   O       +   H2O          6.3E+12   0.        1093.  
+   H       +   O2       =   HO2     +   M            1.5E+15    0.       -1000. 
+   O       +   O        =   O2      +   M            5.7E+13   0.        -1788. 
+   H       +   H        =   H2      +   M            8.3E+17   -1.         0.   
+   H       +   OH       =   H2O     +   M            8.4E+21   -2.       0.     
+   O       +   H        =   OH      +   M            6.2E+16  -.6         0.    
+   H       +   CH3      =   H2      +   CH2          2.7E+11  .67        25700. 
+   O       +   CH3      =   OH      +   CH2          1.9E+11   .68       25700. 
+   OH      +   CH3      =   H2O     +   CH2          2.7E+11   .67       25700. 
+   HO2     +   NO       =   NO2     +   OH           1.2E+13    0.      2380.   
+   O       +   NO2      =   NO      +   O2           1.0E+13     0.      596.   
+   NO      +   O        =   NO2     +   M           5.62E+15   0.        -1160. 
+   NO2     +   H        =   NO      +   OH           2.9E+14   0.         795.  
+   N       +   O2       =   NO      +   O             6.4E+9   1.        6250.  
+   O       +   N2       =   NO      +   N            1.8E+14   0.        76250. 
+   N       +   OH       =   NO      +   H            4.0E+13   0.        0.     
+   CN      +   H2       =   HCN     +   H            6.0E+13   0.        5300.  
+   O       +   HCN      =   H       +   NCO          5.2E+12  .68        8100.  
+   OH      +   HCN      =   HNCO    +   H            4.0E+11   0.         2800. 
+   CN      +   O        =   CO      +   N            1.2E+13   0.           0.  
+   CN      +   OH       =   NCO     +   H            2.5E+14   0.        6000.  
+   CN      +   O2       =   NCO     +   O            3.2E+13   0.        1000.  
+   CN      +   CO2      =   NCO     +   CO           3.7E+12   0.         0.    
+   O       +   NCO      =   NO      +   CO           2.0E+13    0.        0.    
+   N       +   NCO      =   N2      +   CO           1.0E+13    0.        0.    
+   H       +   NCO      =   NH      +   CO           2.0E+13   0.        0.     
+   H2      +   NCO      =   HNCO    +   H            1.0E+14   0.        9000.  
+   HNCO    +   H        =   NH2     +   CO           1.0E+14   0.        8500.  
+   NH      +   OH       =   N       +   H2O          5.0E+11   .5        1999.  
+   H       +   HO2      =   OH      +   OH           1.4E+14   0.        1070.  
+   H       +   HO2      =   O       +   H2O          1.0E+13   0.        1000.  
+   O       +   HO2      =   OH      +   O2           1.6E+13   0.        1070.  
+   OH      +   HO2      =   H2O     +   O2           7.9E+12   0.           0.  
+   CH3     +   OH       =   CH2O    +   H2           7.4E+12   0.         0.    
+   H2      +   HO2      =   H2O     +   OH           7.2E+11   0.        18700. 
+   HCO     +   O2       =   CO      +   HO2          3.0E+13   0.         0.    
+                                                                                
+END                                                                             
+DISTANCE  PRESSURE                                                              
+ &PROB  ITPSZ=2, CX0=1.730,  EMAX=1.E-3, PSTAT=T, MF =21,                       
+  PRINT=5.,10.,15.,20.,25.,30.,35.,37.,38.,38.5,39.,39.5,40,40.5, 41,           
+      41.5, 42, 42.5, 43, NPRNTS =19, ATOLSP = 1.E-12,                          
+   COMBUS = T,  ALLM1 = F,   EXCHR =T,   &END                                   
+   H       +   O2       =   HO2     +   M       O2        2.0    N2         2.0 
+   SAME                                         H2O       32.5   CO2        7.5 
+   SAME                                         CO        2.0    CH4        5.0 
+   SAME                                         H2        5.0                   
+   H       +   OH       =   H2O     +   M       O2        1.6    H2O       20.  
+   SAME                                         N2        1.6    CO2       7.5  
+   SAME                                         CO        1.6                   
+                                                                                
+ &START  AREA= 1000,  MACH =2,  T= 1645,  &END                                  
+CH4        .049768                                                              
+O2         .199072                                                              
+N2         .75116                                                               
+CN         .0000001                                                             
+END                                                                             
+FINIS                                                                           
+  GCKP86  CH4 - AIR WITH AREA PROFILE OF CASE 6           CASE 7                
+REPEAT                                                                          
+DISTANCE  AREA                                                                  
+ &PROB   ITPSZ=1,   MF= 21, PCON=F,                                             
+   COMBUS=.FALSE.,   ALLM1=.FALSE.,   PSTAT = T,                                
+   XTB=0.,5.,10.,15.,20.,25.,30.,35.,37.,38.,38.5,39.,39.5,40,40.5, 41,         
+       41.5, 42, 42.5, 43,       NTB = 20,                                      
+   ATB= 1000, 1000.36, 1002.13, 1005.58, 1011.41, 1021.20, 1038.50,             
+  1072.32,1095.79,1111.69, 1121.23, 1132.21,1145.11, 1160.74,1180.54,1207.54,   
+   1249.28,1323.25, 1394.55,  1409.12,                                          
+   PRINT =  10, 25, 35,  40, 42,   NPRNTS = 5,                                  
+    EMAX = 1.E-3,  ATOLSP = 1.E-12,  &END                                       
+                                                                                
+ &START T= 1645, MACH =2,  P= 1.730,  &END                                      
+CH4        .049768                                                              
+O2         .199072                                                              
+N2         .75116                                                               
+CN         .0000001                                                             
+END                                                                             
+FINIS                                                                           
+   GCKP86   METHANOL - AIR  COMBUSTION       CASE 8                             
+NEW                                                                             
+   M       +   CH3OH    =   CH3     +   OH           3.2E+18   0.        80000. 
+   O2      +   CH3OH    =   CH2OH   +   HO2          4.0E+13   0.        50900. 
+   OH      +   CH3OH    =   CH2OH   +   H2O          4.0E+12   0.        2000.  
+   O       +   CH3OH    =   CH2OH   +   OH           1.6E+12   0.        2300.  
+   H       +   CH3OH    =   CH2OH   +   H2           3.2E+13   0.        7000.  
+   H       +   CH3OH    =   CH3     +   H2O          5.0E+12   0.        5300.  
+   CH3     +   CH3OH    =   CH2OH   +   CH4          2.0E+11   0.        9800.  
+   HO2     +   CH3OH    =   CH2OH   +   H2O2         6.3E+12   0.        19400. 
+   M       +   CH2OH    =   CH2O    +   H            2.5E+13   0.        29000. 
+   O2      +   CH2OH    =   CH2O    +   HO2          1.0E+12   0.        6000.  
+               CH4      =   CH3     +   H            2.0E+15   0.        104000.
+   H       +   CH4      =   CH3     +   H2          1.26E+14   0.        11900. 
+   O       +   CH4      =   CH3     +   OH           2.0E+13   0.        9200.  
+   OH      +   CH4      =   CH3     +   H2O          3.0E+13   0.        6000.  
+   CH      +   O2       =   HCO     +   O            1.0E+13   0.        0.     
+   CH2     +   O2       =   CH2O    +   O            1.0E+14   0.        3700.  
+   CH3     +   O2       =   CH2O    +   OH           1.7E+12   0.        14000. 
+   CH3     +   O        =   CH2O    +   H            6.8E+13   0.        0.     
+   CH2O    +   H        =   HCO     +   H2            2.E+13   0.        3300.  
+   CH2O    +   O        =   HCO     +   OH            5.E+13   0.        4570.  
+   CH2O    +   OH       =   HCO     +   H2O           5.E+15   0.        13000. 
+   HCO     +   O        =   CO      +   OH            3.E+13    0.        0.    
+   HCO     +   H        =   CO      +   H2            2.E+13    0.        0.    
+   HCO     +   OH       =   CO      +   H2O           3.E+13   0.        0.     
+   M       +   HCO      =   H       +   CO            3.E+14    0.       14700. 
+   CO      +   OH       =   CO2     +   H            4.0E+12   0.        8000.  
+   CO      +   O        =   CO2     +   M            2.8E+13   0.        -4540. 
+   CO      +   O2       =   CO2     +   O            1.2E+11    0.       35000. 
+   H       +   O2       =   OH      +   O            2.2E+14   0.        16790. 
+   O       +   H2       =   OH      +   H            1.8E+10   1.        8900.  
+   H2      +   OH       =   H2O     +   H            5.2E+13   0.        6500.  
+   OH      +   OH       =   O       +   H2O          6.3E+12   0.        1093.  
+   H       +   O2       =   HO2     +   M            1.5E+15    0.       -1000. 
+   O       +   O        =   O2      +   M            5.7E+13   0.        -1788. 
+   H       +   H        =   H2      +   M            8.3E+17   -1.         0.   
+   H       +   OH       =   H2O     +   M            8.4E+21   -2.       0.     
+   H       +   CH3      =   H2      +   CH2          2.7E+11  .67        25700. 
+   O       +   CH3      =   OH      +   CH2          1.9E+11   .68       25700. 
+   OH      +   CH3      =   H2O     +   CH2          2.7E+11   .67       25700. 
+   H       +   CH2      =   H2      +   CH           2.9E+11   .7        26000. 
+   O       +   CH2      =   OH      +   CH           3.2E+11   .5        26000. 
+   OH      +   CH2      =   H2O     +   CH           5.0E+11   .5        6000.  
+   HO2     +   NO       =   NO2     +   OH           1.2E+13    0.      2380.   
+   O       +   NO2      =   NO      +   O2           1.0E+13     0.      596.   
+   NO      +   O        =   NO2     +   M           5.62E+15   0.        -1160. 
+   NO2     +   H        =   NO      +   OH           2.9E+14   0.         795.  
+   N       +   O2       =   NO      +   O             6.4E+9   1.        6250.  
+   O       +   N2       =   NO      +   N            1.8E+14   0.        76250. 
+   N       +   OH       =   NO      +   H            4.0E+13   0.        0.     
+   CN      +   H2       =   HCN     +   H            6.0E+13   0.        5300.  
+   O       +   HCN      =   H       +   NCO          5.2E+12  .68        8100.  
+   OH      +   HCN      =   HNCO    +   H            4.0E+11   0.         2800. 
+   CN      +   O        =   CO      +   N            1.2E+13   0.           0.  
+   CN      +   OH       =   NCO     +   H            2.5E+14   0.        6000.  
+   CN      +   O2       =   NCO     +   O            3.2E+13   0.        1000.  
+   CN      +   CO2      =   NCO     +   CO           3.7E+12   0.         0.    
+   O       +   NCO      =   NO      +   CO           2.0E+13    0.        0.    
+   N       +   NCO      =   N2      +   CO           1.0E+13    0.        0.    
+   H       +   NCO      =   NH      +   CO           2.0E+13   0.        0.     
+   H2      +   NCO      =   HNCO    +   H            1.0E+14   0.        9000.  
+   HNCO    +   H        =   NH2     +   CO           1.0E+14   0.        8500.  
+   NH      +   OH       =   N       +   H2O          5.0E+11   .5        1999.  
+   H       +   HO2      =   OH      +   OH           1.4E+14   0.        1070.  
+   H       +   HO2      =   O       +   H2O          1.0E+13   0.        1000.  
+   O       +   HO2      =   OH      +   O2           1.6E+13   0.        1070.  
+   OH      +   HO2      =   H2O     +   O2           7.9E+12   0.           0.  
+   CH3     +   OH       =   CH2O    +   H2           7.4E+12   0.         0.    
+   H2      +   HO2      =   H2O     +   OH           7.2E+11   0.        18700. 
+   HCO     +   O2       =   CO      +   HO2          3.0E+13   0.         0.    
+   OH      +   H2O2     =   H2O     +   HO2          1.0E+13   0.        1800.  
+   O2      +   H2O2     =2.0HO2                      4.0E+13   0.        42600. 
+   H       +   H2O2     =   HO2     +   H2           1.6E+12   0.        3800.  
+   M       +   H2O2     =2.0OH                       1.3E+17   0.        45500. 
+                                                                                
+AR                                                                              
+TIME                                    CH3OH                                   
+ &PROB  MF=21, PSTAT= T,  ALLM1 =F,  RHOCON =T, EMAX=5.E-4, ATOLSP=1.E-12,      
+   PRINT= 3.E-4,  5.6E-4,   6.E-4,  6.2E-4,                                     
+        NPRNTS = 4,   &END                                                      
+   H       +   O2       =   HO2     +   M       O2        2.0    N2         2.0 
+   SAME                                         H2O       32.5   CO2        7.5 
+   SAME                                         CO        2.0                   
+   H       +   OH       =   H2O     +   M       O2        1.6    H2O       20.  
+   SAME                                         N2        1.6    CO2       7.5  
+   SAME                                         CO        1.6                   
+                                                                                
+ &START   T= 1300, MMHG=T, P= 760,  ERATIO= 2.0,  SCC=1,  SCH= 4, SCOX= 1,      
+         &END                                                                   
+CN        .000001                                                               
+CH        .00001                                                                
+N         .000001                                                               
+END                                                                             
+FINIS                                                                           
+ C3H8 - AIR WELL-STIRRED REACTOR +  ROCKET EXPANSION PROB.   GCKP86 CASE 9      
+NEW                                                                             
+               C3H8     =   C2H5    +   CH3          4.5E+16   0.        84900. 
+               C2H5     =   C2H4    +   H           3.16E+13   0.        40700. 
+   O       +   C2H4     =   CH2O    +   CH2          2.5E+13   0.        5000.  
+   O       +   C2H4     =   CH3     +   HCO         2.26E+13  0.         2700.  
+   CH3     +   C3H8     =   CH4     +   C3H7         2.0E+13   0.        10300. 
+               C3H7     =   C2H4    +   CH3          4.0E+13   0.        33100. 
+   H       +   CH4      =   CH3     +   H2          1.26E+14   0.        11900. 
+   O       +   CH4      =   CH3     +   OH           2.0E+13   0.        9200.  
+   OH      +   CH4      =   CH3     +   H2O          3.0E+13   0.        6000.  
+   CH      +   O2       =   HCO     +   O            1.0E+13   0.         0.    
+   CH2     +   O2       =   CH2O    +   O            1.0E+14   0.        3700.  
+   CH3     +   O2       =   CH2O    +   OH           1.7E+12   0.         14000.
+   CH3     +   O        =   CH2O    +   H            6.8E+13   0.        0.     
+   CH2O    +   H        =   HCO     +   H2            2.E+13   0.        3300.  
+   CH2O    +   O        =   HCO     +   OH            5.E+13   0.        4570.  
+   CH2O    +   OH       =   HCO     +   H2O           5.E+15   0.        13000. 
+   HCO     +   O        =   CO      +   OH            3.E+13    0.        0.    
+   HCO     +   H        =   CO      +   H2            2.E+13    0.        0.    
+   HCO     +   OH       =   CO      +   H2O           3.E+13   0.        0.     
+   M       +   HCO      =   H       +   CO            3.E+14    0.       14700. 
+   CO      +   OH       =   CO2     +   H            4.0E+12   0.        8000.  
+   CO      +   O        =   CO2     +   M            2.8E+13   0.        -4540. 
+   CO      +   O2       =   CO2     +   O            1.2E+11    0.       35000. 
+   H       +   O2       =   OH      +   O            2.2E+14   0.        16790. 
+   O       +   H2       =   OH      +   H            1.8E+10   1.        8900.  
+   H2      +   OH       =   H2O     +   H            5.2E+13   0.        6500.  
+   OH      +   OH       =   O       +   H2O          6.3E+12   0.        1093.  
+   H       +   O2       =   HO2     +   M            1.5E+15    0.       -1000. 
+   O       +   O        =   O2      +   M            5.7E+13   0.        -1788. 
+   H       +   H        =   H2      +   M            8.3E+17   -1.         0.   
+   H       +   OH       =   H2O     +   M            8.4E+21   -2.       0.     
+   H       +   CH3      =   H2      +   CH2          2.7E+11  .67        25700. 
+   O       +   CH3      =   OH      +   CH2          1.9E+11   .68       25700. 
+   OH      +   CH3      =   H2O     +   CH2          2.7E+11   .67       25700. 
+   HO2     +   NO       =   NO2     +   OH           1.2E+13    0.      2380.   
+   O       +   NO2      =   NO      +   O2           1.0E+13     0.      596.   
+   NO      +   O        =   NO2     +   M           5.62E+15  0.         -1160. 
+   NO2     +   H        =   NO      +   OH           2.9E+14    0.       795.   
+   N       +   O2       =   NO      +   O             6.4E+9   1.        6250.  
+   O       +   N2       =   NO      +   N            1.8E+14   0.        76250. 
+   N       +   OH       =   NO      +   H            4.0E+13   0.        0.     
+   CH      +   N2       =   HCN     +   N            1.5E+11   0.        19000. 
+   CN      +   H2       =   HCN     +   H            6.0E+13   0.        5300.  
+   O       +   HCN      =   OH      +   CN           1.4E+11  .68        16900. 
+   OH      +   HCN      =   HNCO    +   H            4.0E+11   0.         2800. 
+   CN      +   O        =   CO      +   N            1.2E+13   0.           0.  
+   CN      +   OH       =   NCO     +   H            2.5E+14   0.        6000.  
+   H2      +   NCO      =   HNCO    +   H            1.0E+14   0.        9000.  
+   HNCO    +   H        =   NH2     +   CO           1.0E+14   0.        8500.  
+   CN      +   O2       =   NCO     +   O            3.2E+13   0.        1000.  
+   CN      +   CO2      =   NCO     +   CO           3.7E+12   0.         0.    
+   O       +   NCO      =   NO      +   CO           2.0E+13    0.        0.    
+   N       +   NCO      =   N2      +   CO           1.0E+13    0.        0.    
+   H       +   NCO      =   NH      +   CO           2.0E+13    0.        0.    
+   NH      +   OH       =   N       +   H2O          5.0E+11   0.5       2000.  
+   CH      +   CO2      =   HCO     +   CO           3.7E+12   0.         0.    
+   H       +   C2H4     =   H2      +   C2H3         1.1E+14   0.        8500.  
+   OH      +   C2H4     =   H2O     +   C2H3         1.0E+14    0.       3500.  
+   M       +   C2H3     =   C2H2    +   H            3.0E+16   0.        40500. 
+   O       +   C2H2     =   CH2     +   CO           5.2E+13   0.        3700.  
+   H       +   CH2      =   H2      +   CH           2.9E+11   .7        26000. 
+   O       +   CH2      =   OH      +   CH           3.2E+11   .5        26000. 
+   OH      +   CH2      =   H2O     +   CH           5.0E+11   .5        6000.  
+   CH      +   NO       =   N       +   HCO          1.0E+14   0.         0.    
+   CH      +   NO       =   O       +   HCN          1.0E+13   0.         0.    
+   CH3     +   OH       =   CH2O    +   H2           7.4E+12   0.         0.    
+   H2      +   HO2      =   H2O     +   OH           7.2E+11   0.        18700. 
+   HCO     +   O2       =   CO      +   HO2          3.0E+13   0.         0.    
+   C2H5    +   O2       =   C2H4    +   HO2          1.5E+12   0.        4860.  
+   H       +   C2H5     =   C2H4    +   H2           4.8E+13   0.         0.    
+   CH3     +   CH2      =   C2H4    +   H            2.0E+13   0.         0.    
+   OH      +   C2H2     =   C2H     +   H2O          6.0E+12   0.        7000.  
+   C2H     +   O        =   CO      +   CH           1.4E+13   0.        3150.  
+   C2H     +   O2       =   HCO     +   CO           1.0E+13  0.         7000.  
+   C2H2    +   O2       =2.0HCO                      4.0E+12   0.        28000. 
+   M       +   C2H2     =   C2H     +   H            1.0E+14   0.        114000.
+   O       +   C2H2     =   C2H     +   OH           3.2E+15  -.6        17000. 
+   M       +   C2H5     =   C2H4    +   H            6.8E+17   0.        31800. 
+                                                                                
+AR                                                                              
+DISTANCE  AREA                                                                  
+ &PROB WELSTR=T, TASS= F,DOTMAX= 1600,DELMD= 800, CONC=F,MPR=1, ALLM1=F,        
+  ITPSZ=2,  CX0= 15, CX1= 20, PRINT = .4, .7, 2, 3, 4, NPRNTS=5,                
+    ROCKET=T,  WSFLOW=T, PSTAT=T, EMAX=1.E-3,  ATOLSP=1.E-11,                   
+  HTRAN =T, QMREAD=T,  HT1= .05, HT0= -42.88 ,                                  
+  PC = 300, ATHROT = 2.2        &END                                            
+   H       +   O2       =   HO2     +   M       O2        2.0    N2         2.0 
+   SAME                                         H2O       32.5   CO2        7.5 
+   SAME                                         CO        2.0                   
+   H       +   OH       =   H2O     +   M       O2        1.6    H2O       20.  
+   SAME                                         N2        1.6    CO2       7.5  
+   SAME                                         CO        1.6                   
+                                                                                
+ &START T= 614, P = 5, AREA= 6026,  MDOT= 85,  MOLEF= F, X=.2  &END             
+C3H8      .0873262                                                              
+N2        .6892887                                                              
+O2        .211232                                                               
+AR        .011737                                                               
+CO2       .0004162                                                              
+END                                                                             
+FINIS                                                                           
+GCKP86         HIGH TEMPERATURE AIR IONIZATION      CASE 10                     
+NEW                                                                             
+   N       +   O2       =   NO      +   O            6.4E+09  1.        6250.   
+   O       +   N2       =   NO      +   N            1.8E+14   0.        76250. 
+   N       +   O        =   NO      +   M           6.40E+16  -0.5      0.      
+   O       +   O        =   O2      +   M            5.7E+13   0.        -1788. 
+            2.0N        =   N2      +   M           2.80E+17  -0.75     0.      
+   NO      +   O        =   NO2     +   M           5.62E+15   0.        -1160. 
+   M       +   N2O      =   N2      +   O           1.42E+14   0.        51280. 
+   O       +   N2O      =   N2      +   O2          6.23E+13   0.        24520. 
+   NO+     +   E        =   N       +   O           1.45E+21  -1.5      0.      
+   O+      +   E        =   O       +   M           2.00E+26  -2.5      0.      
+   O2      +   E        =   O2-     +   M           1.52E+21  -1.       1190.   
+   O2      +   O-       =   O2-     +   O           6.00E+12  0.        0.      
+                                                                                
+END                                                                             
+DISTANCE  AREA                                                                  
+ &PROB   MF= 21, ITPSZ= 2, CX0= 1000.,  ALLM1 = F,                              
+   PSTAT= T,  DBUGO= T, EMAX= 1.E-3, ATOLSP=1.E-12,                             
+  PRINT = .02, .06, .10, .50, .70,  NPRNTS = 5   &END                           
+   N       +   O        =   NO      +   M       N2O      2.25                   
+   NO      +   O        =   NO2     +   M       N2       1.55                   
+   O+      +   E        =   O       +   M       N        0.03    O2       4.5   
+   SAME                                         NO       50.     O        0.03  
+   O2      +   E        =   O2-     +   M       N2       .00002                 
+                                                                                
+ &START  P=1.6803, V=47002, T=4820.&END                                         
+N2        .7905                                                                 
+O2        .2095                                                                 
+O2-       .000000001                                                            
+END                                                                             
+FINIS                                                                           
+ GCKP86    HIGH PRESSURE H2  -  CO REACTION       CASE 11                       
+NEW                                                                             
+   CH3     +   OH       =   CH2O    +   H2           7.4E+12   0.         0.    
+               CH4      =   CH3     +   H            2.0E+15   0.        104000.
+   H       +   CH4      =   CH3     +   H2          1.26E+14   0.        11900. 
+   OH      +   CH4      =   CH3     +   H2O          3.0E+13   0.        6000.  
+   CH2O    +   H        =   HCO     +   H2            2.E+13   0.        3300.  
+   CH2O    +   OH       =   HCO     +   H2O          2.3E+13   0.         0.    
+   M       +   CH2O     =   H       +   HCO          5.0E+16  0.         72000. 
+   HCO     +   H        =   CO      +   H2           1.0E+14    0.        0.    
+   HCO     +   OH       =   CO      +   H2O          1.0E+14   0.        0.     
+   M       +   HCO      =   H       +   CO           5.0E+14   0.        19000. 
+   CO      +   OH       =   CO2     +   H            4.0E+12   0.0       8000.  
+   H2      +   OH       =   H2O     +   H            5.2E+13   0.        6500.  
+   H       +   H        =   H2      +   M            8.3E+17   -1.         0.   
+   H       +   OH       =   H2O     +   M            8.4E+21   -2.       0.     
+                                                                                
+END                                                                             
+TIME                                                                            
+ &PROB    ITPSZ = 5, EMAX = 1.E-3,  PRINT =  1, 100, 1.E+4,                     
+ 1.E+6,  1.E+8, 1.E+9,   NPRNTS =  6, ATOLSP=1.E-12,                            
+   ALLM1 =F, PSTAT = T, RHOCON = T, MF= 21,  TCON= T  &END                      
+   H       +   OH       =   H2O     +   M       H2        4.0                   
+   H       +   H        =   H2      +   M       H2        1.7    CO        2.0  
+   SAME                                         H2O       9.6    CO2       3.5  
+   M       +   HCO      =   H       +   CO      H2        5.0    CO        2.0  
+                                                                                
+ &START T= 1000, P= 100  &END                                                   
+H2        .99                                                                   
+CO        .01                                                                   
+OH        .000000001                                                            
+CH2O      .00000001                                                             
+END                                                                             
+FINIS                                                                           
+   GCKP86   HYDROGEN - OXYGEN LOW TEMP PHOTOLYTIC IGNITION      CASE 12         
+NEW                                                                             
+   H       +   O2       =   OH      +   O            2.2E+14   0.        16790. 
+   O       +   H2       =   OH      +   H            1.8E+10   1.        8900.  
+   H2      +   OH       =   H2O     +   H            5.2E+13   0.        6500.  
+   OH      +   OH       =   O       +   H2O          6.3E+12   0.        1093.  
+   H       +   O2       =   HO2     +   M            1.5E+15    0.       -1000. 
+   O       +   O        =   O2      +   M            5.7E+13   0.        -1788. 
+   H       +   H        =   H2      +   M            8.3E+17   -1.         0.   
+   H       +   OH       =   H2O     +   M            8.4E+21   -2.       0.     
+   H2      +   HO2      =   H2O     +   OH           7.2E+11   0.        18700. 
+   M       +   H2O2     =2.0OH                       1.3E+17  0.        45500.  
+   H2      +   O2       =2.0OH                      1.00E+13  0.        43000.  
+   H       +   HO2      =   OH      +   OH           2.5E+14   0.        1900.  
+   O       +   HO2      =   OH      +   O2           5.0E+13   0.        1000.  
+   OH      +   HO2      =   H2O     +   O2           5.0E+13   0.        1000.  
+            2.0HO2      =   H2O2    +   O2          1.80E+12  0.        0.      
+   OH      +   H2O2     =   H2O     +   HO2          1.0E+13   0.        1800.  
+   O       +   H2O2     =   OH      +   HO2          8.0E+13   0.        1000.  
+   H       +   H2O2     =   H2O     +   OH           3.2E+14   0.        9000.  
+   HNU     +   H2       >2.0H                          .003   0.           0.   
+   HNU     +   O2       >2.0O                          .005     0.        0.    
+                                                                                
+END                                                                             
+TIME                                                                            
+ &PROB    ITPSZ=5, ALLM1 = F,  RHOCON =T, IPRINT=50,                            
+   EMAX=1.E-6,  MF= 21, END = 1.147376, ATOLSP=1.E-15,   &END                   
+   H       +   O2       =   HO2     +   M       H2        5.0    O2        2.0  
+   SAME                                         H2O      32.5                   
+   H           H        =   H2      +   M       O2       2.0     H2       5.0   
+   SAME                                         H2O      15.0                   
+   M       +   H2O2     =2.0OH                  O2       0.78    H2O      6.0   
+   SAME                                         H2O2     6.6     H2       2.3   
+   H       +   OH       =   H2O     +   M       H2       4.0                    
+   SAME                                         H2O      20.0    O2       1.6   
+                                                                                
+ &START T= 700, P = 2.    &END                                                  
+H2        .667                                                                  
+O2        .333                                                                  
+END                                                                             
+FINIS                                                                           
+  ETHANE PYROLYSIS     DUNKER TEST  CASE A                 CASE 1               
+NEW                                                                             
+               C2H6     >2.0CH3                      1.2E+12   0.       59273.  
+   C2H6    +   CH3      >   C2H5    +   CH4          8.00E+8   0.        11950. 
+               C2H5     >   C2H4    +   H           3.00E+11   0.        34968. 
+   H       +   C2H6     >   C2H5    +   H2           1.3E+11   0.        8987.  
+   H       +   H        >   H2                      6.99E+13   0.        0.     
+                                                                                
+                                                                                
+TIME                                                                            
+ &PROB  EMAX=1.E-6, ATOLSP=1.E-08, RHOCON=T, PSTAT=T, TCON=T,                   
+  PRINT= 1.E-3, 1.E-2,   1.,  10.,   20.,                                       
+   NPRNTS=5, SENCAL=T,  ITPSZ=5,  &END                                          
+ &START   P=.4507,  T=923.,    &END                                             
+C2H6        1.0                                                                 
+END                                                                             
+INIT                                                                            
+C2H6      CH3       C2H5      CH4       C2H4      H         H2        END       
+SENSVAR                                                                         
+H2        H         C2H4      CH4       C2H5      CH3       C2H6                
+                                                                                
+REAC                                                                            
+ &SENRXN  SENSAJ=T, ALLRXN=T,    &END                                           
+FINIS                                                                           
+  FORMALDEHYDE OXIDATION     DUNKER TEST  CASE B           CASE 2               
+NEW                                                                             
+   HCO     +   O2       =   CO      +   HO2        6.023E+10   0.          0.   
+   HO2     +   CH2O     =   H2O2    +   HCO         1.14E+13   0.       11000.  
+   M       +   H2O2     =2.0OH                       1.7E+17   0.        46300. 
+   CH2O    +   OH       =   HCO     +   H2O        9.637E+13    0.        0.    
+   OH      +   H2O2     =   H2O     +   HO2         3.05E+12   0.           0.  
+               H2O2     >   H2O2W                    1.05E+2   0.           0.  
+               HO2      >   HO2W                     1.05E+1   0.           0.  
+   HO2     +   HO2      =   H2O2    +   O2          1.81E+12   0.            0. 
+   CO      +   OH       =   CO2     +   H          3.047E+11   0.          810. 
+   CO      +   HO2      =   CO2     +   OH         1.325E+14   0.        23000. 
+   CH2O    +   H        =   HCO     +   H2         1.205E+13   0.         3760. 
+   H       +   O2       =   OH      +   O          2.036E+14   0.        16500. 
+   H       +   O2       >   HO2     +   M          3.628E+15   0.            0. 
+   M       +   HO2      >   H       +   O2         8.432E+16   0.        50000. 
+   O       +   H2       =   OH      +   H            4.0E+13   0.       10200.  
+   CH2O    +   O        =   HCO     +   OH         6.023E+13   0.           0.  
+   H       +   H2O2     =   HO2     +   H2         4.156E+14  0.         11800. 
+   H       +   H2O2     =   H2O     +   OH         4.156E+14   0.        9000.  
+   O       +   H2O2     =   OH      +   HO2        6.023E+10    0.          0.  
+               HCO      =   H       +   CO         5.012E-06   0.        26300. 
+   H2      +   OH       =   H2O     +   H          9.637E+13   0.        5200.  
+   CH2O    +   O2       =   HCO     +   HO2         4.52E+13   0.       41000.  
+   H       +   HO2      =2.0OH                     3.012E+12   0.           0.  
+   HO2     +   H        =   H2O     +   O          3.012E+13   0.           0.  
+   H       +   HO2      =   H2      +   O2         2.710E+13   0.          0.   
+                                                                                
+N2                                                                              
+TIME      PRESSURE                                                              
+ &PROB ITPSZ=2, ATOLSP=1.E-08, EMAX=1.E-06, PSTAT=T,                            
+  CX0=0.92, PRINT= 1.E-03, 2.E-03, 3.E-03, 4.E-03, 5.E-03,                      
+    NPRNTS=5, TCON=T, EXCHR=T, SENCAL=T,   &END                                 
+ &START T=952., P=0.92,   &END                                                  
+CH2O      0.01                                                                  
+CO        0.40                                                                  
+O2        0.18                                                                  
+N2        0.41                                                                  
+END                                                                             
+REAC                                                                            
+ &SENRXN ALLRXN=T,SENSAJ=T  &END                                                
+SENSVAR                                                                         
+ALLSP     END                                                                   
+INIT                                                                            
+ALLSP     END                                                                   
+FINIS                                                                           
+  YETTER ET AL'S WET CO OXIDATION REDUCED MECH             CASE 3               
+NEW                                                                             
+   CO      +   O2       >   CO2     +   O         3.1400E+11   0.0      37600.  
+   CO2     +   O        >   CO      +   O2        2.7800E+12    0.0      43830. 
+   O       +   H2O      >   OH      +   OH        6.8000E+13   0.0      18350.  
+   OH      +   OH       >   O       +   H2O       6.3000E+12    0.0       1100. 
+   CO      +   OH       >   CO2     +   H         1.5000E+07   1.3      -770.   
+   CO2     +   H        >   CO      +   OH        1.6800E+09    1.3      21580. 
+   H       +   O2       >   OH      +   O         2.2000E+14   0.0      16790.  
+   OH      +   O        >   H       +   O2        1.7400E+13    0.0       677.  
+   H       +   O2       >   HO2     +   M         1.6500E+15   0.0      -1000.  
+   M       +   HO2      >   H       +   O2        2.3100E+15    0.0      45900. 
+                                                                                
+N2                                                                              
+TIME      PRESSURE                                                              
+ &PROB ITPSZ=2, CX0=1, ATOLSP=1.E-12, EMAX=1.E-3, PSTAT=T,                      
+  PRINT= 1.E-03, 5.E-03, 1.E-02, 5.E-02, 1.E-01, 2.E-01,                        
+    NPRNTS=6,  TCON=T, EXCHR=T, SENCAL=T  &END                                  
+ &START T=1100, P=1.0,            &END                                          
+CO           .002                                                               
+H2O         0.01                                                                
+O2          0.028                                                               
+N2          0.96                                                                
+END                                                                             
+INIT                                                                            
+ALLSP     END                                                                   
+SENSVAR                                                                         
+ALLSP     END                                                                   
+REAC                                                                            
+ &SENRXN  SENSAJ=T,  ALLRXN=T,        &END                                      
+FINIS                                                                           
+  KRAMER ET AL'S WET CO OXIDATION COMPLETE MECHANISM       CASE 4               
+NEW                                                                             
+   HCO     +   H        >   CO      +   H2           2.0E+14   0.        0.     
+   CO      +   H2       >   HCO     +   H            1.0E+14   0.        0.     
+   HCO     +   OH       >   CO      +   H2O          1.0E+14    0.        0.    
+   CO      +   H2O      >   HCO     +   OH         3.656E-06    0.        0.    
+   HCO     +   O        >   CO      +   OH           1.0E+14   0.        0.     
+   CO      +   OH       >   O       +   HCO        9.516E-04   0.        0.     
+   HCO     +   O2       >   CO      +   HO2        1.343E+11   0.       0.      
+   CO      +   HO2      >   HCO     +   O2         1.156E+05   0.        0.     
+   CO      +   HO2      >   CO2     +   OH         3.018E+09   0.       0.      
+   CO2     +   OH       >   CO      +   HO2        1.741E-02   0.        0.0    
+   CO      +   OH       >   CO2     +   H          1.915E+11   0.       0.      
+   CO2     +   H        >   CO      +   OH         7.890E+08   0.0        0.0   
+   CO2     +   O        >   CO      +   O2         5.469E+03   0.       0.      
+   CO      +   O2       >   CO2     +   O          1.048E+04   0.        0.0    
+   H       +   O2       >   OH      +   O          1.012E+11   0.       0.      
+   OH      +   O        >   H       +   O2         1.247E+13   0.        0.0    
+   O       +   H2       >   OH      +   H          3.361E+11   0.       0.      
+   OH      +   H        >   O       +   H2         3.800E+11   0.0       0.0    
+   O       +   H2O      >   OH      +   OH         1.536E+10    0.      0.      
+   OH      +   OH       >   O       +   H2O        3.825E+12    0.       0.0    
+   H2O     +   H        >   OH      +   H2         8.794E+09   0.       0.      
+   OH      +   H2       >   H2O     +   H          2.090E+12   0.        0.0    
+   OH      +   H2O2     >   H2O     +   HO2        4.385E+12   0.       0.      
+   H2O     +   HO2      >   OH      +   H2O2       8.553E+06   0.        0.0    
+   O       +   HO2      >   OH      +   O2         3.162E+13    0.      0.      
+   OH      +   O2       >   O       +   HO2        3.608E+02    0.       0.0    
+   H       +   HO2      >2.0OH                     1.048E+14   0.       0.      
+   OH      +   OH       >   H       +   HO2        1.289E+06   0.        0.0    
+   H       +   HO2      >   H2      +   O2         1.813E+13   0.       0.      
+   H2      +   O2       >   H       +   HO2        1.801E+02   0.        0.0    
+   HO2     +   OH       >   H2O     +   O2         3.162E+13   0.       0.      
+   H2O     +   O2       >   HO2     +   OH         1.331E+00   0.        0.0    
+   O2      +   H2O2     >2.0HO2                    1.349E+05   0.       0.      
+   HO2     +   HO2      >   O2      +   H2O2       6.324E+12   0.        0.0    
+   HO2     +   H2       >   H2O2    +   H          1.976E+07  0.        0.      
+   H2O2    +   H        >   HO2     +   H2         3.054E+11  0.         0.0    
+   M       +   O2       >   O       +   O          6.023E-11   0.       0.      
+   O       +   O        >   O2      +   M          4.716E+16   0.       0.0     
+   M       +   H2       >   H       +   H          1.850E-05   0.       0.      
+   H       +   H        >   H2      +   M          3.000E+15   0.       0.0     
+   M       +   OH       >   O       +   H          1.807E-04    0.      0.      
+   O       +   H        >   OH      +   M          1.001E+16    0.       0.0    
+   M       +   H2O2     >2.0OH                     1.090E+08   0.       0.      
+   OH      +   OH       >   H2O2    +   M          9.251E+15   0.        0.0    
+   M       +   H2O      >   H       +   OH         3.012E-05   0.0      0.      
+   H       +   OH       >   H2O     +   M          1.157E+18   0.0      0.0     
+   M       +   HO2      >   H       +   O2         1.741E+07   0.       0.      
+   H       +   O2       >   HO2     +   M          2.528E+16   0.        0.0    
+   M       +   CO2      >   CO      +   O          4.668E-08    0.      0.      
+   CO      +   O        >   CO2     +   M          9.069E+14   0.0      0.0     
+   M       +   HCO      >   H       +   CO         2.343E+10    0.      0.      
+   H       +   CO       >   HCO     +   M          2.706E+14    0.       0.0    
+                                                                                
+N2                                                                              
+TIME                                                                            
+ &PROB ITPSZ=5, ATOLSP=1.E-13, EMAX=1.E-3, PSTAT=T, RHOCON=T,                   
+  PRINT=1.E-3,5.E-3,1.E-2,5.E-2,1.E-1,5.E-1,1.E0,5.E0,1.E1,5.E1,1.E2,           
+  NPRNTS=11,  TCON=T,  SENCAL=T  &END                                           
+ &START T=1100, P=1.0,            &END                                          
+CO           .002                                                               
+H2O         0.01                                                                
+O2          0.028                                                               
+N2          0.96                                                                
+END                                                                             
+INIT                                                                            
+ALLSP     END                                                                   
+SENSVAR                                                                         
+ALLSP     END                                                                   
+REAC                                                                            
+ &SENRXN  SENSAJ=T,  RXNUM=2,3,5,6,7,8,9,11,14,15,16,17,18,19,20,21,22,23,24,   
+  25,26,27,29,31,32,33,34,38,39,40,41,42,43,44,45,47,48,49,50,51,52, &END       
+FINIS                                                                           
+  HYDROGEN COMB. IN PURE AIR,  MACH =3.00 AND P=3.10 ATM.  CASE 5               
+NEW                                                                             
+   CO      +   O        =   CO2     +   M          5.888E+15   0.        4100.  
+   CO      +   O2       =   CO2     +   O          2.512E+12   0.        47690. 
+   CO      +   OH       =   CO2     +   H          4.169E+11   0.         1000. 
+   CO      +   HO2      =   CO2     +   OH         5.754E+13   0.        22930. 
+   O       +   H2O      =   OH      +   OH         6.761E+13    0.       18360. 
+   O       +   H2       =   OH      +   H           3.26E+13   0.        9800.  
+   H2      +   O2       =2.0OH                       3.4E+13   0.        48150. 
+   H2      +   O2       =   H2O     +   O            4.1E+13   0.        50470. 
+   O       +   HO2      =   OH      +   O2          5.00E+13   0.        1000.  
+   HO2     +   OH       =   H2O     +   O2           8.0E+12   0.        2980.  
+   H       +   HO2      =2.0OH                      2.04E+14   0.        1070.  
+   H       +   HO2      =   H2O     +   O            1.7E+13   0.        1070.  
+   H       +   HO2      =   H2      +   O2           1.4E+13   0.               
+   H2      +   OH       =   H2O     +   H            2.1E+13   0.        5100.  
+   H       +   O2       =   HO2     +   M            2.0E+18   -1.              
+   H       +   OH       =   H2O     +   M          1.413E+23   -2.        0.    
+   H       +   O        =   OH      +   M            7.1E+18   -1.        0.    
+   H       +   H        =   H2      +   M          3.020E+15   0.        0.     
+   H       +   O2       =   OH      +   O           1.66E+14   0.        16400. 
+   O       +   O        =   O2      +   M          1.905E+13   0.        -1790. 
+   OH      +   H2O2     =   H2O     +   HO2          6.1E+12   0.        1430.  
+   HO2     +   HO2      =   H2O2    +   O2           2.0E+12    0.        0.    
+   H       +   H2O2     =   H2O     +   OH           7.8E+11   0.         0.    
+   H2      +   HO2      =   H2O2    +   H            6.0E+11  0.         18500. 
+   M       +   H2O2     =2.0OH                      1.44E+17   0.        45510. 
+   M       +   N2       =   N       +   N           3.72E+21   -1.6      224950.
+   HO2     +   NO       =   NO2     +   OH          2.09E+12    0.      -477.   
+   O       +   NO2      =   NO      +   O2           1.0E+13     0.      596.   
+   NO      +   O        =   NO2     +   M           5.62E+15   0.        -1160. 
+   NO2     +   H        =   NO      +   OH          3.47E+14   0.         1470. 
+   NO      +   H        =   N       +   OH          2.63E+14   0.        50410. 
+   NO      +   O        =   N       +   O2            3.8E+9   1.        41370. 
+   O       +   N2       =   NO      +   N           1.82E+14   0.        76250. 
+   N       +   NO2      =2.0NO                       4.0E+12   0.        0.     
+   M       +   N2O      =   N2      +   O           6.92E+23   -2.5      65000. 
+   O       +   N2O      =   N2      +   O2           1.0E+14   0.        28020. 
+   O       +   N2O      =2.0NO                      6.92E+13   0.        26630. 
+   N2O     +   H        =   N2      +   OH          7.59E+13   0.        15100. 
+   NO2     +   H2       =   HNO2    +   H            2.4E+13  0.         29000. 
+   OH      +   NO2      =   HNO3    +   M            3.0E+15  0.         -3800. 
+   OH      +   NO       =   HNO2    +   M            5.6E+15  0.         -1700. 
+   HNO     +   H        =   H2      +   NO           5.0E+12   0.        0.     
+   H       +   NO       =   HNO     +   M            5.4E+15   0.        -600.  
+   HNO     +   OH       =   H2O     +   NO           3.6E+13   0.        0.     
+                                                                                
+AR                                                                              
+TIME      PRESSURE                                                              
+ &PROB ALLM1=F, ITPSZ=2,  PSTAT=T,SENCAL=T, SENSTD=T, TINY=1.E-7,               
+ PRINT= 4.E-5,  6.E-5,  8.E-5,  1.E-4,  NPRNTS=4, CX0=3.1,                      
+   EMAX=1.E-4, ATOLSP = 1.E-13,          &END                                   
+   H       +   O2       =   HO2     +   M       N2        1.5    O2         1.5 
+   H       +   O2       =   HO2     +   M       H2O       21.3   CO2        7.5 
+   H       +   OH       =   H2O     +   M       O2        4.2    H2O       16.7 
+   H       +   OH       =   H2O     +   M       CO2       7.5                   
+   H       +   OH       =   H2O     +   M       H2        4.0                   
+   H           H        =   H2      +   M       O2        2.0    H2        5.0  
+   H           H        =   H2      +   M       H2O       15.0                  
+   H       +   O        =   OH      +   M       H2O       5.0                   
+   OH      +   NO2      =   HNO3    +   M       O2        0.7    H2        1.4  
+                                                                                
+ &START   T= 950.66,   &END                                                     
+H2             .2952726                                                         
+O2          .1476404                                                            
+CO2             2.1140E-4                                                       
+N2         0.5458075                                                            
+NO          .0045                                                               
+AR              6.5681E-3                                                       
+END                                                                             
+INIT                                                                            
+CO        H2        O2        HO2       H2O2      NO        TEMP      DENSITY   
+                                                                                
+REAC                                                                            
+ &SENRXN  SENSAJ=T,  SENSEJ=T, RXNUM=1,2,5,7,8,     &END                        
+SENSVAR                                                                         
+ALLSP     TEMP      DENSITY   PRESSURE  END                                     
+FINIS                                                                           
+  BENZENE - OXYGEN - AR SHOCK IGNITION                     CASE 6               
+NEW                                                                             
+   C6H6    +   O2       =   C6H5    +   HO2         6.31E+13  0.         60000. 
+               C6H6     =   C6H5    +   H           5.00E+15  0.         108000.
+   C6H6    +   H        =   C6H5    +   H2           2.5E+14  0.         16000. 
+   C6H6    +   O        =   C6H5    +   OH         2.783E+13   0.        4910.  
+   C6H6    +   OH       =   C6H5    +   H2O        2.132E+13   0.        4580.  
+   M       +   C4H3     =   C4H2    +   H           3.31E+51   -10.      63000. 
+               C6H5O    =   C5H5    +   CO          2.51E+11   0.        43900. 
+   C6H5    +   O2       =   C6H5O   +   O            4.5E+12   0.        15000. 
+               C6H5     =   C4H3    +   C2H2        1.58E+15   0.        82000. 
+               C6H5OH   =   C6H5O   +   H            6.0E+13   0.        88000. 
+   C5H6    +   O        =   C5H5O   +   H            5.0E+12   0.        10000. 
+   C6H5OH  +   OH       =   C6H5O   +   H2O          8.0E+12   0.        5000.  
+   C5H5    +   C6H6     =   C6H5    +   C5H6         2.0E+11   0.        10000. 
+   M       +   C5H5O    =   C4H5    +   CO         7.586E+13   0.        15000. 
+   C5H5    +   O2       =   C5H5O   +   O            2.0E+12   0.        20000. 
+               C4H5     =   C2H3    +   C2H2         1.4E+13   0.        32900. 
+   C4H2    +   O        =   C2HO    +   C2H          1.0E+13   0.         0.    
+   C4H2    +   OH       =   HCO     +   C3H2         3.0E+13    0.       0.     
+   C4H2    +   O        =   CO      +   C3H2         1.2E+12    0.       0.     
+   M       +   C2H4     =   C2H2    +   H2         9.333E+16    0.       77200. 
+   C2H4    +   OH       =   C2H3    +   H2O        4.786E+12   0.         1230. 
+   C2H4    +   O        =   CH3     +   HCO        3.311E+12   0.         1130. 
+   C2H4    +   O        =   CH2O    +   CH2        2.512E+13   0.         5000. 
+   C2H4    +   OH       =   CH3     +   CH2O       1.995E+12   0.         960.  
+   M       +   C2H3     =   C2H2    +   H          7.943E+14   0.        31500. 
+   C2H3    +   O2       =   C2H2    +   HO2         1.58E+13   0.        10000. 
+   C2H3    +   H        =   C2H2    +   H2           6.0E+12  0.            0.  
+   C2H3    +   OH       =   C2H2    +   H2O        5.012E+12   0.        0.     
+   C2H3    +   CH2      =   C2H2    +   CH3        3.020E+13    0.        0.    
+   C2H3    +   C2H      =2.0C2H2                   3.020E+13   0.         0.    
+   C2H3    +   O        =   C2H2O   +   H            3.3E+13   0.        0.     
+   CH2     +   CH2      =   C2H2    +   H2           4.0E+13   0.         0.    
+   CH2     +   CH2      =   C2H3    +   H          5.012E+12   0.        0.     
+   CH2     +   OH       =   CH      +   H2O         2.51E+11   .67       25700. 
+   CH2     +   O        =   CH      +   OH           2.0E+11   .68       25000. 
+   CH2     +   O2       =   CO2     +2.0H           1.59E+12   0.        1000.  
+   M       +   C2H2     =   C2H     +   H          4.169E+16   0.        107000.
+   C2H2    +   C2H2     =   C4H3    +   H            2.0E+12   0.        45900. 
+   C2H2    +   O2       =   C2HO    +   OH          2.00E+08   1.5       30100. 
+   C2H2    +   O        =   C2H     +   OH          3.16E+15   -.6       15000. 
+   C2H2    +   O        =   CH2     +   CO         2.188E+10   1.0        2580. 
+   C2H2    +   O        =   C2HO    +   H           3.548E+4   2.7        1390. 
+   C2H2    +   OH       =   C2H     +   H2O        6.310E+12    0.        7000. 
+   C2H2    +   OH       =   C2H2O   +   H            3.2E+11   0.         200.  
+   C2H2    +   C2H      =   C4H2    +   H            3.0E+13   0.        0.     
+   C2H2    +   CH2      =   C3H3    +   H            1.0E+12    0.       0.     
+   C3H3    +   H        =   C3H4    +   M            2.0E+13   0.        0.     
+   C2H2O   +   OH       =   CH2O    +   HCO          2.8E+13    0.        0.    
+   C2H2O   +   OH       =   C2HO    +   H2O          7.5E+12    0.       3000.  
+   C2H2O   +   H        =   CH3     +   CO          1.13E+13   0.        3428.  
+   C2H2O   +   H        =   C2HO    +   H2           7.5E+13   0.        8000.  
+   C2H2O   +   O        =   C2HO    +   OH           5.0E+13    0.       8000.  
+   C2H2O   +   O        =   CH2O    +   CO           2.0E+13   0.         0.    
+   M       +   C2H2O    =   CH2     +   CO           2.0E+16   0.        60000. 
+   C2HO    +   O2       =2.0CO      +   OH          1.46E+12   0.        2500.  
+   C2HO    +   O        =2.0CO      +   H          1.202E+12    0.        0.    
+   C2HO    +   OH       =2.0HCO                      1.0E+13   0.        0.     
+   C2HO    +   H        =   CH2     +   CO           5.0E+13    0.       0.     
+   C2HO    +   CH2      =   C2H3    +   CO           3.0E+13    0.        0.    
+   C2HO    +   CH2      =   CH2O    +   C2H          1.0E+13   0.        2000.  
+            2.0C2HO     =   C2H2    +2.0CO           1.0E+13    0.        0.    
+   C2H     +   OH       =   C2HO    +   H            2.0E+13    0.        0.    
+   C2H     +   O2       =   C2HO    +   O           5.00E+13    0.       1500.  
+   C2H     +   O        =   CO      +   CH         5.012E+13   0.         0.    
+   C2H     +   H2       =   C2H2    +   H            4.09E+6  2.39       864.   
+   M       +   CH4      =   CH3     +   H          1.995E+17   0.        88000. 
+   CH4     +   O2       =   CH3     +   HO2        7.943E+13   0.        56000. 
+   CH4     +   H        =   CH3     +   H2          1.26E+14   0.        11900. 
+   OH      +   CH4      =   CH3     +   H2O          2.5E+13  0.         5010.  
+   O       +   CH4      =   CH3     +   OH           1.9E+14   0.       11720.  
+   M       +   CH3O     =   CH2O    +   H          5.012E+13   0.        21000. 
+   CH3O    +   O2       =   CH2O    +   HO2          1.0E+12   0.         6000. 
+   CH3O    +   H        =   CH2O    +   H2         1.995E+13    0.        0.    
+   CH3     +   O2       =   CH3O    +   O          4.786E+13    0.       29000. 
+   CH3     +   CH3      =   C2H4    +   H2           1.0E+16   0.        32000. 
+   CH3     +   O        =   CH2O    +   H          1.288E+14   0.        2000.  
+   CH3     +   OH       =   CH2O    +   H2         3.981E+12   0.         0.    
+   CH3     +   OH       =   CH3O    +   H          1.995E+16   0.        27410. 
+   CH3     +   CH2O     =   CH4     +   HCO          1.0E+10   0.5        6000. 
+   CH3     +   HCO      =   CH4     +   CO         3.020E+11   .5         0.    
+   CH3     +   HO2      =   CH3O    +   OH         1.995E+13   0.         0.    
+   M       +   CH2O     =   HCO     +   H          3.311E+16   0.        81000. 
+   CH2O    +   OH       =   HCO     +   H2O        7.586E+12    0.        170.  
+   CH2O    +   H        =   HCO     +   H2         3.311E+14   0.        10500. 
+   CH2O    +   O        =   HCO     +   OH         5.012E+13   0.        4600.  
+   HCO     +   HO2      =   CH2O    +   O2           1.0E+14   0.        3000.  
+   M       +   HCO      =   H       +   CO          2.94E+14   0.        15569. 
+   HCO     +   O2       =   CO      +   HO2        3.311E+12   0.        7000.  
+   HCO     +   OH       =   CO      +   H2O          1.0E+14    0.        0.    
+   HCO     +   H        =   CO      +   H2         1.995E+14   0.        0.     
+   HCO     +   O        =   CO      +   OH           1.0E+14   0.        0.     
+   CH      +   O2       =   HCO     +   O            1.0E+13   0.        0.     
+   CO      +   O        =   CO2     +   M          5.888E+15   0.        4100.  
+   CO      +   O2       =   CO2     +   O          2.512E+12   0.        47690. 
+   CO      +   OH       =   CO2     +   H          4.169E+11   0.         1000. 
+   CO      +   HO2      =   CO2     +   OH         5.754E+13   0.        22930. 
+   O       +   H2O      =   OH      +   OH         6.761E+13    0.       18360. 
+   O       +   H2       =   OH      +   H          2.951E+13   0.        9800.  
+   H2      +   O2       =2.0OH                     2.512E+12   0.        38950. 
+   O       +   HO2      =   OH      +   O2         5.012E+13   0.        1000.  
+   HO2     +   OH       =   H2O     +   O2         5.012E+13   0.        1000.  
+   HO2     +   H        =   H2O     +   O          5.012E+13   0.        1000.  
+   H       +   HO2      =2.0OH                     2.512E+14   0.        1900.  
+   H2      +   OH       =   H2O     +   H          2.089E+13   0.        5150.  
+   H       +   O2       =   HO2     +   M          1.514E+15   0.        -1000. 
+   H       +   OH       =   H2O     +   M          1.413E+23   -2.        0.    
+   H       +   O        =   OH      +   M            1.0E+16   0.        0.     
+   H       +   H        =   H2      +   M          3.020E+15   0.        0.     
+   H       +   O2       =   OH      +   O          1.259E+14   0.        16300. 
+   O       +   O        =   O2      +   M          1.905E+13   0.        -1790. 
+                                                                                
+AR                                                                              
+TIME                                                                            
+ &PROB  ITPSZ =5,  EMAX=1.E-4,  ATOLSP=1.E-13, IPRINT=25,                       
+     RHOCON =T, SENCAL=T, TINY=1.E-7,   END=3.E-4,   &END                       
+ &START  T= 1405.,  P=2.3868,       &END                                        
+C6H6       .01690                                                               
+O2         .12582                                                               
+AR         .85728                                                               
+END                                                                             
+SENSVAR                                                                         
+C6H6      C6H5      H2O       CO        C2H2      C6H5OH    C5H6      TEMP      
+DENSITY   PRESSURE  END                                                         
+INIT                                                                            
+C6H6      OH        AR        TEMP      DENSITY                                 
+                                                                                
+REAC                                                                            
+ &SENRXN  SENSAJ=T, SENSNJ=T, SENSEJ=T, RXNUM=1,2,3,4,5,6,7,8,9,10,11,12,       
+   13,14,15,16,17,18,19,20,95,105,109,   &END                                   
+FINIS                                                                           

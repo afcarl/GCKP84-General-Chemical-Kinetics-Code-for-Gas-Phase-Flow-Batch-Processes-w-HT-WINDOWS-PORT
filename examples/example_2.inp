@@ -1,0 +1,50 @@
+  GCKP86  HYD - AIR TEST WITH HEAT TRANSFER          STOICH  CASE 2             
+NEW                                                                             
+   H       +   O2       =   OH      +   O            2.2E+14   0.        16790. 
+   O       +   H2       =   OH      +   H            1.8E+10   1.        8900.  
+   H2      +   OH       =   H2O     +   H            5.2E+13   0.        6500.  
+   OH      +   OH       =   O       +   H2O          6.3E+12   0.        1093.  
+   H       +   O2       =   HO2     +   M            1.5E+15    0.       -1000. 
+   O       +   O        =   O2      +   M            5.7E+13   0.        -1788. 
+   H       +   H        =   H2      +   M            8.3E+17   -1.         0.   
+   H       +   OH       =   H2O     +   M            8.4E+21   -2.       0.     
+   H2      +   HO2      =   H2O     +   OH           7.2E+11   0.        18700. 
+   M       +   H2O2     =2.0OH                       1.3E+17  0.        45500.  
+   H2      +   O2       =2.0OH                      1.00E+13  0.        43000.  
+   H       +   HO2      =   OH      +   OH           2.5E+14   0.        1900.  
+   O       +   HO2      =   OH      +   O2           5.0E+13   0.        1000.  
+   OH      +   HO2      =   H2O     +   O2           5.0E+13   0.        1000.  
+            2.0HO2      =   H2O2    +   O2          1.00E+12  0.        0.      
+   HO2     +   NO       =   NO2     +   OH           1.2E+13    0.      2380.   
+   O       +   NO2      =   NO      +   O2           1.0E+13     0.      596.   
+   NO      +   O        =   NO2     +   M           5.62E+15   0.        -1160. 
+   NO2     +   H        =   NO      +   OH           2.9E+14   0.         795.  
+   N       +   O2       =   NO      +   O             6.4E+9   1.        6250.  
+   O       +   N2       =   NO      +   N            1.8E+14   0.        76250. 
+   N       +   OH       =   NO      +   H            4.0E+13   0.        0.     
+   M       +   N2O      =   N2      +   O           1.42E+14   0.        51280. 
+   O       +   N2O      =   N2      +   O2          6.23E+13   0.        24520. 
+   O       +   N2O      =2.0NO                       3.1E+13   0.        21800. 
+            2.0NO2      =2.0NO      +   O2           4.0E+12   0.        26900. 
+   N       +   NO2      =2.0NO                       3.6E+12   0.        0.     
+   OH      +   N2       =   N2O     +   H            3.2E+12   0.        80280. 
+                                                                                
+CO2       AR                                                                    
+DISTANCE  AREA                          H2                                      
+ &PROB    ITPSZ=2,  CX0 = 2000.,  ALLM1 = F,                                    
+   PRINT= 3.048, 4.572, 6.096, 7.620, 15.24,  NPRNTS = 5,                       
+   EMAX=5.E-3,  MF= 21, PSTAT= T, ATOLSP=1.E-12,                                
+   HTRAN = T, QMREAD= T,  HT1= 5.863, HT0= -42.88   &END                        
+   H       +   O2       =   HO2     +   M       H2        5.0    O2        2.0  
+   SAME                                         H2O      32.5    N2       2.0   
+   H           H        =   H2      +   M       O2       2.0     H2       5.0   
+   SAME                                         H2O      15.0    N2       2.0   
+   M       +   H2O2     =2.0OH                  O2       0.78    H2O      6.0   
+   SAME                                         H2O2     6.6     H2       2.3   
+   H       +   OH       =   H2O     +   M       H2       4.0     N2       1.6   
+   SAME                                         H2O      20.0    O2       1.6   
+                                                                                
+ &START      P=0.9560,  T=1559., MACH=5.0,                                      
+  ERATIO =1, SCC= 0, SCH= 2, SCOX= 0,   &END                                    
+END                                                                             
+FINIS                                                                           

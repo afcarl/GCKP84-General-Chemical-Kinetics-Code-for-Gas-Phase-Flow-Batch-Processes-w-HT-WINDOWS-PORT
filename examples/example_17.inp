@@ -1,0 +1,78 @@
+  HYDROGEN COMB. IN PURE AIR,  MACH =3.00 AND P=3.10 ATM.  CASE 17               
+NEW                                                                             
+   CO      +   O        =   CO2     +   M          5.888E+15   0.        4100.  
+   CO      +   O2       =   CO2     +   O          2.512E+12   0.        47690. 
+   CO      +   OH       =   CO2     +   H          4.169E+11   0.         1000. 
+   CO      +   HO2      =   CO2     +   OH         5.754E+13   0.        22930. 
+   O       +   H2O      =   OH      +   OH         6.761E+13    0.       18360. 
+   O       +   H2       =   OH      +   H           3.26E+13   0.        9800.  
+   H2      +   O2       =2.0OH                       3.4E+13   0.        48150. 
+   H2      +   O2       =   H2O     +   O            4.1E+13   0.        50470. 
+   O       +   HO2      =   OH      +   O2          5.00E+13   0.        1000.  
+   HO2     +   OH       =   H2O     +   O2           8.0E+12   0.        2980.  
+   H       +   HO2      =2.0OH                      2.04E+14   0.        1070.  
+   H       +   HO2      =   H2O     +   O            1.7E+13   0.        1070.  
+   H       +   HO2      =   H2      +   O2           1.4E+13   0.               
+   H2      +   OH       =   H2O     +   H            2.1E+13   0.        5100.  
+   H       +   O2       =   HO2     +   M            2.0E+18   -1.              
+   H       +   OH       =   H2O     +   M          1.413E+23   -2.        0.    
+   H       +   O        =   OH      +   M            7.1E+18   -1.        0.    
+   H       +   H        =   H2      +   M          3.020E+15   0.        0.     
+   H       +   O2       =   OH      +   O           1.66E+14   0.        16400. 
+   O       +   O        =   O2      +   M          1.905E+13   0.        -1790. 
+   OH      +   H2O2     =   H2O     +   HO2          6.1E+12   0.        1430.  
+   HO2     +   HO2      =   H2O2    +   O2           2.0E+12    0.        0.    
+   H       +   H2O2     =   H2O     +   OH           7.8E+11   0.         0.    
+   H2      +   HO2      =   H2O2    +   H            6.0E+11  0.         18500. 
+   M       +   H2O2     =2.0OH                      1.44E+17   0.        45510. 
+   M       +   N2       =   N       +   N           3.72E+21   -1.6      224950.
+   HO2     +   NO       =   NO2     +   OH          2.09E+12    0.      -477.   
+   O       +   NO2      =   NO      +   O2           1.0E+13     0.      596.   
+   NO      +   O        =   NO2     +   M           5.62E+15   0.        -1160. 
+   NO2     +   H        =   NO      +   OH          3.47E+14   0.         1470. 
+   NO      +   H        =   N       +   OH          2.63E+14   0.        50410. 
+   NO      +   O        =   N       +   O2            3.8E+9   1.        41370. 
+   O       +   N2       =   NO      +   N           1.82E+14   0.        76250. 
+   N       +   NO2      =2.0NO                       4.0E+12   0.        0.     
+   M       +   N2O      =   N2      +   O           6.92E+23   -2.5      65000. 
+   O       +   N2O      =   N2      +   O2           1.0E+14   0.        28020. 
+   O       +   N2O      =2.0NO                      6.92E+13   0.        26630. 
+   N2O     +   H        =   N2      +   OH          7.59E+13   0.        15100. 
+   NO2     +   H2       =   HNO2    +   H            2.4E+13  0.         29000. 
+   OH      +   NO2      =   HNO3    +   M            3.0E+15  0.         -3800. 
+   OH      +   NO       =   HNO2    +   M            5.6E+15  0.         -1700. 
+   HNO     +   H        =   H2      +   NO           5.0E+12   0.        0.     
+   H       +   NO       =   HNO     +   M            5.4E+15   0.        -600.  
+   HNO     +   OH       =   H2O     +   NO           3.6E+13   0.        0.     
+                                                                                
+AR                                                                              
+TIME      PRESSURE                                                              
+ &PROB ALLM1=F, ITPSZ=2,  PSTAT=T,SENCAL=T, SENSTD=T, TINY=1.E-7,               
+ PRINT= 4.E-5,  6.E-5,  8.E-5,  1.E-4,  NPRNTS=4, CX0=3.1,                      
+   EMAX=1.E-4, ATOLSP = 1.E-13,          &END                                   
+   H       +   O2       =   HO2     +   M       N2        1.5    O2         1.5 
+   H       +   O2       =   HO2     +   M       H2O       21.3   CO2        7.5 
+   H       +   OH       =   H2O     +   M       O2        4.2    H2O       16.7 
+   H       +   OH       =   H2O     +   M       CO2       7.5                   
+   H       +   OH       =   H2O     +   M       H2        4.0                   
+   H           H        =   H2      +   M       O2        2.0    H2        5.0  
+   H           H        =   H2      +   M       H2O       15.0                  
+   H       +   O        =   OH      +   M       H2O       5.0                   
+   OH      +   NO2      =   HNO3    +   M       O2        0.7    H2        1.4  
+                                                                                
+ &START   T= 950.66,   &END                                                     
+H2             .2952726                                                         
+O2          .1476404                                                            
+CO2             2.1140E-4                                                       
+N2         0.5458075                                                            
+NO          .0045                                                               
+AR              6.5681E-3                                                       
+END                                                                             
+INIT                                                                            
+CO        H2        O2        HO2       H2O2      NO        TEMP      DENSITY   
+                                                                                
+REAC                                                                            
+ &SENRXN  SENSAJ=T,  SENSEJ=T, RXNUM=1,2,5,7,8,     &END                        
+SENSVAR                                                                         
+ALLSP     TEMP      DENSITY   PRESSURE  END                                     
+FINIS                                                                           

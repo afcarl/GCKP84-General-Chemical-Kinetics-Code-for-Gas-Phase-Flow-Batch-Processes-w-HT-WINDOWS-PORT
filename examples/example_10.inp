@@ -1,0 +1,32 @@
+GCKP86         HIGH TEMPERATURE AIR IONIZATION      CASE 10                     
+NEW                                                                             
+   N       +   O2       =   NO      +   O            6.4E+09  1.        6250.   
+   O       +   N2       =   NO      +   N            1.8E+14   0.        76250. 
+   N       +   O        =   NO      +   M           6.40E+16  -0.5      0.      
+   O       +   O        =   O2      +   M            5.7E+13   0.        -1788. 
+            2.0N        =   N2      +   M           2.80E+17  -0.75     0.      
+   NO      +   O        =   NO2     +   M           5.62E+15   0.        -1160. 
+   M       +   N2O      =   N2      +   O           1.42E+14   0.        51280. 
+   O       +   N2O      =   N2      +   O2          6.23E+13   0.        24520. 
+   NO+     +   E        =   N       +   O           1.45E+21  -1.5      0.      
+   O+      +   E        =   O       +   M           2.00E+26  -2.5      0.      
+   O2      +   E        =   O2-     +   M           1.52E+21  -1.       1190.   
+   O2      +   O-       =   O2-     +   O           6.00E+12  0.        0.      
+                                                                                
+END                                                                             
+DISTANCE  AREA                                                                  
+ &PROB   MF= 21, ITPSZ= 2, CX0= 1000.,  ALLM1 = F,                              
+   PSTAT= T,  DBUGO= T, EMAX= 1.E-3, ATOLSP=1.E-12,                             
+  PRINT = .02, .06, .10, .50, .70,  NPRNTS = 5   &END                           
+   N       +   O        =   NO      +   M       N2O      2.25                   
+   NO      +   O        =   NO2     +   M       N2       1.55                   
+   O+      +   E        =   O       +   M       N        0.03    O2       4.5   
+   SAME                                         NO       50.     O        0.03  
+   O2      +   E        =   O2-     +   M       N2       .00002                 
+                                                                                
+ &START  P=1.6803, V=47002, T=4820.&END                                         
+N2        .7905                                                                 
+O2        .2095                                                                 
+O2-       .000000001                                                            
+END                                                                             
+FINIS                                                                           

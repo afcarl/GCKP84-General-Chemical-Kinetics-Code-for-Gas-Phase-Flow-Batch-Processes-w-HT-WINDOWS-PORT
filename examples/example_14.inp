@@ -1,0 +1,46 @@
+  FORMALDEHYDE OXIDATION     DUNKER TEST  CASE B           CASE 14               
+NEW                                                                             
+   HCO     +   O2       =   CO      +   HO2        6.023E+10   0.          0.   
+   HO2     +   CH2O     =   H2O2    +   HCO         1.14E+13   0.       11000.  
+   M       +   H2O2     =2.0OH                       1.7E+17   0.        46300. 
+   CH2O    +   OH       =   HCO     +   H2O        9.637E+13    0.        0.    
+   OH      +   H2O2     =   H2O     +   HO2         3.05E+12   0.           0.  
+               H2O2     >   H2O2W                    1.05E+2   0.           0.  
+               HO2      >   HO2W                     1.05E+1   0.           0.  
+   HO2     +   HO2      =   H2O2    +   O2          1.81E+12   0.            0. 
+   CO      +   OH       =   CO2     +   H          3.047E+11   0.          810. 
+   CO      +   HO2      =   CO2     +   OH         1.325E+14   0.        23000. 
+   CH2O    +   H        =   HCO     +   H2         1.205E+13   0.         3760. 
+   H       +   O2       =   OH      +   O          2.036E+14   0.        16500. 
+   H       +   O2       >   HO2     +   M          3.628E+15   0.            0. 
+   M       +   HO2      >   H       +   O2         8.432E+16   0.        50000. 
+   O       +   H2       =   OH      +   H            4.0E+13   0.       10200.  
+   CH2O    +   O        =   HCO     +   OH         6.023E+13   0.           0.  
+   H       +   H2O2     =   HO2     +   H2         4.156E+14  0.         11800. 
+   H       +   H2O2     =   H2O     +   OH         4.156E+14   0.        9000.  
+   O       +   H2O2     =   OH      +   HO2        6.023E+10    0.          0.  
+               HCO      =   H       +   CO         5.012E-06   0.        26300. 
+   H2      +   OH       =   H2O     +   H          9.637E+13   0.        5200.  
+   CH2O    +   O2       =   HCO     +   HO2         4.52E+13   0.       41000.  
+   H       +   HO2      =2.0OH                     3.012E+12   0.           0.  
+   HO2     +   H        =   H2O     +   O          3.012E+13   0.           0.  
+   H       +   HO2      =   H2      +   O2         2.710E+13   0.          0.   
+                                                                                
+N2                                                                              
+TIME      PRESSURE                                                              
+ &PROB ITPSZ=2, ATOLSP=1.E-08, EMAX=1.E-06, PSTAT=T,                            
+  CX0=0.92, PRINT= 1.E-03, 2.E-03, 3.E-03, 4.E-03, 5.E-03,                      
+    NPRNTS=5, TCON=T, EXCHR=T, SENCAL=T,   &END                                 
+ &START T=952., P=0.92,   &END                                                  
+CH2O      0.01                                                                  
+CO        0.40                                                                  
+O2        0.18                                                                  
+N2        0.41                                                                  
+END                                                                             
+REAC                                                                            
+ &SENRXN ALLRXN=T,SENSAJ=T  &END                                                
+SENSVAR                                                                         
+ALLSP     END                                                                   
+INIT                                                                            
+ALLSP     END                                                                   
+FINIS                                                                           

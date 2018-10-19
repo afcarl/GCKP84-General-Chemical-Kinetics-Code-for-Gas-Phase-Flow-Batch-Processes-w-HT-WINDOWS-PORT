@@ -1,0 +1,16 @@
+TAPE                                                                            
+GCKP86               BROMINE DISSOCIATION IN A SHOCK TUBE                CASE 1 
+   M       +   BR2      =2.0BR                      6.99E+11  0.50      35500.  
+                                                                                
+XE                                                                              
+DISTANCE  AREA                                                                  
+ &PROB   ITPSZ=3,LSUBM=32200.,ETA=0.50,   SHOCK=.TRUE.,                         
+   PRINT= .05, .2, .5, 2., 4.,  NPRNTS = 5,                                     
+  ALLM1= F, PSTAT= T, MF=21,ATOLSP=1.E-10,EMAX=1.E-2,  &END                     
+   M       +   BR2      =2.0BR                  BR2      3.80                   
+                                                                                
+ &START   P=0.1227,MACH=3.2646,T=299.9    &END                                  
+BR2        .01                                                                  
+XE         .99                                                                  
+END                                                                             
+FINIS                                                                           

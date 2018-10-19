@@ -1,0 +1,487 @@
+ Thermodynamic Data File Name:
+ thermo.inp                                                                     
+                                          
+ Case Input Data File Name:
+ example_1.inp                                                                  
+                                          
+ Transport Data File Name:
+ transport.inp                                                                  
+                                          
+1                                                        **  DATA CARDS  **
+
+                                     1         2         3         4         5         6         7         8
+                        CC  12345678901234567890123456789012345678901234567890123456789012345678901234567890
+
+
+                            GCKP86               BROMINE DISSOCIATION IN A SHOCK TUBE                CASE 1 
+                               M       +   BR2      =2.0BR                      6.99E+11  0.50      35500.  
+                                                            -  BLANK CARD  -
+                            XE                                                                              
+                            DISTANCE  AREA                                                                  
+                             &PROB   ITPSZ=3,LSUBM=32200.,ETA=0.50,   SHOCK=.TRUE.,                         
+                               PRINT= .05, .2, .5, 2., 4.,  NPRNTS = 5,                                     
+                              ALLM1= F, PSTAT= T, MF=21,ATOLSP=1.E-10,EMAX=1.E-2,  &END                     
+                               M       +   BR2      =2.0BR                  BR2      3.80                   
+                                                            -  BLANK CARD  -
+                             &START   P=0.1227,MACH=3.2646,T=299.9    &END                                  
+                            BR2        .01                                                                  
+                            XE         .99                                                                  
+                            END                                                                             
+                            FINIS                                                                           
+1
+
+
+
+     *** THE FOLLOWING  2 ELEMENTS CONSIDERED FOR THIS PROBLEM ***
+
+          BR    XE  
+
+
+
+     *** THE FOLLOWING  2 REACTING SPECIES CONSIDERED FOR THIS PROBLEM ***
+
+          BR2       BR      
+
+
+
+     *** THE FOLLOWING  1 INERT SPECIES CONSIDERED FOR THIS PROBLEM ***
+
+          XE      
+
+
+
+                    *** THERMODYNAMIC DATA AND MOLECULAR WEIGHT ***
+
+
+
+    BR2                         MWT =     159.81799
+   0.44479494E+01   0.10051208E-03  -0.16393816E-07   0.22685621E-11  -0.10236774E-15   0.23659941E+04   0.40888429E+01
+   0.38469579E+01   0.26111840E-02  -0.40034147E-05   0.28120688E-08  -0.73256201E-12   0.24846985E+04   0.69696984E+01
+
+
+    BR                          MWT =      79.90900
+   0.20843208E+01   0.71949483E-03  -0.27419924E-06   0.42422649E-10  -0.23791569E-14   0.12858837E+05   0.90838003E+01
+   0.24611552E+01   0.33319276E-03  -0.10080655E-05   0.12262126E-08  -0.44283511E-12   0.12711920E+05   0.69494734E+01
+
+
+    XE                          MWT =     131.28999
+   0.25000000E+01   0.00000000E+00   0.00000000E+00   0.00000000E+00   0.00000000E+00  -0.74537500E+03   0.61512742E+01
+   0.25000000E+01   0.00000000E+00   0.00000000E+00   0.00000000E+00   0.00000000E+00  -0.74537500E+03   0.61512742E+01
+1                                               **  EQUILIBRIUM SHOCK CALCULATION  **
+
+                                         INITIAL STATE                 FINAL STATE                 FINAL/INITIAL RATIO
+
+
+          PRESSURE                             0.1227                      1.6130                         13.1460
+           (ATM)
+          VELOCITY                         57877.96                    18108.65                            0.3129
+           (CM/SEC)
+          DENSITY                         6.56042E-04                 2.09681E-03                          3.1961
+           (GM/CM**3)
+          TEMPERATURE                        299.90                     1231.21                            4.1054
+           (DEG K)
+          ENTROPY                              0.3422                      0.3576                          1.0451
+           (CAL/GM/DEG K)
+          MACH NUMBER                          3.2646                      0.5172                          0.1584
+
+          GAMMA                                1.6586                      1.5730                          0.9484
+
+          SONIC VELOCITY                   17728.96                    35015.81                            1.9751
+           (CM/SEC)
+
+                                                                   SPECIES     MOLE FRACTION
+                                                                    BR2         8.11906E-03
+                                                                    BR          3.72463E-03
+                                                                    XE          9.88156E-01
+
+          MIXTURE MOLECULAR WEIGHT                                       131.33025
+
+          D(LOG VOLUME)/D(LOG T)                                           1.0161
+              AT CONSTANT P
+
+          D(LOG VOLUME)/D(LOG P)                                          -1.0008
+              AT CONSTANT T
+1                                                 **  FROZEN SHOCK CALCULATION  **
+
+                                         INITIAL STATE                 FINAL STATE                 FINAL/INITIAL RATIO
+
+
+          PRESSURE                             0.1227                      1.6017                         13.0535
+           (ATM)
+          VELOCITY                         57877.96                    18411.41                            0.3181
+           (CM/SEC)
+          DENSITY                         6.56042E-04                 2.06233E-03                          3.1436
+           (GM/CM**3)
+          TEMPERATURE                        299.90                     1245.31                            4.1524
+           (DEG K)
+          ENTROPY                              0.3422                      0.3575                          1.0449
+           (CAL/GM/DEG K)
+          MACH NUMBER                          3.2646                      0.5098                          0.1562
+
+          GAMMA                                1.6586                      1.6577                          0.9994
+
+          SONIC VELOCITY                   17728.96                    36117.20                            2.0372
+           (CM/SEC)
+
+                                                                   SPECIES     MOLE FRACTION
+                                                                    BR2         1.00000E-02
+                                                                    BR          0.00000E+00
+                                                                    XE          9.90000E-01
+
+          MIXTURE MOLECULAR WEIGHT                                       131.57527
+
+          D(LOG VOLUME)/D(LOG T)                                           1.0000
+              AT CONSTANT P
+
+          D(LOG VOLUME)/D(LOG P)                                          -1.0000
+              AT CONSTANT T
+1              DISTANCE-AREA VERSION
++                                                 GENERAL CHEMICAL KINETICS PROGRAM           NASA LEWIS RESEARCH CENTER
+
+
+                          GCKP86               BROMINE DISSOCIATION IN A SHOCK TUBE                CASE 1 
+
+
+     REACTION                               REACTION                                          REACTION RATE VARIABLES
+      NUMBER                                                                                  A                N         ACTIVATION
+                                                                                                                            ENERGY
+         1                         1*BR2       =    2*BR                                  6.99000E+11         0.5000       35500.00
++                    M         +
+
+
+
+                                         ALL THIRD BODY RATIOS ARE 1.0 EXCEPT THE FOLLOWING
+
+
+     M(BR2     ,  1) =  3.80000
+
+
+
+                                                        INTEGRATION CONTROLS
+
+               MAXIMUM RELATIVE ERROR   1.00000E-02                    SPECIES ABSOLUTE ERROR   1.00000E-10
+1                                                  ** ASSIGNED VARIABLE PROFILE **
+
+
+                                         THE AREA IS CALCULATED FROM THE FOLLOWING FUNCTION
+
+                                              1/AREA = 1 - (X/ 32200.000)**(   0.50000)
+
+
+
+                                                  NUMBER OF REACTING SPECIES:    2
+
+                                                     NUMBER OF INERT SPECIES:    1
+
+
+                                        NUMBER OF SPECIES ODE'S REQUIRED FOR THIS CASE:    2
+
+                                          TOTAL NUMBER OF ODE'S REQUIRED FOR THIS CASE:    5
+1                                                    **  INITIAL CONDITIONS  **
+
+
+                TIME   0.00000E+00  SEC              AREA   1.00000E+00  SQ CM              AXIAL POSITION   0.00000E+00  CM
+
+
+                    FLOW PROPERTIES                                             INTEGRATION INDICATORS
+
+                      PRESSURE                1.60167                             STEPS FROM LAST PRINT            0
+                       (ATM)
+                      VELOCITY            18411.41                                AVERAGE STEP SIZE             0.00000E+00
+                       (CM/SEC)
+                      DENSITY            2.06233E-03                              TOTAL NUMBER OF STEPS                 0
+                       (GM/CM**3)
+                      TEMPERATURE          1245.31
+                       (DEG K)
+                      MASS FLOW RATE     3.79704E+01
+                       (GM/SEC)
+                      ENTROPY                 0.3575                              FUNCT EVALUATIONS                     0
+                       CAL/GM/DEG K)
+                      MACH NUMBER             0.5098                              JACOBIAN EVALUATIONS                  0
+
+                      GAMMA                   1.6577
+
+                      ENTHALPY           3.66089E+01
+                       (CAL/GM)
+
+
+                                                        CHEMICAL PROPERTIES
+
+
+ SPECIES    CONCENTRATION   MOLE FRACTION   NET SPECIES PRODUCTION  REACTION   RATE CONST   NET REACTION CONV RATE   NET RATE/POSI-
+            (MOLES/CM**3)                    RATE (MOLE/CM**3/SEC)   NUMBER    CGS  UNITS   (MOLE-CM**3/GM**2/SEC)    TIVE DIR RATE
+  BR2        1.56741E-07     1.00000E-02          -3.66694E-05          1      1.4519E+07         8.62160E+00               1.00000
+  BR         0.00000E+00     0.00000E+00           7.33387E-05
+  XE         1.55174E-05     9.90000E-01           0.00000E+00
+
+    DERIVATIVES (CGS UNITS): T            0.50057E+01    RHO          0.17340E-04
++                                                                                     V           -0.53659E+03
+
+    MIXTURE MOLECULAR WEIGHT    131.57527     TOTAL ENERGY EXCHANGE RATE    3.97305E+05       MASS FRACTION SUM    1.00000000
+                                                 (CAL-CM**3/GM**2/SEC)
+
+
+
+                                   CPU TIME FOR INITIALIZATION OF GCKP86 =     0.000000 S
+
+
+1
+                TIME   2.71785E-06  SEC              AREA   1.00125E+00  SQ CM              AXIAL POSITION   5.00000E-02  CM
+
+
+                    FLOW PROPERTIES                                             INTEGRATION INDICATORS
+
+                      PRESSURE                1.60250                             STEPS FROM LAST PRINT            4
+                       (ATM)
+                      VELOCITY            18389.24                                AVERAGE STEP SIZE             0.14283E-01
+                       (CM/SEC)
+                      DENSITY            2.06306E-03                              TOTAL NUMBER OF STEPS                 4
+                       (GM/CM**3)
+                      TEMPERATURE          1245.51
+                       (DEG K)
+                      MASS FLOW RATE     3.79854E+01
+                       (GM/SEC)
+                      ENTROPY                 0.3575                              FUNCT EVALUATIONS                     5
+                       CAL/GM/DEG K)
+                      MACH NUMBER             0.5091                              JACOBIAN EVALUATIONS                  2
+
+                      GAMMA                   1.6577
+
+                      ENTHALPY           3.66186E+01
+                       (CAL/GM)
+
+
+                                                        CHEMICAL PROPERTIES
+
+
+ SPECIES    CONCENTRATION   MOLE FRACTION   NET SPECIES PRODUCTION  REACTION   RATE CONST   NET REACTION CONV RATE   NET RATE/POSI-
+            (MOLES/CM**3)                    RATE (MOLE/CM**3/SEC)   NUMBER    CGS  UNITS   (MOLE-CM**3/GM**2/SEC)    TIVE DIR RATE
+  BR2        1.56697E-07     9.99357E-03          -3.67571E-05          1      1.4553E+07         8.63612E+00               0.99999
+  BR         1.99793E-10     1.27421E-05           7.35142E-05
+  XE         1.55229E-05     9.89994E-01           0.00000E+00
+
+    DERIVATIVES (CGS UNITS): T            0.26147E+01    RHO          0.11336E-04
++                                                                                     V           -0.33048E+03
+
+    MIXTURE MOLECULAR WEIGHT    131.57444     TOTAL ENERGY EXCHANGE RATE    3.97974E+05       MASS FRACTION SUM    1.00000000
+                                                 (CAL-CM**3/GM**2/SEC)
+
+
+
+
+ __________________________________________________________________
+
+
+     COMPUTER TIME (CPU) REQUIRED: FOR THIS STEP -  0.000000E+00  S     UP TO THIS TIME -  0.000000E+00  S
+
+
+1
+                TIME   1.08815E-05  SEC              AREA   1.00250E+00  SQ CM              AXIAL POSITION   2.00000E-01  CM
+
+
+                    FLOW PROPERTIES                                             INTEGRATION INDICATORS
+
+                      PRESSURE                1.60347                             STEPS FROM LAST PRINT            1
+                       (ATM)
+                      VELOCITY            18363.26                                AVERAGE STEP SIZE             0.16841E+00
+                       (CM/SEC)
+                      DENSITY            2.06407E-03                              TOTAL NUMBER OF STEPS                 5
+                       (GM/CM**3)
+                      TEMPERATURE          1245.63
+                       (DEG K)
+                      MASS FLOW RATE     3.79978E+01
+                       (GM/SEC)
+                      ENTROPY                 0.3575                              FUNCT EVALUATIONS                     6
+                       CAL/GM/DEG K)
+                      MACH NUMBER             0.5084                              JACOBIAN EVALUATIONS                  3
+
+                      GAMMA                   1.6577
+
+                      ENTHALPY           3.66300E+01
+                       (CAL/GM)
+
+
+                                                        CHEMICAL PROPERTIES
+
+
+ SPECIES    CONCENTRATION   MOLE FRACTION   NET SPECIES PRODUCTION  REACTION   RATE CONST   NET REACTION CONV RATE   NET RATE/POSI-
+            (MOLES/CM**3)                    RATE (MOLE/CM**3/SEC)   NUMBER    CGS  UNITS   (MOLE-CM**3/GM**2/SEC)    TIVE DIR RATE
+  BR2        1.56474E-07     9.97423E-03          -3.67695E-05          1      1.4574E+07         8.63054E+00               0.99988
+  BR         8.00652E-10     5.10367E-05           7.35390E-05
+  XE         1.55305E-05     9.89975E-01           0.00000E+00
+
+    DERIVATIVES (CGS UNITS): T            0.81992E+00    RHO          0.68247E-05
++                                                                                     V           -0.17542E+03
+
+    MIXTURE MOLECULAR WEIGHT    131.57192     TOTAL ENERGY EXCHANGE RATE    3.97717E+05       MASS FRACTION SUM    1.00000000
+                                                 (CAL-CM**3/GM**2/SEC)
+
+
+
+
+ __________________________________________________________________
+
+
+     COMPUTER TIME (CPU) REQUIRED: FOR THIS STEP -  0.000000E+00  S     UP TO THIS TIME -  0.000000E+00  S
+
+
+1
+                TIME   2.72366E-05  SEC              AREA   1.00396E+00  SQ CM              AXIAL POSITION   5.00000E-01  CM
+
+
+                    FLOW PROPERTIES                                             INTEGRATION INDICATORS
+
+                      PRESSURE                1.60478                             STEPS FROM LAST PRINT            2
+                       (ATM)
+                      VELOCITY            18328.21                                AVERAGE STEP SIZE             0.49544E+00
+                       (CM/SEC)
+                      DENSITY            2.06561E-03                              TOTAL NUMBER OF STEPS                 7
+                       (GM/CM**3)
+                      TEMPERATURE          1245.67
+                       (DEG K)
+                      MASS FLOW RATE     3.80087E+01
+                       (GM/SEC)
+                      ENTROPY                 0.3575                              FUNCT EVALUATIONS                    11
+                       CAL/GM/DEG K)
+                      MACH NUMBER             0.5074                              JACOBIAN EVALUATIONS                  5
+
+                      GAMMA                   1.6577
+
+                      ENTHALPY           3.66454E+01
+                       (CAL/GM)
+
+
+                                                        CHEMICAL PROPERTIES
+
+
+ SPECIES    CONCENTRATION   MOLE FRACTION   NET SPECIES PRODUCTION  REACTION   RATE CONST   NET REACTION CONV RATE   NET RATE/POSI-
+            (MOLES/CM**3)                    RATE (MOLE/CM**3/SEC)   NUMBER    CGS  UNITS   (MOLE-CM**3/GM**2/SEC)    TIVE DIR RATE
+  BR2        1.55991E-07     9.93572E-03          -3.66767E-05          1      1.4582E+07         8.59598E+00               0.99924
+  BR         1.99851E-09     1.27294E-04           7.33535E-05
+  XE         1.55421E-05     9.89937E-01           0.00000E+00
+
+    DERIVATIVES (CGS UNITS): T            0.16036E+00    RHO          0.51599E-05
++                                                                                     V           -0.11829E+03
+
+    MIXTURE MOLECULAR WEIGHT    131.56690     TOTAL ENERGY EXCHANGE RATE    3.96125E+05       MASS FRACTION SUM    1.00000000
+                                                 (CAL-CM**3/GM**2/SEC)
+
+
+
+
+ __________________________________________________________________
+
+
+     COMPUTER TIME (CPU) REQUIRED: FOR THIS STEP -  0.000000E+00  S     UP TO THIS TIME -  0.000000E+00  S
+
+
+1
+                TIME   1.09352E-04  SEC              AREA   1.00794E+00  SQ CM              AXIAL POSITION   2.00000E+00  CM
+
+
+                    FLOW PROPERTIES                                             INTEGRATION INDICATORS
+
+                      PRESSURE                1.60897                             STEPS FROM LAST PRINT            1
+                       (ATM)
+                      VELOCITY            18215.74                                AVERAGE STEP SIZE             0.82247E+00
+                       (CM/SEC)
+                      DENSITY            2.07141E-03                              TOTAL NUMBER OF STEPS                 8
+                       (GM/CM**3)
+                      TEMPERATURE          1245.19
+                       (DEG K)
+                      MASS FLOW RATE     3.80320E+01
+                       (GM/SEC)
+                      ENTROPY                 0.3576                              FUNCT EVALUATIONS                    12
+                       CAL/GM/DEG K)
+                      MACH NUMBER             0.5043                              JACOBIAN EVALUATIONS                  5
+
+                      GAMMA                   1.6579
+
+                      ENTHALPY           3.66944E+01
+                       (CAL/GM)
+
+
+                                                        CHEMICAL PROPERTIES
+
+
+ SPECIES    CONCENTRATION   MOLE FRACTION   NET SPECIES PRODUCTION  REACTION   RATE CONST   NET REACTION CONV RATE   NET RATE/POSI-
+            (MOLES/CM**3)                    RATE (MOLE/CM**3/SEC)   NUMBER    CGS  UNITS   (MOLE-CM**3/GM**2/SEC)    TIVE DIR RATE
+  BR2        1.53479E-07     9.74647E-03          -3.55599E-05          1      1.4499E+07         8.28760E+00               0.98784
+  BR         7.90560E-09     5.02035E-04           7.11197E-05
+  XE         1.55857E-05     9.89752E-01           0.00000E+00
+
+    DERIVATIVES (CGS UNITS): T           -0.38592E+00    RHO          0.36644E-05
++                                                                                     V           -0.68399E+02
+
+    MIXTURE MOLECULAR WEIGHT    131.54225     TOTAL ENERGY EXCHANGE RATE    3.81913E+05       MASS FRACTION SUM    1.00000000
+                                                 (CAL-CM**3/GM**2/SEC)
+
+
+
+
+ __________________________________________________________________
+
+
+     COMPUTER TIME (CPU) REQUIRED: FOR THIS STEP -  0.000000E+00  S     UP TO THIS TIME -  0.000000E+00  S
+
+
+1
+                TIME   2.19540E-04  SEC              AREA   1.01127E+00  SQ CM              AXIAL POSITION   4.00000E+00  CM
+
+
+                    FLOW PROPERTIES                                             INTEGRATION INDICATORS
+
+                      PRESSURE                1.61360                             STEPS FROM LAST PRINT            2
+                       (ATM)
+                      VELOCITY            18091.43                                AVERAGE STEP SIZE             0.14460E+01
+                       (CM/SEC)
+                      DENSITY            2.07827E-03                              TOTAL NUMBER OF STEPS                10
+                       (GM/CM**3)
+                      TEMPERATURE          1244.35
+                       (DEG K)
+                      MASS FLOW RATE     3.80227E+01
+                       (GM/SEC)
+                      ENTROPY                 0.3576                              FUNCT EVALUATIONS                    14
+                       CAL/GM/DEG K)
+                      MACH NUMBER             0.5009                              JACOBIAN EVALUATIONS                  5
+
+                      GAMMA                   1.6581
+
+                      ENTHALPY           3.67484E+01
+                       (CAL/GM)
+
+
+                                                        CHEMICAL PROPERTIES
+
+
+ SPECIES    CONCENTRATION   MOLE FRACTION   NET SPECIES PRODUCTION  REACTION   RATE CONST   NET REACTION CONV RATE   NET RATE/POSI-
+            (MOLES/CM**3)                    RATE (MOLE/CM**3/SEC)   NUMBER    CGS  UNITS   (MOLE-CM**3/GM**2/SEC)    TIVE DIR RATE
+  BR2        1.50195E-07     9.50418E-03          -3.32810E-05          1      1.4354E+07         7.70535E+00               0.95156
+  BR         1.55158E-08     9.81826E-04           6.65620E-05
+  XE         1.56373E-05     9.89514E-01           0.00000E+00
+
+    DERIVATIVES (CGS UNITS): T           -0.50070E+00    RHO          0.31039E-05
++                                                                                     V           -0.52508E+02
+
+    MIXTURE MOLECULAR WEIGHT    131.51068     TOTAL ENERGY EXCHANGE RATE    3.55082E+05       MASS FRACTION SUM    1.00000000
+                                                 (CAL-CM**3/GM**2/SEC)
+
+
+
+
+ __________________________________________________________________
+
+
+     COMPUTER TIME (CPU) REQUIRED: FOR THIS STEP -  0.000000E+00  S     UP TO THIS TIME -  0.000000E+00  S
+
+
+1
+0(GCKP)     END OF THIS CASE
+
+
+
+                                   TOTAL CPU TIME (INCLUDING I/O) REQUIRED =     0.000000 S
+
+
+
+0(GCKP)     READ DATA FOR NEXT CASE

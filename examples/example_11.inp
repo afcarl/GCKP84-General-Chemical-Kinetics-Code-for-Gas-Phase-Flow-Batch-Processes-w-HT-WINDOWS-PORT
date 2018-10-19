@@ -1,0 +1,34 @@
+ GCKP86    HIGH PRESSURE H2  -  CO REACTION       CASE 11                       
+NEW                                                                             
+   CH3     +   OH       =   CH2O    +   H2           7.4E+12   0.         0.    
+               CH4      =   CH3     +   H            2.0E+15   0.        104000.
+   H       +   CH4      =   CH3     +   H2          1.26E+14   0.        11900. 
+   OH      +   CH4      =   CH3     +   H2O          3.0E+13   0.        6000.  
+   CH2O    +   H        =   HCO     +   H2            2.E+13   0.        3300.  
+   CH2O    +   OH       =   HCO     +   H2O          2.3E+13   0.         0.    
+   M       +   CH2O     =   H       +   HCO          5.0E+16  0.         72000. 
+   HCO     +   H        =   CO      +   H2           1.0E+14    0.        0.    
+   HCO     +   OH       =   CO      +   H2O          1.0E+14   0.        0.     
+   M       +   HCO      =   H       +   CO           5.0E+14   0.        19000. 
+   CO      +   OH       =   CO2     +   H            4.0E+12   0.0       8000.  
+   H2      +   OH       =   H2O     +   H            5.2E+13   0.        6500.  
+   H       +   H        =   H2      +   M            8.3E+17   -1.         0.   
+   H       +   OH       =   H2O     +   M            8.4E+21   -2.       0.     
+                                                                                
+END                                                                             
+TIME                                                                            
+ &PROB    ITPSZ = 5, EMAX = 1.E-3,  PRINT =  1, 100, 1.E+4,                     
+ 1.E+6,  1.E+8, 1.E+9,   NPRNTS =  6, ATOLSP=1.E-12,                            
+   ALLM1 =F, PSTAT = T, RHOCON = T, MF= 21,  TCON= T  &END                      
+   H       +   OH       =   H2O     +   M       H2        4.0                   
+   H       +   H        =   H2      +   M       H2        1.7    CO        2.0  
+   SAME                                         H2O       9.6    CO2       3.5  
+   M       +   HCO      =   H       +   CO      H2        5.0    CO        2.0  
+                                                                                
+ &START T= 1000, P= 100  &END                                                   
+H2        .99                                                                   
+CO        .01                                                                   
+OH        .000000001                                                            
+CH2O      .00000001                                                             
+END                                                                             
+FINIS                                                                           

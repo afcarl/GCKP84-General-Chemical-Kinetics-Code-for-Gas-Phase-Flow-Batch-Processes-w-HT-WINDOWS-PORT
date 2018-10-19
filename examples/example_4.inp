@@ -1,0 +1,41 @@
+  GCKP86  HYD - OXYGEN CASE WITH HEAT TRANSFER               CASE 4             
+NEW                                                                             
+   H       +   O2       =   OH      +   O            2.2E+14   0.        16790. 
+   O       +   H2       =   OH      +   H            1.8E+10   1.        8900.  
+   H2      +   OH       =   H2O     +   H            5.2E+13   0.        6500.  
+   OH      +   OH       =   O       +   H2O          6.3E+12   0.        1093.  
+   H       +   O2       =   HO2     +   M            1.5E+15    0.       -1000. 
+   O       +   O        =   O2      +   M            5.7E+13   0.        -1788. 
+   H       +   H        =   H2      +   M            8.3E+17   -1.         0.   
+   H       +   OH       =   H2O     +   M            8.4E+21   -2.       0.     
+   H2      +   HO2      =   H2O     +   OH           7.2E+11   0.        18700. 
+   M       +   H2O2     =2.0OH                       1.3E+17  0.        45500.  
+   H2      +   O2       =2.0OH                      1.00E+13  0.        43000.  
+   H       +   HO2      =   OH      +   OH           2.5E+14   0.        1900.  
+   O       +   HO2      =   OH      +   O2           5.0E+13   0.        1000.  
+   OH      +   HO2      =   H2O     +   O2           5.0E+13   0.        1000.  
+            2.0HO2      =   H2O2    +   O2          1.80E+12  0.        0.      
+   OH      +   H2O2     =   H2O     +   HO2          1.0E+13   0.        1800.  
+   O       +   H2O2     =   OH      +   HO2          8.0E+13   0.        1000.  
+   H       +   H2O2     =   H2O     +   OH           3.2E+14   0.        9000.  
+                                                                                
+END                                                                             
+DISTANCE  PRESSURE            FPS       H2                                      
+ &PROB    ITPSZ=2,  CX0 = 5., CX1= .01,  ALLM1 = F,                             
+  PRINT = 6, 20, 22.81, 22.83, 22.84, 22.845,  NPRNTS = 6,                      
+    EMAX=5.E-6,  MF= 21, PSTAT= T, ATOLSP=1.E-13,                               
+    HTRAN = T, QMREAD = T,  HT1=5.863, HT0=-42.88    &END                       
+   H       +   O2       =   HO2     +   M       H2        5.0    O2        2.0  
+   SAME                                         H2O      32.5                   
+   H           H        =   H2      +   M       O2       2.0     H2       5.0   
+   SAME                                         H2O      15.0                   
+   M       +   H2O2     =2.0OH                  O2       0.78    H2O      6.0   
+   SAME                                         H2O2     6.6     H2       2.3   
+   H       +   OH       =   H2O     +   M       H2       4.0                    
+   SAME                                         H2O      20.0    O2       1.6   
+                                                                                
+ &START     T=1075., MACH=0.5,                                                  
+   AIRMW = 31.994,  FRO2 = 1,  AREA = 2000,                                     
+  ERATIO =1, SCC= 0, SCH= 2, SCOX= 0, NOXRAT=0, ARAT= 0, CRAT=0  &END           
+END                                                                             
+FINIS                                                                           

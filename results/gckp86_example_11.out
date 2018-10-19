@@ -1,0 +1,642 @@
+ Thermodynamic Data File Name:
+ thermo.inp                                                                     
+                                          
+ Case Input Data File Name:
+ example_11.inp                                                                 
+                                          
+ Transport Data File Name:
+ transport.inp                                                                  
+                                          
+1                                                        **  DATA CARDS  **
+
+                                     1         2         3         4         5         6         7         8
+                        CC  12345678901234567890123456789012345678901234567890123456789012345678901234567890
+
+
+                            NEW                                                                             
+                               CH3     +   OH       =   CH2O    +   H2           7.4E+12   0.         0.    
+                                           CH4      =   CH3     +   H            2.0E+15   0.        104000.
+                               H       +   CH4      =   CH3     +   H2          1.26E+14   0.        11900. 
+                               OH      +   CH4      =   CH3     +   H2O          3.0E+13   0.        6000.  
+                               CH2O    +   H        =   HCO     +   H2            2.E+13   0.        3300.  
+                               CH2O    +   OH       =   HCO     +   H2O          2.3E+13   0.         0.    
+                               M       +   CH2O     =   H       +   HCO          5.0E+16  0.         72000. 
+                               HCO     +   H        =   CO      +   H2           1.0E+14    0.        0.    
+                               HCO     +   OH       =   CO      +   H2O          1.0E+14   0.        0.     
+                               M       +   HCO      =   H       +   CO           5.0E+14   0.        19000. 
+                               CO      +   OH       =   CO2     +   H            4.0E+12   0.0       8000.  
+                               H2      +   OH       =   H2O     +   H            5.2E+13   0.        6500.  
+                               H       +   H        =   H2      +   M            8.3E+17   -1.         0.   
+                               H       +   OH       =   H2O     +   M            8.4E+21   -2.       0.     
+                                                            -  BLANK CARD  -
+                            END                                                                             
+                            TIME                                                                            
+                             &PROB    ITPSZ = 5, EMAX = 1.E-3,  PRINT =  1, 100, 1.E+4,                     
+                             1.E+6,  1.E+8, 1.E+9,   NPRNTS =  6, ATOLSP=1.E-12,                            
+                               ALLM1 =F, PSTAT = T, RHOCON = T, MF= 21,  TCON= T  &END                      
+                               H       +   OH       =   H2O     +   M       H2        4.0                   
+                               H       +   H        =   H2      +   M       H2        1.7    CO        2.0  
+                               SAME                                         H2O       9.6    CO2       3.5  
+                               M       +   HCO      =   H       +   CO      H2        5.0    CO        2.0  
+                                                            -  BLANK CARD  -
+                             &START T= 1000, P= 100  &END                                                   
+                            H2        .99                                                                   
+                            CO        .01                                                                   
+                            OH        .000000001                                                            
+                            CH2O      .00000001                                                             
+                            END                                                                             
+                            FINIS                                                                           
+1
+
+
+
+     *** THE FOLLOWING  3 ELEMENTS CONSIDERED FOR THIS PROBLEM ***
+
+          C     H     O   
+
+
+
+     *** THE FOLLOWING 10 REACTING SPECIES CONSIDERED FOR THIS PROBLEM ***
+
+          CH3       OH        CH2O      H2        CH4       H         H2O       HCO       CO        CO2     
+
+
+     *** NO INERT SPECIES CONSIDERED FOR THIS PROBLEM ***
+
+
+
+
+
+
+                    *** THERMODYNAMIC DATA AND MOLECULAR WEIGHT ***
+
+
+
+    CH3                         MWT =      15.03470
+   0.28400328E+01   0.60869087E-02  -0.21740339E-05   0.36042577E-09  -0.22725299E-13   0.16449812E+05   0.55056753E+01
+   0.34666350E+01   0.38301845E-02   0.10116802E-05  -0.18859236E-08   0.66803182E-12   0.16313104E+05   0.24172192E+01
+
+
+    OH                          MWT =      17.00730
+   0.28897815E+01   0.10005879E-02  -0.22048808E-06   0.20191288E-10  -0.39409830E-15   0.38857041E+04   0.55566425E+01
+   0.38737299E+01  -0.13393773E-02   0.16348351E-05  -0.52133636E-09   0.41826975E-13   0.35802349E+04   0.34202406E+00
+
+
+    CH2O                        MWT =      30.02620
+   0.28364248E+01   0.68605300E-02  -0.26882647E-05   0.47971260E-09  -0.32118405E-13  -0.15236031E+05   0.78531170E+01
+   0.37963784E+01  -0.25701786E-02   0.18548815E-04  -0.17869176E-07   0.55504451E-11  -0.15088947E+05   0.47548165E+01
+
+
+    H2                          MWT =       2.01580
+   0.30558124E+01   0.59740403E-03  -0.16747471E-08  -0.21247544E-10   0.25195486E-14  -0.86168475E+03  -0.17207073E+01
+   0.29432328E+01   0.34815508E-02  -0.77713821E-05   0.74997493E-08  -0.25203379E-11  -0.97695410E+03  -0.18186136E+01
+
+
+    CH4                         MWT =      16.04260
+   0.21737833E+01   0.89936592E-02  -0.27855467E-05   0.39775117E-09  -0.19976425E-13  -0.10216566E+05   0.70773563E+01
+   0.29428148E+01   0.25153728E-02   0.79085839E-05  -0.47495483E-08   0.14244910E-12  -0.10056824E+05   0.45714579E+01
+
+
+    H                           MWT =       1.00797
+   0.25000000E+01   0.00000000E+00   0.00000000E+00   0.00000000E+00   0.00000000E+00   0.25474391E+05  -0.45989841E+00
+   0.25000000E+01   0.00000000E+00   0.00000000E+00   0.00000000E+00   0.00000000E+00   0.25474391E+05  -0.45989841E+00
+
+
+    H2O                         MWT =      18.01520
+   0.26340654E+01   0.31121899E-02  -0.90278451E-06   0.12673054E-09  -0.69164734E-14  -0.29876258E+05   0.70823874E+01
+   0.41675563E+01  -0.18106868E-02   0.59450877E-05  -0.48670872E-08   0.15284144E-11  -0.30289547E+05  -0.73087996E+00
+
+
+    HCO                         MWT =      29.01830
+   0.34738348E+01   0.34370227E-02  -0.13632664E-05   0.24928645E-09  -0.17044331E-13   0.39594004E+04   0.60453339E+01
+   0.38840191E+01  -0.82974450E-03   0.77900813E-05  -0.70616961E-08   0.19971730E-11   0.40563860E+04   0.48354135E+01
+
+
+    CO                          MWT =      28.01040
+   0.29840696E+01   0.14891390E-02  -0.57899683E-06   0.10364577E-09  -0.69353550E-14  -0.14245228E+05   0.63479156E+01
+   0.37100928E+01  -0.16190964E-02   0.36923593E-05  -0.20319675E-08   0.23953344E-12  -0.14356310E+05   0.29555352E+01
+
+
+    CO2                         MWT =      44.00979
+   0.44608040E+01   0.30981719E-02  -0.12392571E-05   0.22741325E-09  -0.15525955E-13  -0.48961441E+05  -0.98635983E+00
+   0.24007797E+01   0.87350961E-02  -0.66070879E-05   0.20021862E-08   0.63274039E-15  -0.48377527E+05   0.96951456E+01
+1                TIME-AREA VERSION
++                                                 GENERAL CHEMICAL KINETICS PROGRAM           NASA LEWIS RESEARCH CENTER
+
+
+                          NEW                                                                             
+
+
+     REACTION                               REACTION                                          REACTION RATE VARIABLES
+      NUMBER                                                                                  A                N         ACTIVATION
+                                                                                                                            ENERGY
+         1                         1*OH        =    1*CH2O                                7.40000E+12         0.0000           0.00
++                  1*CH3       +
++                                                               +    1*H2      
+         2                         1*CH4       =    1*CH3                                 2.00000E+15         0.0000      104000.00
++                                                               +    1*H       
+         3                         1*CH4       =    1*CH3                                 1.26000E+14         0.0000       11900.00
++                  1*H         +
++                                                               +    1*H2      
+         4                         1*CH4       =    1*CH3                                 3.00000E+13         0.0000        6000.00
++                  1*OH        +
++                                                               +    1*H2O     
+         5                         1*H         =    1*HCO                                 2.00000E+13         0.0000        3300.00
++                  1*CH2O      +
++                                                               +    1*H2      
+         6                         1*OH        =    1*HCO                                 2.30000E+13         0.0000           0.00
++                  1*CH2O      +
++                                                               +    1*H2O     
+         7                         1*CH2O      =    1*H                                   5.00000E+16         0.0000       72000.00
++                    M         +
++                                                               +    1*HCO     
+         8                         1*H         =    1*CO                                  1.00000E+14         0.0000           0.00
++                  1*HCO       +
++                                                               +    1*H2      
+         9                         1*OH        =    1*CO                                  1.00000E+14         0.0000           0.00
++                  1*HCO       +
++                                                               +    1*H2O     
+        10                         1*HCO       =    1*H                                   5.00000E+14         0.0000       19000.00
++                    M         +
++                                                               +    1*CO      
+        11                         1*OH        =    1*CO2                                 4.00000E+12         0.0000        8000.00
++                  1*CO        +
++                                                               +    1*H       
+        12                         1*OH        =    1*H2O                                 5.20000E+13         0.0000        6500.00
++                  1*H2        +
++                                                               +    1*H       
+        13                         2*H         =    1*H2                                  8.30000E+17        -1.0000           0.00
++                                                               +      M       
+        14                         1*OH        =    1*H2O                                 8.40000E+21        -2.0000           0.00
++                  1*H         +
++                                                               +      M       
+
+
+
+                                         ALL THIRD BODY RATIOS ARE 1.0 EXCEPT THE FOLLOWING
+
+
+     M(H2      , 10) =  5.00000
++                                    M(H2      , 13) =  1.70000
++                                                                    M(H2      , 14) =  4.00000
++                                                                                                    M(CO      , 10) =  2.00000
+     M(CO      , 13) =  2.00000
++                                    M(H2O     , 13) =  9.60000
++                                                                    M(CO2     , 13) =  3.50000
+
+
+
+                                                        INTEGRATION CONTROLS
+
+               MAXIMUM RELATIVE ERROR   1.00000E-03                    SPECIES ABSOLUTE ERROR   1.00000E-12
+1                                                  ** ASSIGNED VARIABLE PROFILE **
+
+
+                                    THIS IS A V=0 PROBLEM - AN ASSIGNED VARIABLE IS NOT REQUIRED
+
+
+
+                                      THE VOLUME (DENSITY) WILL BE HELD CONSTANT FOR THIS CASE
+
+
+
+                                        THE TEMPERATURE WILL BE HELD CONSTANT FOR THIS CASE
+
+
+
+                                                  NUMBER OF REACTING SPECIES:   10
+
+                                                     NUMBER OF INERT SPECIES:    0
+
+
+                                        NUMBER OF SPECIES ODE'S REQUIRED FOR THIS CASE:   10
+
+                                          TOTAL NUMBER OF ODE'S REQUIRED FOR THIS CASE:   10
+1                                                    **  INITIAL CONDITIONS  **
+
+
+                TIME   0.00000E+00  SEC              AREA   0.00000E+00  SQ CM              AXIAL POSITION   0.00000E+00  CM
+
+
+                    FLOW PROPERTIES                                             INTEGRATION INDICATORS
+
+                      PRESSURE              100.00000                             STEPS FROM LAST PRINT            0
+                       (ATM)
+                      VELOCITY                0.00                                AVERAGE STEP SIZE             0.00000E+00
+                       (CM/SEC)
+                      DENSITY            2.77340E-03                              TOTAL NUMBER OF STEPS                 0
+                       (GM/CM**3)
+                      TEMPERATURE          1000.00
+                       (DEG K)
+                      MASS FLOW RATE     0.00000E+00
+                       (GM/SEC)
+                      ENTROPY                13.5443                              FUNCT EVALUATIONS                     0
+                       CAL/GM/DEG K)
+                      MACH NUMBER             0.0000                              JACOBIAN EVALUATIONS                  0
+
+                      GAMMA                   1.3793
+
+                      ENTHALPY           2.05701E+03
+                       (CAL/GM)
+
+
+                                                        CHEMICAL PROPERTIES
+
+
+ SPECIES    CONCENTRATION   MOLE FRACTION   NET SPECIES PRODUCTION  REACTION   RATE CONST   NET REACTION CONV RATE   NET RATE/POSI-
+            (MOLES/CM**3)                    RATE (MOLE/CM**3/SEC)   NUMBER    CGS  UNITS   (MOLE-CM**3/GM**2/SEC)    TIVE DIR RATE
+  CH3        0.00000E+00     0.00000E+00           7.52423E-16          1      7.4000E+12        -9.78219E-11               1.00000
+  OH         1.21868E-12     1.00000E-09          -2.90403E-03          2      3.7312E-08         0.00000E+00               0.00000
+  CH2O       1.21868E-11     1.00000E-08          -3.41728E-10          3      3.1596E+11         0.00000E+00               0.00000
+  H2         1.20649E-03     9.90000E-01          -2.90297E-03          4      1.4649E+12         0.00000E+00               0.00000
+  CH4        0.00000E+00     0.00000E+00           0.00000E+00          5      3.8003E+12         0.00000E+00               0.00000
+  H          0.00000E+00     0.00000E+00           2.90403E-03          6      2.3000E+13         4.44099E-05               1.00000
+  H2O        0.00000E+00     0.00000E+00           2.90297E-03          7      9.1915E+00         1.77475E-08               1.00000
+  HCO        0.00000E+00     0.00000E+00           3.41933E-10          8      1.0000E+14        -2.67100E-08               1.00000
+  CO         1.21868E-05     1.00000E-02          -1.06033E-06          9      1.0000E+14         0.00000E+00               0.00000
+  CO2        0.00000E+00     0.00000E+00           1.06033E-06         10      3.5198E+10         0.00000E+00               0.00000
+                                                                       11      7.1394E+10         1.37852E-01               1.00000
+                                                                       12      1.9744E+12         3.77413E+02               1.00000
+                                                                       13      8.3000E+14        -1.67388E-08               1.00000
+                                                                       14      8.4000E+15         0.00000E+00               0.00000
+
+    DERIVATIVES (CGS UNITS): T            0.00000E+00    RHO          0.00000E+00
+
+    MIXTURE MOLECULAR WEIGHT      2.27575     TOTAL ENERGY EXCHANGE RATE   -5.66838E+06       MASS FRACTION SUM    1.00000000
+                                                 (CAL-CM**3/GM**2/SEC)
+
+
+
+                                   CPU TIME FOR INITIALIZATION OF GCKP86 =     0.000000 S
+
+
+1
+                TIME   1.00000E+00  SEC              AREA   0.00000E+00  SQ CM              AXIAL POSITION   0.00000E+00  CM
+
+
+                    FLOW PROPERTIES                                             INTEGRATION INDICATORS
+
+                      PRESSURE               99.99995                             STEPS FROM LAST PRINT           75
+                       (ATM)
+                      VELOCITY                0.00                                AVERAGE STEP SIZE             0.14605E-01
+                       (CM/SEC)
+                      DENSITY            2.77340E-03                              TOTAL NUMBER OF STEPS                75
+                       (GM/CM**3)
+                      TEMPERATURE          1000.00
+                       (DEG K)
+                      MASS FLOW RATE     0.00000E+00
+                       (GM/SEC)
+                      ENTROPY                13.5443                              FUNCT EVALUATIONS                    92
+                       CAL/GM/DEG K)
+                      MACH NUMBER             0.0000                              JACOBIAN EVALUATIONS                 25
+
+                      GAMMA                   1.3793
+
+                      ENTHALPY           2.05701E+03
+                       (CAL/GM)
+
+
+                                                        CHEMICAL PROPERTIES
+
+
+ SPECIES    CONCENTRATION   MOLE FRACTION   NET SPECIES PRODUCTION  REACTION   RATE CONST   NET REACTION CONV RATE   NET RATE/POSI-
+            (MOLES/CM**3)                    RATE (MOLE/CM**3/SEC)   NUMBER    CGS  UNITS   (MOLE-CM**3/GM**2/SEC)    TIVE DIR RATE
+  CH3        2.05582E-21     1.68693E-18           1.22412E-18          1      7.4000E+12        -4.94853E-09               1.00000
+  OH         1.63741E-23     1.34359E-20           1.74706E-20          2      3.7312E-08        -1.27098E-15               0.93368
+  CH2O       6.16495E-10     5.05872E-07           6.65443E-10          3      3.1596E+11        -4.94837E-09               0.97446
+  H2         1.20649E-03     9.90000E-01          -6.65595E-10          4      1.4649E+12         2.36099E-21               0.04068
+  CH4        1.86095E-14     1.52702E-11           3.80617E-14          5      3.8003E+12        -8.64919E-05               0.62598
+  H          1.69663E-13     1.39219E-10          -2.86530E-13          6      2.3000E+13         2.82074E-14               0.93449
+  H2O        1.23684E-12     1.01490E-09           3.80487E-14          7      9.1915E+00        -2.66679E-08               0.02885
+  HCO        4.66020E-15     3.82398E-12           3.63479E-13          8      1.0000E+14        -1.64293E-08               0.61513
+  CO         1.21862E-05     9.99951E-03          -6.65844E-10          9      1.0000E+14         9.28899E-19               0.93634
+  CO2        4.52002E-16     3.70895E-13           1.42370E-17         10      3.5198E+10        -8.65494E-05               0.00067
+                                                                       11      7.1394E+10         1.85094E-12               0.99938
+                                                                       12      1.9744E+12         4.94665E-09               0.97550
+                                                                       13      8.3000E+14        -1.02922E-08               0.61487
+                                                                       14      8.4000E+15         1.37445E-17               0.93638
+
+    DERIVATIVES (CGS UNITS): T            0.00000E+00    RHO          0.00000E+00
+
+    MIXTURE MOLECULAR WEIGHT      2.27575     TOTAL ENERGY EXCHANGE RATE   -1.11676E-01       MASS FRACTION SUM    1.00000000
+                                                 (CAL-CM**3/GM**2/SEC)
+
+
+
+
+ __________________________________________________________________
+
+
+     COMPUTER TIME (CPU) REQUIRED: FOR THIS STEP -  0.000000E+00  S     UP TO THIS TIME -  0.000000E+00  S
+
+
+1
+                TIME   1.00000E+02  SEC              AREA   0.00000E+00  SQ CM              AXIAL POSITION   0.00000E+00  CM
+
+
+                    FLOW PROPERTIES                                             INTEGRATION INDICATORS
+
+                      PRESSURE               99.99987                             STEPS FROM LAST PRINT           21
+                       (ATM)
+                      VELOCITY                0.00                                AVERAGE STEP SIZE             0.14382E+02
+                       (CM/SEC)
+                      DENSITY            2.77340E-03                              TOTAL NUMBER OF STEPS                96
+                       (GM/CM**3)
+                      TEMPERATURE          1000.00
+                       (DEG K)
+                      MASS FLOW RATE     0.00000E+00
+                       (GM/SEC)
+                      ENTROPY                13.5443                              FUNCT EVALUATIONS                   123
+                       CAL/GM/DEG K)
+                      MACH NUMBER             0.0000                              JACOBIAN EVALUATIONS                 33
+
+                      GAMMA                   1.3793
+
+                      ENTHALPY           2.05701E+03
+                       (CAL/GM)
+
+
+                                                        CHEMICAL PROPERTIES
+
+
+ SPECIES    CONCENTRATION   MOLE FRACTION   NET SPECIES PRODUCTION  REACTION   RATE CONST   NET REACTION CONV RATE   NET RATE/POSI-
+            (MOLES/CM**3)                    RATE (MOLE/CM**3/SEC)   NUMBER    CGS  UNITS   (MOLE-CM**3/GM**2/SEC)    TIVE DIR RATE
+  CH3        5.10561E-20     4.18947E-17           5.89298E-19          1      7.4000E+12        -1.32384E-08               1.00000
+  OH         4.86185E-23     3.98945E-20           8.47830E-21          2      3.7312E-08        -5.99705E-15               0.10979
+  CH2O       1.64926E-09     1.35332E-06          -3.28473E-17          3      3.1596E+11        -1.32383E-08               0.10497
+  H2         1.20649E-03     9.90000E-01          -3.05405E-13          4      1.4649E+12         8.02561E-17               0.86465
+  CH4        1.00239E-11     8.22525E-09           1.01826E-13          5      3.8003E+12        -2.31108E-10               0.00000
+  H          2.74130E-13     2.24941E-10          -1.12144E-18          6      2.3000E+13         2.10724E-13               0.87886
+  H2O        1.12379E-11     9.22137E-09           1.01785E-13          7      9.1915E+00        -1.30033E-08               0.00538
+  HCO        7.53405E-15     6.18215E-12           5.04675E-19          8      1.0000E+14         1.44557E-10               0.00538
+  CO         1.21851E-05     9.99866E-03          -1.01837E-13          9      1.0000E+14         4.18838E-18               0.87951
+  CO2        4.73917E-15     3.88879E-12           4.21470E-17         10      3.5198E+10        -1.33788E-08               0.00000
+                                                                       11      7.1394E+10         5.47950E-12               0.99649
+                                                                       12      1.9744E+12         1.32327E-08               0.87886
+                                                                       13      8.3000E+14         9.06054E-11               0.00538
+                                                                       14      8.4000E+15         6.19345E-17               0.87951
+
+    DERIVATIVES (CGS UNITS): T            0.00000E+00    RHO          0.00000E+00
+
+    MIXTURE MOLECULAR WEIGHT      2.27575     TOTAL ENERGY EXCHANGE RATE   -6.52419E-04       MASS FRACTION SUM    1.00000000
+                                                 (CAL-CM**3/GM**2/SEC)
+
+
+
+
+ __________________________________________________________________
+
+
+     COMPUTER TIME (CPU) REQUIRED: FOR THIS STEP -  0.000000E+00  S     UP TO THIS TIME -  0.000000E+00  S
+
+
+1
+                TIME   1.00000E+04  SEC              AREA   0.00000E+00  SQ CM              AXIAL POSITION   0.00000E+00  CM
+
+
+                    FLOW PROPERTIES                                             INTEGRATION INDICATORS
+
+                      PRESSURE               99.99970                             STEPS FROM LAST PRINT            6
+                       (ATM)
+                      VELOCITY                0.00                                AVERAGE STEP SIZE             0.21011E+04
+                       (CM/SEC)
+                      DENSITY            2.77340E-03                              TOTAL NUMBER OF STEPS               102
+                       (GM/CM**3)
+                      TEMPERATURE          1000.00
+                       (DEG K)
+                      MASS FLOW RATE     0.00000E+00
+                       (GM/SEC)
+                      ENTROPY                13.5443                              FUNCT EVALUATIONS                   131
+                       CAL/GM/DEG K)
+                      MACH NUMBER             0.0000                              JACOBIAN EVALUATIONS                 35
+
+                      GAMMA                   1.3793
+
+                      ENTHALPY           2.05699E+03
+                       (CAL/GM)
+
+
+                                                        CHEMICAL PROPERTIES
+
+
+ SPECIES    CONCENTRATION   MOLE FRACTION   NET SPECIES PRODUCTION  REACTION   RATE CONST   NET REACTION CONV RATE   NET RATE/POSI-
+            (MOLES/CM**3)                    RATE (MOLE/CM**3/SEC)   NUMBER    CGS  UNITS   (MOLE-CM**3/GM**2/SEC)    TIVE DIR RATE
+  CH3        4.64648E-18     3.81273E-15           2.60851E-21          1      7.4000E+12        -1.32373E-08               1.00000
+  OH         5.75492E-22     4.72228E-19           2.55400E-23          2      3.7312E-08        -3.24653E-14               0.00653
+  CH2O       1.64912E-09     1.35321E-06          -1.42636E-17          3      3.1596E+11        -1.32372E-08               0.00115
+  H2         1.20649E-03     9.89999E-01          -3.05014E-13          4      1.4649E+12         8.13383E-15               0.07289
+  CH4        1.01807E-09     8.35387E-07           1.01818E-13          5      3.8003E+12        -2.33537E-10               0.00000
+  H          2.74130E-13     2.24941E-10          -4.94061E-22          6      2.3000E+13         2.09892E-13               0.07396
+  H2O        1.01687E-09     8.34408E-07           1.01393E-13          7      9.1915E+00        -1.30021E-08               0.00538
+  HCO        7.53341E-15     6.18164E-12          -1.77560E-21          8      1.0000E+14         1.44544E-10               0.00538
+  CO         1.21841E-05     9.99785E-03          -1.02229E-13          9      1.0000E+14         4.44983E-18               0.07895
+  CO2        2.41198E-12     1.97919E-09           4.25044E-16         10      3.5198E+10        -1.33799E-08               0.00000
+                                                                       11      7.1394E+10         5.52596E-11               0.84906
+                                                                       12      1.9744E+12         1.31818E-08               0.07396
+                                                                       13      8.3000E+14         9.06048E-11               0.00538
+                                                                       14      8.4000E+15         6.58059E-17               0.07895
+
+    DERIVATIVES (CGS UNITS): T            0.00000E+00    RHO          0.00000E+00
+
+    MIXTURE MOLECULAR WEIGHT      2.27575     TOTAL ENERGY EXCHANGE RATE   -6.52853E-04       MASS FRACTION SUM    1.00000000
+                                                 (CAL-CM**3/GM**2/SEC)
+
+
+
+
+ __________________________________________________________________
+
+
+     COMPUTER TIME (CPU) REQUIRED: FOR THIS STEP -  0.000000E+00  S     UP TO THIS TIME -  0.000000E+00  S
+
+
+1
+                TIME   1.00000E+06  SEC              AREA   0.00000E+00  SQ CM              AXIAL POSITION   0.00000E+00  CM
+
+
+                    FLOW PROPERTIES                                             INTEGRATION INDICATORS
+
+                      PRESSURE               99.98323                             STEPS FROM LAST PRINT           23
+                       (ATM)
+                      VELOCITY                0.00                                AVERAGE STEP SIZE             0.47210E+05
+                       (CM/SEC)
+                      DENSITY            2.77340E-03                              TOTAL NUMBER OF STEPS               125
+                       (GM/CM**3)
+                      TEMPERATURE          1000.00
+                       (DEG K)
+                      MASS FLOW RATE     0.00000E+00
+                       (GM/SEC)
+                      ENTROPY                13.5440                              FUNCT EVALUATIONS                   156
+                       CAL/GM/DEG K)
+                      MACH NUMBER             0.0000                              JACOBIAN EVALUATIONS                 40
+
+                      GAMMA                   1.3792
+
+                      ENTHALPY           2.05504E+03
+                       (CAL/GM)
+
+
+                                                        CHEMICAL PROPERTIES
+
+
+ SPECIES    CONCENTRATION   MOLE FRACTION   NET SPECIES PRODUCTION  REACTION   RATE CONST   NET REACTION CONV RATE   NET RATE/POSI-
+            (MOLES/CM**3)                    RATE (MOLE/CM**3/SEC)   NUMBER    CGS  UNITS   (MOLE-CM**3/GM**2/SEC)    TIVE DIR RATE
+  CH3        4.62191E-16     3.79320E-13           5.49923E-17          1      7.4000E+12        -1.31202E-08               1.00000
+  OH         5.24432E-20     4.30401E-17           7.85051E-19          2      3.7312E-08        -2.66652E-12               0.00539
+  CH2O       1.63495E-09     1.34180E-06          -1.41590E-17          3      3.1596E+11        -1.31112E-08               0.00001
+  H2         1.20619E-03     9.89916E-01          -3.01257E-13          4      1.4649E+12         7.94908E-13               0.00079
+  CH4        1.01372E-07     8.31955E-05           1.00863E-13          5      3.8003E+12        -2.34847E-10               0.00000
+  H          2.74095E-13     2.24950E-10          -1.43677E-16          6      2.3000E+13         2.03955E-13               0.00080
+  H2O        9.99741E-08     8.20486E-05           9.94914E-14          7      9.1915E+00        -1.28837E-08               0.00538
+  HCO        7.46957E-15     6.13027E-12           8.78978E-17          8      1.0000E+14         1.43251E-10               0.00538
+  CO         1.20824E-05     9.91600E-03          -1.02417E-13          9      1.0000E+14         3.14435E-17               0.00617
+  CO2        1.39871E-09     1.14792E-06           1.42534E-15         10      3.5198E+10        -1.32730E-08               0.00000
+                                                                       11      7.1394E+10         1.85308E-10               0.03151
+                                                                       12      1.9744E+12         1.29338E-08               0.00080
+                                                                       13      8.3000E+14         9.05656E-11               0.00538
+                                                                       14      8.4000E+15         4.68813E-16               0.00617
+
+    DERIVATIVES (CGS UNITS): T            0.00000E+00    RHO          0.00000E+00
+
+    MIXTURE MOLECULAR WEIGHT      2.27613     TOTAL ENERGY EXCHANGE RATE   -6.48533E-04       MASS FRACTION SUM    1.00000000
+                                                 (CAL-CM**3/GM**2/SEC)
+
+
+
+
+ __________________________________________________________________
+
+
+     COMPUTER TIME (CPU) REQUIRED: FOR THIS STEP -  0.000000E+00  S     UP TO THIS TIME -  0.000000E+00  S
+
+
+1
+                TIME   1.00000E+08  SEC              AREA   0.00000E+00  SQ CM              AXIAL POSITION   0.00000E+00  CM
+
+
+                    FLOW PROPERTIES                                             INTEGRATION INDICATORS
+
+                      PRESSURE               98.88474                             STEPS FROM LAST PRINT           14
+                       (ATM)
+                      VELOCITY                0.00                                AVERAGE STEP SIZE             0.73965E+07
+                       (CM/SEC)
+                      DENSITY            2.77340E-03                              TOTAL NUMBER OF STEPS               139
+                       (GM/CM**3)
+                      TEMPERATURE          1000.00
+                       (DEG K)
+                      MASS FLOW RATE     0.00000E+00
+                       (GM/SEC)
+                      ENTROPY                13.4869                              FUNCT EVALUATIONS                   173
+                       CAL/GM/DEG K)
+                      MACH NUMBER             0.0000                              JACOBIAN EVALUATIONS                 44
+
+                      GAMMA                   1.3744
+
+                      ENTHALPY           1.92487E+03
+                       (CAL/GM)
+
+
+                                                        CHEMICAL PROPERTIES
+
+
+ SPECIES    CONCENTRATION   MOLE FRACTION   NET SPECIES PRODUCTION  REACTION   RATE CONST   NET REACTION CONV RATE   NET RATE/POSI-
+            (MOLES/CM**3)                    RATE (MOLE/CM**3/SEC)   NUMBER    CGS  UNITS   (MOLE-CM**3/GM**2/SEC)    TIVE DIR RATE
+  CH3        3.12393E-14     2.59228E-11          -8.40980E-13          1      7.4000E+12        -5.61471E-09               0.99998
+  OH         3.56818E-18     2.96093E-15          -1.20244E-14          2      3.7312E-08        -1.70417E-10               0.00514
+  CH2O       7.11499E-10     5.90413E-07          -1.48611E-15          3      3.1596E+11        -1.14803E-07               0.00000
+  H2         1.18615E-03     9.84285E-01          -9.80870E-13          4      1.4649E+12         2.33003E-11               0.00001
+  CH4        6.79538E-06     5.63891E-03           8.84167E-13          5      3.8003E+12        -1.24818E-10               0.00000
+  H          2.71776E-13     2.25524E-10           2.13165E-12          6      2.3000E+13         3.98726E-14               0.00001
+  H2O        6.75153E-06     5.60253E-03           5.49871E-14          7      9.1915E+00        -5.29673E-09               0.00514
+  HCO        3.27757E-15     2.71978E-12          -1.27861E-12          8      1.0000E+14         5.95655E-11               0.00514
+  CO         5.34686E-06     4.43690E-03           1.23669E-12          9      1.0000E+14         7.83034E-16               0.00515
+  CO2        4.38482E-08     3.63860E-05           2.24314E-16         10      3.5198E+10         1.60751E-07               0.00000
+                                                                       11      7.1394E+10         2.91629E-11               0.00016
+                                                                       12      1.9744E+12         7.12547E-09               0.00001
+                                                                       13      8.3000E+14         8.60152E-11               0.00514
+                                                                       14      8.4000E+15         2.59715E-14               0.00515
+
+    DERIVATIVES (CGS UNITS): T            0.00000E+00    RHO          0.00000E+00
+
+    MIXTURE MOLECULAR WEIGHT      2.30141     TOTAL ENERGY EXCHANGE RATE    2.17389E-03       MASS FRACTION SUM    1.00000012
+                                                 (CAL-CM**3/GM**2/SEC)
+
+
+
+
+ __________________________________________________________________
+
+
+     COMPUTER TIME (CPU) REQUIRED: FOR THIS STEP -  0.000000E+00  S     UP TO THIS TIME -  0.000000E+00  S
+
+
+1
+                TIME   1.00000E+09  SEC              AREA   0.00000E+00  SQ CM              AXIAL POSITION   0.00000E+00  CM
+
+
+                    FLOW PROPERTIES                                             INTEGRATION INDICATORS
+
+                      PRESSURE               98.00086                             STEPS FROM LAST PRINT           37
+                       (ATM)
+                      VELOCITY                0.00                                AVERAGE STEP SIZE             0.24207E+08
+                       (CM/SEC)
+                      DENSITY            2.77340E-03                              TOTAL NUMBER OF STEPS               176
+                       (GM/CM**3)
+                      TEMPERATURE          1000.00
+                       (DEG K)
+                      MASS FLOW RATE     0.00000E+00
+                       (GM/SEC)
+                      ENTROPY                13.4257                              FUNCT EVALUATIONS                   225
+                       CAL/GM/DEG K)
+                      MACH NUMBER             0.0000                              JACOBIAN EVALUATIONS                 51
+
+                      GAMMA                   1.3706
+
+                      ENTHALPY           1.82036E+03
+                       (CAL/GM)
+
+
+                                                        CHEMICAL PROPERTIES
+
+
+ SPECIES    CONCENTRATION   MOLE FRACTION   NET SPECIES PRODUCTION  REACTION   RATE CONST   NET REACTION CONV RATE   NET RATE/POSI-
+            (MOLES/CM**3)                    RATE (MOLE/CM**3/SEC)   NUMBER    CGS  UNITS   (MOLE-CM**3/GM**2/SEC)    TIVE DIR RATE
+  CH3        5.62433E-14     4.70925E-11          -1.84077E-14          1      7.4000E+12        -4.90112E-12               0.93337
+  OH         6.46581E-18     5.41382E-15          -2.76602E-16          2      3.7312E-08        -3.74160E-12               0.00006
+  CH2O       6.74609E-13     5.64850E-10          -2.75873E-17          3      3.1596E+11        -2.39438E-09               0.00000
+  H2         1.16995E-03     9.79596E-01          -1.87647E-14          4      1.4649E+12         4.32987E-14               0.00000
+  CH4        1.21816E-05     1.01996E-02           1.84454E-14          5      3.8003E+12        -1.24008E-12               0.00001
+  H          2.69227E-13     2.25424E-10           4.27731E-14          6      2.3000E+13        -1.79977E-16               0.00001
+  H2O        1.21815E-05     1.01996E-02           3.08898E-16          7      9.1915E+00        -7.42508E-14               0.00008
+  HCO        3.12116E-18     2.61335E-15          -2.40882E-14          8      1.0000E+14         1.09908E-15               0.00010
+  CO         5.13972E-09     4.30349E-06           2.40727E-14          9      1.0000E+14         2.64011E-20               0.00010
+  CO2        7.69384E-11     6.44205E-08           5.40253E-18         10      3.5198E+10         3.13037E-09               0.00004
+                                                                       11      7.1394E+10         7.02378E-13               0.00228
+                                                                       12      1.9744E+12         4.01158E-11               0.00000
+                                                                       13      8.3000E+14         1.04859E-12               0.00006
+                                                                       14      8.4000E+15         5.66236E-16               0.00006
+
+    DERIVATIVES (CGS UNITS): T            0.00000E+00    RHO          0.00000E+00
+
+    MIXTURE MOLECULAR WEIGHT      2.32217     TOTAL ENERGY EXCHANGE RATE    4.56208E-05       MASS FRACTION SUM    1.00000000
+                                                 (CAL-CM**3/GM**2/SEC)
+
+
+
+
+ __________________________________________________________________
+
+
+     COMPUTER TIME (CPU) REQUIRED: FOR THIS STEP -  0.000000E+00  S     UP TO THIS TIME -  0.000000E+00  S
+
+
+1
+0(GCKP)     END OF THIS CASE
+
+
+
+                                   TOTAL CPU TIME (INCLUDING I/O) REQUIRED =     0.000000 S
+
+
+
+0(GCKP)     READ DATA FOR NEXT CASE

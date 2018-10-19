@@ -1,0 +1,82 @@
+      GCKP86    METHANE  AIR  TEST CASE  LEAN MECHANISM    CASE 6               
+NEW                                                                             
+               CH4      =   CH3     +   H            2.0E+15   0.        104000.
+   H       +   CH4      =   CH3     +   H2          1.26E+14   0.        11900. 
+   O       +   CH4      =   CH3     +   OH           2.0E+13   0.        9200.  
+   OH      +   CH4      =   CH3     +   H2O          3.0E+13   0.        6000.  
+   CH2     +   O2       =   CH2O    +   O            1.0E+14   0.        3700.  
+   CH3     +   O2       =   CH2O    +   OH           1.7E+12   0.        14000. 
+   CH3     +   O        =   CH2O    +   H            6.8E+13   0.        0.     
+   CH2O    +   H        =   HCO     +   H2            2.E+13   0.        3300.  
+   CH2O    +   O        =   HCO     +   OH            5.E+13   0.        4570.  
+   CH2O    +   OH       =   HCO     +   H2O           5.E+15   0.        13000. 
+   M       +   CH2O     =   HCO     +   H            5.0E+16   0.        72000. 
+   O       +   HCO      =   H       +   CO2          5.3E+13   0.        0.     
+   HCO     +   O        =   CO      +   OH            3.E+13    0.        0.    
+   HCO     +   H        =   CO      +   H2            2.E+13    0.        0.    
+   HCO     +   OH       =   CO      +   H2O           3.E+13   0.        0.     
+   M       +   HCO      =   H       +   CO            3.E+14    0.       14700. 
+   CO      +   OH       =   CO2     +   H            4.0E+12   0.        8000.  
+   CO      +   O        =   CO2     +   M            2.8E+13   0.        -4540. 
+   CO      +   O2       =   CO2     +   O            1.2E+11    0.       35000. 
+   H       +   O2       =   OH      +   O            2.2E+14   0.        16790. 
+   O       +   H2       =   OH      +   H            1.8E+10   1.        8900.  
+   H2      +   OH       =   H2O     +   H            5.2E+13   0.        6500.  
+   OH      +   OH       =   O       +   H2O          6.3E+12   0.        1093.  
+   H       +   O2       =   HO2     +   M            1.5E+15    0.       -1000. 
+   O       +   O        =   O2      +   M            5.7E+13   0.        -1788. 
+   H       +   H        =   H2      +   M            8.3E+17   -1.         0.   
+   H       +   OH       =   H2O     +   M            8.4E+21   -2.       0.     
+   O       +   H        =   OH      +   M            6.2E+16  -.6         0.    
+   H       +   CH3      =   H2      +   CH2          2.7E+11  .67        25700. 
+   O       +   CH3      =   OH      +   CH2          1.9E+11   .68       25700. 
+   OH      +   CH3      =   H2O     +   CH2          2.7E+11   .67       25700. 
+   HO2     +   NO       =   NO2     +   OH           1.2E+13    0.      2380.   
+   O       +   NO2      =   NO      +   O2           1.0E+13     0.      596.   
+   NO      +   O        =   NO2     +   M           5.62E+15   0.        -1160. 
+   NO2     +   H        =   NO      +   OH           2.9E+14   0.         795.  
+   N       +   O2       =   NO      +   O             6.4E+9   1.        6250.  
+   O       +   N2       =   NO      +   N            1.8E+14   0.        76250. 
+   N       +   OH       =   NO      +   H            4.0E+13   0.        0.     
+   CN      +   H2       =   HCN     +   H            6.0E+13   0.        5300.  
+   O       +   HCN      =   H       +   NCO          5.2E+12  .68        8100.  
+   OH      +   HCN      =   HNCO    +   H            4.0E+11   0.         2800. 
+   CN      +   O        =   CO      +   N            1.2E+13   0.           0.  
+   CN      +   OH       =   NCO     +   H            2.5E+14   0.        6000.  
+   CN      +   O2       =   NCO     +   O            3.2E+13   0.        1000.  
+   CN      +   CO2      =   NCO     +   CO           3.7E+12   0.         0.    
+   O       +   NCO      =   NO      +   CO           2.0E+13    0.        0.    
+   N       +   NCO      =   N2      +   CO           1.0E+13    0.        0.    
+   H       +   NCO      =   NH      +   CO           2.0E+13   0.        0.     
+   H2      +   NCO      =   HNCO    +   H            1.0E+14   0.        9000.  
+   HNCO    +   H        =   NH2     +   CO           1.0E+14   0.        8500.  
+   NH      +   OH       =   N       +   H2O          5.0E+11   .5        1999.  
+   H       +   HO2      =   OH      +   OH           1.4E+14   0.        1070.  
+   H       +   HO2      =   O       +   H2O          1.0E+13   0.        1000.  
+   O       +   HO2      =   OH      +   O2           1.6E+13   0.        1070.  
+   OH      +   HO2      =   H2O     +   O2           7.9E+12   0.           0.  
+   CH3     +   OH       =   CH2O    +   H2           7.4E+12   0.         0.    
+   H2      +   HO2      =   H2O     +   OH           7.2E+11   0.        18700. 
+   HCO     +   O2       =   CO      +   HO2          3.0E+13   0.         0.    
+                                                                                
+END                                                                             
+DISTANCE  PRESSURE                                                              
+ &PROB  ITPSZ=2, CX0=1.730,  EMAX=1.E-3, PSTAT=T, MF =21,                       
+  PRINT=5.,10.,15.,20.,25.,30.,35.,37.,38.,38.5,39.,39.5,40,40.5, 41,           
+      41.5, 42, 42.5, 43, NPRNTS =19, ATOLSP = 1.E-12,                          
+   COMBUS = T,  ALLM1 = F,   EXCHR =T,   &END                                   
+   H       +   O2       =   HO2     +   M       O2        2.0    N2         2.0 
+   SAME                                         H2O       32.5   CO2        7.5 
+   SAME                                         CO        2.0    CH4        5.0 
+   SAME                                         H2        5.0                   
+   H       +   OH       =   H2O     +   M       O2        1.6    H2O       20.  
+   SAME                                         N2        1.6    CO2       7.5  
+   SAME                                         CO        1.6                   
+                                                                                
+ &START  AREA= 1000,  MACH =2,  T= 1645,  &END                                  
+CH4        .049768                                                              
+O2         .199072                                                              
+N2         .75116                                                               
+CN         .0000001                                                             
+END                                                                             
+FINIS                                                                           

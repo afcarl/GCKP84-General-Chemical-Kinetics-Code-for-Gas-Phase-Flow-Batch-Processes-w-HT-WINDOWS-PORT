@@ -1,0 +1,690 @@
+ Thermodynamic Data File Name:
+ thermo.inp                                                                     
+                                          
+ Case Input Data File Name:
+ example_4.inp                                                                  
+                                          
+ Transport Data File Name:
+ transport.inp                                                                  
+                                          
+1                                                        **  DATA CARDS  **
+
+                                     1         2         3         4         5         6         7         8
+                        CC  12345678901234567890123456789012345678901234567890123456789012345678901234567890
+
+
+                            NEW                                                                             
+                               H       +   O2       =   OH      +   O            2.2E+14   0.        16790. 
+                               O       +   H2       =   OH      +   H            1.8E+10   1.        8900.  
+                               H2      +   OH       =   H2O     +   H            5.2E+13   0.        6500.  
+                               OH      +   OH       =   O       +   H2O          6.3E+12   0.        1093.  
+                               H       +   O2       =   HO2     +   M            1.5E+15    0.       -1000. 
+                               O       +   O        =   O2      +   M            5.7E+13   0.        -1788. 
+                               H       +   H        =   H2      +   M            8.3E+17   -1.         0.   
+                               H       +   OH       =   H2O     +   M            8.4E+21   -2.       0.     
+                               H2      +   HO2      =   H2O     +   OH           7.2E+11   0.        18700. 
+                               M       +   H2O2     =2.0OH                       1.3E+17  0.        45500.  
+                               H2      +   O2       =2.0OH                      1.00E+13  0.        43000.  
+                               H       +   HO2      =   OH      +   OH           2.5E+14   0.        1900.  
+                               O       +   HO2      =   OH      +   O2           5.0E+13   0.        1000.  
+                               OH      +   HO2      =   H2O     +   O2           5.0E+13   0.        1000.  
+                                        2.0HO2      =   H2O2    +   O2          1.80E+12  0.        0.      
+                               OH      +   H2O2     =   H2O     +   HO2          1.0E+13   0.        1800.  
+                               O       +   H2O2     =   OH      +   HO2          8.0E+13   0.        1000.  
+                               H       +   H2O2     =   H2O     +   OH           3.2E+14   0.        9000.  
+                                                            -  BLANK CARD  -
+                            END                                                                             
+                            DISTANCE  PRESSURE            FPS       H2                                      
+                             &PROB    ITPSZ=2,  CX0 = 5., CX1= .01,  ALLM1 = F,                             
+                              PRINT = 6, 20, 22.81, 22.83, 22.84, 22.845,  NPRNTS = 6,                      
+                                EMAX=5.E-6,  MF= 21, PSTAT= T, ATOLSP=1.E-13,                               
+                                HTRAN = T, QMREAD = T,  HT1=5.863, HT0=-42.88    &END                       
+                               H       +   O2       =   HO2     +   M       H2        5.0    O2        2.0  
+                               SAME                                         H2O      32.5                   
+                               H           H        =   H2      +   M       O2       2.0     H2       5.0   
+                               SAME                                         H2O      15.0                   
+                               M       +   H2O2     =2.0OH                  O2       0.78    H2O      6.0   
+                               SAME                                         H2O2     6.6     H2       2.3   
+                               H       +   OH       =   H2O     +   M       H2       4.0                    
+                               SAME                                         H2O      20.0    O2       1.6   
+                                                            -  BLANK CARD  -
+                             &START     T=1075., MACH=0.5,                                                  
+                               AIRMW = 31.994,  FRO2 = 1,  AREA = 2000,                                     
+                              ERATIO =1, SCC= 0, SCH= 2, SCOX= 0, NOXRAT=0, ARAT= 0, CRAT=0  &END           
+                            END                                                                             
+                            FINIS                                                                           
+1
+
+
+
+     *** THE FOLLOWING  2 ELEMENTS CONSIDERED FOR THIS PROBLEM ***
+
+          H     O   
+
+
+
+     *** THE FOLLOWING  8 REACTING SPECIES CONSIDERED FOR THIS PROBLEM ***
+
+          H         O2        OH        O         H2        H2O       HO2       H2O2    
+
+
+     *** NO INERT SPECIES CONSIDERED FOR THIS PROBLEM ***
+
+
+
+
+
+
+                    *** THERMODYNAMIC DATA AND MOLECULAR WEIGHT ***
+
+
+
+    H                           MWT =       1.00797
+   0.25000000E+01   0.00000000E+00   0.00000000E+00   0.00000000E+00   0.00000000E+00   0.25474391E+05  -0.45989841E+00
+   0.25000000E+01   0.00000000E+00   0.00000000E+00   0.00000000E+00   0.00000000E+00   0.25474391E+05  -0.45989841E+00
+
+
+    O2                          MWT =      31.99879
+   0.36122139E+01   0.74853166E-03  -0.19820646E-06   0.33749007E-10  -0.23907374E-14  -0.11978151E+04   0.36703308E+01
+   0.37837136E+01  -0.30233634E-02   0.99492754E-05  -0.98189101E-08   0.33031826E-11  -0.10638107E+04   0.36416345E+01
+
+
+    OH                          MWT =      17.00730
+   0.28897815E+01   0.10005879E-02  -0.22048808E-06   0.20191288E-10  -0.39409830E-15   0.38857041E+04   0.55566425E+01
+   0.38737299E+01  -0.13393773E-02   0.16348351E-05  -0.52133636E-09   0.41826975E-13   0.35802349E+04   0.34202406E+00
+
+
+    O                           MWT =      15.99940
+   0.25342960E+01  -0.12478170E-04  -0.12562724E-07   0.69029860E-11  -0.63797098E-15   0.29231107E+05   0.49628592E+01
+   0.30309401E+01  -0.22525853E-02   0.39824540E-05  -0.32604921E-08   0.10152035E-11   0.29136525E+05   0.26099341E+01
+
+
+    H2                          MWT =       2.01580
+   0.30558124E+01   0.59740403E-03  -0.16747471E-08  -0.21247544E-10   0.25195486E-14  -0.86168475E+03  -0.17207073E+01
+   0.29432328E+01   0.34815508E-02  -0.77713821E-05   0.74997493E-08  -0.25203379E-11  -0.97695410E+03  -0.18186136E+01
+
+
+    H2O                         MWT =      18.01520
+   0.26340654E+01   0.31121899E-02  -0.90278451E-06   0.12673054E-09  -0.69164734E-14  -0.29876258E+05   0.70823874E+01
+   0.41675563E+01  -0.18106868E-02   0.59450877E-05  -0.48670872E-08   0.15284144E-11  -0.30289547E+05  -0.73087996E+00
+
+
+    HO2                         MWT =      33.00669
+   0.40173059E+01   0.22175882E-02  -0.57710173E-06   0.71372880E-10  -0.36458589E-14  -0.11412445E+04   0.37846050E+01
+   0.35964103E+01   0.52500749E-03   0.75118346E-05  -0.95674952E-08   0.36597626E-11  -0.89333502E+03   0.66372671E+01
+
+
+    H2O2                        MWT =      34.01460
+   0.47928858E+01   0.36300865E-02  -0.11136435E-05   0.14868513E-09  -0.68958511E-14  -0.18132195E+05  -0.51306415E+00
+   0.34546633E+01   0.55575930E-02   0.92103738E-06  -0.46279780E-08   0.21458200E-11  -0.17672328E+05   0.68402452E+01
+1            DISTANCE-PRESSURE VERSION
++                                                 GENERAL CHEMICAL KINETICS PROGRAM           NASA LEWIS RESEARCH CENTER
+
+
+                          NEW                                                                             
+
+
+     REACTION                               REACTION                                          REACTION RATE VARIABLES
+      NUMBER                                                                                  A                N         ACTIVATION
+                                                                                                                            ENERGY
+         1                         1*O2        =    1*OH                                  2.20000E+14         0.0000       16790.00
++                  1*H         +
++                                                               +    1*O       
+         2                         1*H2        =    1*OH                                  1.80000E+10         1.0000        8900.00
++                  1*O         +
++                                                               +    1*H       
+         3                         1*OH        =    1*H2O                                 5.20000E+13         0.0000        6500.00
++                  1*H2        +
++                                                               +    1*H       
+         4                         2*OH        =    1*O                                   6.30000E+12         0.0000        1093.00
++                                                               +    1*H2O     
+         5                         1*O2        =    1*HO2                                 1.50000E+15         0.0000       -1000.00
++                  1*H         +
++                                                               +      M       
+         6                         2*O         =    1*O2                                  5.70000E+13         0.0000       -1788.00
++                                                               +      M       
+         7                         2*H         =    1*H2                                  8.30000E+17        -1.0000           0.00
++                                                               +      M       
+         8                         1*OH        =    1*H2O                                 8.40000E+21        -2.0000           0.00
++                  1*H         +
++                                                               +      M       
+         9                         1*HO2       =    1*H2O                                 7.20000E+11         0.0000       18700.00
++                  1*H2        +
++                                                               +    1*OH      
+        10                         1*H2O2      =    2*OH                                  1.30000E+17         0.0000       45500.00
++                    M         +
+        11                         1*O2        =    2*OH                                  1.00000E+13         0.0000       43000.00
++                  1*H2        +
+        12                         1*HO2       =    2*OH                                  2.50000E+14         0.0000        1900.00
++                  1*H         +
+        13                         1*HO2       =    1*OH                                  5.00000E+13         0.0000        1000.00
++                  1*O         +
++                                                               +    1*O2      
+        14                         1*HO2       =    1*H2O                                 5.00000E+13         0.0000        1000.00
++                  1*OH        +
++                                                               +    1*O2      
+        15                         2*HO2       =    1*H2O2                                1.80000E+12         0.0000           0.00
++                                                               +    1*O2      
+        16                         1*H2O2      =    1*H2O                                 1.00000E+13         0.0000        1800.00
++                  1*OH        +
++                                                               +    1*HO2     
+        17                         1*H2O2      =    1*OH                                  8.00000E+13         0.0000        1000.00
++                  1*O         +
++                                                               +    1*HO2     
+        18                         1*H2O2      =    1*H2O                                 3.20000E+14         0.0000        9000.00
++                  1*H         +
++                                                               +    1*OH      
+
+
+
+                                         ALL THIRD BODY RATIOS ARE 1.0 EXCEPT THE FOLLOWING
+
+
+     M(H2      ,  5) =  5.00000
++                                    M(O2      ,  7) =  2.00000
++                                                                    M(H2      ,  8) =  4.00000
++                                                                                                    M(O2      , 10) =  0.78000
+     M(O2      ,  5) =  2.00000
++                                    M(H2      ,  7) =  5.00000
++                                                                    M(H2O     ,  8) = 20.00000
++                                                                                                    M(H2O     , 10) =  6.00000
+     M(H2O     ,  5) = 32.50000
++                                    M(H2O     ,  7) = 15.00000
++                                                                    M(O2      ,  8) =  1.60000
++                                                                                                    M(H2O2    , 10) =  6.60000
+     M(H2      , 10) =  2.30000
+
+
+
+                                                        INTEGRATION CONTROLS
+
+               MAXIMUM RELATIVE ERROR   5.00000E-06                    SPECIES ABSOLUTE ERROR   1.00000E-13
+1                                                  ** ASSIGNED VARIABLE PROFILE **
+
+
+                                      THE PRESSURE IS CALCULATED FROM THE FOLLOWING POLYNOMIAL
+
+                    PRESSURE (ATM     ) = ( 0.00000E+00)X**3 + ( 0.00000E+00)X**2 + ( 1.00000E-02)X + ( 5.00000E+00)
+
+
+
+          AIR - FUEL COMBUSTION, EQUIVALENCE RATIO =    1.0000   OXYGEN FRACTION IN AIR = 1.0000
+
+
+
+                                             HEAT TRANSFER CASE   QDOT (CAL/CM-SEC) =
+                    ( 0.00000E+00)T**4 + ( 0.00000E+00)T**3 +  0.00000E+00)T**2 + ( 5.86300E+00)T + (-4.28800E+01)
+
+
+
+                                                  NUMBER OF REACTING SPECIES:    8
+
+                                                     NUMBER OF INERT SPECIES:    0
+
+
+                                        NUMBER OF SPECIES ODE'S REQUIRED FOR THIS CASE:    8
+
+                                          TOTAL NUMBER OF ODE'S REQUIRED FOR THIS CASE:   11
+1                                                    **  INITIAL CONDITIONS  **
+
+
+                TIME   0.00000E+00  SEC              AREA   2.15278E+00  SQ FT              AXIAL POSITION   0.00000E+00  FT
+
+
+                    FLOW PROPERTIES                                             INTEGRATION INDICATORS
+
+                      PRESSURE           1.05810E+04                              STEPS FROM LAST PRINT            0
+                       (LB/FT**2)
+                      VELOCITY           1.64421E+03                              AVERAGE STEP SIZE             0.00000E+00
+                       (FT/SEC)
+                      DENSITY            4.25003E-02                              TOTAL NUMBER OF STEPS                 0
+                       (LB/FT**3)
+                      TEMPERATURE        1.93500E+03
+                       (DEG R)
+                      MASS FLOW RATE     1.50430E+02
+                       (LB/SEC)
+                      ENTROPY            3.70366E+00                              FUNCT EVALUATIONS                     0
+                       BTU/LB/DEG R)
+                      MACH NUMBER        5.00000E-01                              JACOBIAN EVALUATIONS                  0
+
+                      GAMMA              1.34995E+00
+
+                      ENTHALPY           8.50703E+02
+                       (BTU/LB)
+
+
+          HEAT LOSS(QDOT/MDOT) =    5.0333E+00  BTU/(LB-FT)
+
+
+                                                        CHEMICAL PROPERTIES
+
+
+ SPECIES    CONCENTRATION   MOLE FRACTION   NET SPECIES PRODUCTION  REACTION   RATE CONST   NET REACTION CONV RATE   NET RATE/POSI-
+            (MOLES/FT**3)                    RATE (MOLE/FT**3/SEC)   NUMBER    CGS  UNITS   (MOLE-FT**3/LB**2/SEC)    TIVE DIR RATE
+  H          0.00000E+00     0.00000E+00           1.99048E-12          1      8.4914E+10         0.00000E+00               0.00000
+  O2         1.17957E-03     3.33333E-01          -8.07404E-04          2      3.0012E+11         0.00000E+00               0.00000
+  OH         0.00000E+00     0.00000E+00           1.61481E-03          3      2.4805E+12         0.00000E+00               0.00000
+  O          0.00000E+00     0.00000E+00           3.38714E-16          4      3.7769E+12         0.00000E+00               0.00000
+  H2         2.35913E-03     6.66667E-01          -8.07404E-04          5      2.3955E+15         0.00000E+00               0.00000
+  H2O        0.00000E+00     0.00000E+00           0.00000E+00          6      1.3164E+14        -9.37605E-14               1.00000
+  HO2        0.00000E+00     0.00000E+00           0.00000E+00          7      7.7209E+14        -5.50991E-10               1.00000
+  H2O2       0.00000E+00     0.00000E+00           0.00000E+00          8      7.2688E+15         0.00000E+00               0.00000
+                                                                        9      1.1365E+08         0.00000E+00               0.00000
+                                                                       10      7.3063E+07         0.00000E+00               0.00000
+                                                                       11      1.8114E+04         4.47000E-01               1.00000
+                                                                       12      1.0272E+14         0.00000E+00               0.00000
+                                                                       13      3.1309E+13         0.00000E+00               0.00000
+                                                                       14      3.1309E+13         0.00000E+00               0.00000
+                                                                       15      1.8000E+12         0.00000E+00               0.00000
+                                                                       16      4.3058E+12         0.00000E+00               0.00000
+                                                                       17      5.0094E+13         0.00000E+00               0.00000
+                                                                       18      4.7362E+12         0.00000E+00               0.00000
+
+    MIXTURE MOLECULAR WEIGHT     12.01013     TOTAL ENERGY EXCHANGE RATE    1.49929E+04       MASS FRACTION SUM    1.00000000
+                                                 (BTU-FT**3/LB**2/SEC)
+
+
+
+                                   CPU TIME FOR INITIALIZATION OF GCKP86 =     0.000000 S
+
+
+1
+                TIME   1.21924E-04  SEC              AREA   2.21417E+00  SQ FT              AXIAL POSITION   1.96850E-01  FT
+
+
+                    FLOW PROPERTIES                                             INTEGRATION INDICATORS
+
+                      PRESSURE           1.07080E+04                              STEPS FROM LAST PRINT          105
+                       (LB/FT**2)
+                      VELOCITY           1.58493E+03                              AVERAGE STEP SIZE             0.57829E-01
+                       (FT/SEC)
+                      DENSITY            4.28673E-02                              TOTAL NUMBER OF STEPS               105
+                       (LB/FT**3)
+                      TEMPERATURE        1.94170E+03
+                       (DEG R)
+                      MASS FLOW RATE     1.50430E+02
+                       (LB/SEC)
+                      ENTROPY            3.70401E+00                              FUNCT EVALUATIONS                   132
+                       BTU/LB/DEG R)
+                      MACH NUMBER        4.81221E-01                              JACOBIAN EVALUATIONS                 19
+
+                      GAMMA              1.34968E+00
+
+                      ENTHALPY           8.53536E+02
+                       (BTU/LB)
+
+
+          HEAT LOSS(QDOT/MDOT) =    5.0508E+00  BTU/(LB-FT)
+
+
+                                                        CHEMICAL PROPERTIES
+
+
+ SPECIES    CONCENTRATION   MOLE FRACTION   NET SPECIES PRODUCTION  REACTION   RATE CONST   NET REACTION CONV RATE   NET RATE/POSI-
+            (MOLES/FT**3)                    RATE (MOLE/FT**3/SEC)   NUMBER    CGS  UNITS   (MOLE-FT**3/LB**2/SEC)    TIVE DIR RATE
+  H          5.53726E-10     1.55157E-07           4.03136E-06          1      8.7248E+10         5.00790E-01               1.00000
+  O2         1.18919E-03     3.33217E-01          -5.98371E-03          2      3.0552E+11         4.93527E-01               1.00000
+  OH         6.28294E-11     1.76051E-08           4.45079E-07          3      2.5067E+12         3.26564E+00               0.99999
+  O          7.79050E-11     2.18294E-08           5.61783E-07          4      3.7835E+12        -5.11709E-06               0.97519
+  H2         2.37879E-03     6.66548E-01          -8.82924E-03          5      2.3916E+15         3.13877E+00               0.99889
+  H2O        5.45137E-07     1.52750E-04           7.05264E-03          6      1.3126E+14         3.96842E-10               0.99971
+  HO2        2.33369E-07     6.53912E-05           1.36505E-03          7      7.6943E+14         4.69755E-07               0.99862
+  H2O2       5.82079E-08     1.63102E-05           1.09185E-03          8      7.2187E+15         4.00765E-07               1.00000
+                                                                        9      1.1714E+08         5.66828E-01               1.00000
+                                                                       10      7.8634E+07         2.55450E-01               1.00000
+                                                                       11      1.9416E+04         4.78771E-01               1.00000
+                                                                       12      1.0304E+14         1.16062E-01               1.00000
+                                                                       13      3.1360E+13         4.96973E-03               1.00000
+                                                                       14      3.1360E+13         4.00798E-03               0.99999
+                                                                       15      1.8000E+12         8.53088E-01               0.99834
+                                                                       16      4.3184E+12         1.36819E-04               0.99387
+                                                                       17      5.0175E+13         1.98301E-03               0.99985
+                                                                       18      4.8055E+12         1.35013E-03               1.00000
+
+    MIXTURE MOLECULAR WEIGHT     12.01164     TOTAL ENERGY EXCHANGE RATE   -4.33166E+05       MASS FRACTION SUM    1.00000000
+                                                 (BTU-FT**3/LB**2/SEC)
+
+
+
+
+ __________________________________________________________________
+
+
+     COMPUTER TIME (CPU) REQUIRED: FOR THIS STEP -  0.000000E+00  S     UP TO THIS TIME -  0.000000E+00  S
+
+
+1
+                TIME   4.25758E-04  SEC              AREA   2.42755E+00  SQ FT              AXIAL POSITION   6.56168E-01  FT
+
+
+                    FLOW PROPERTIES                                             INTEGRATION INDICATORS
+
+                      PRESSURE           1.10042E+04                              STEPS FROM LAST PRINT           50
+                       (LB/FT**2)
+                      VELOCITY           1.43872E+03                              AVERAGE STEP SIZE             0.28040E+00
+                       (FT/SEC)
+                      DENSITY            4.30728E-02                              TOTAL NUMBER OF STEPS               155
+                       (LB/FT**3)
+                      TEMPERATURE        1.98920E+03
+                       (DEG R)
+                      MASS FLOW RATE     1.50430E+02
+                       (LB/SEC)
+                      ENTROPY            3.71479E+00                              FUNCT EVALUATIONS                   198
+                       BTU/LB/DEG R)
+                      MACH NUMBER        4.32283E-01                              JACOBIAN EVALUATIONS                 25
+
+                      GAMMA              1.34753E+00
+
+                      ENTHALPY           8.60031E+02
+                       (BTU/LB)
+
+
+          HEAT LOSS(QDOT/MDOT) =    5.1752E+00  BTU/(LB-FT)
+
+
+                                                        CHEMICAL PROPERTIES
+
+
+ SPECIES    CONCENTRATION   MOLE FRACTION   NET SPECIES PRODUCTION  REACTION   RATE CONST   NET REACTION CONV RATE   NET RATE/POSI-
+            (MOLES/FT**3)                    RATE (MOLE/FT**3/SEC)   NUMBER    CGS  UNITS   (MOLE-FT**3/LB**2/SEC)    TIVE DIR RATE
+  H          7.57732E-09     2.11659E-06           1.19370E-04          1      1.0519E+11         8.17936E+00               0.99999
+  O2         1.18856E-03     3.32003E-01          -6.78779E-02          2      3.4561E+11         7.37317E+00               1.00000
+  OH         9.20130E-10     2.57021E-07           1.51044E-05          3      2.6949E+12         5.09393E+01               0.99984
+  O          1.03834E-09     2.90040E-07           1.61942E-05          4      3.8299E+12        -1.45917E-03               0.98118
+  H2         2.37973E-03     6.64733E-01          -1.14976E-01          5      2.3651E+15         4.29484E+01               0.99940
+  H2O        9.55670E-06     2.66949E-03           1.01139E-01          6      1.2867E+14         6.86806E-08               0.99999
+  HO2        9.76626E-07     2.72802E-04           7.04605E-03          7      7.5106E+14         8.60007E-05               0.99998
+  H2O2       1.13970E-06     3.18354E-04           1.02465E-02          8      6.8781E+15         7.70221E-05               1.00000
+                                                                        9      1.4427E+08         2.89484E+00               1.00000
+                                                                       10      1.3054E+08         8.30588E+00               1.00000
+                                                                       11      3.1348E+04         7.65514E-01               1.00000
+                                                                       12      1.0524E+14         6.72410E+00               1.00000
+                                                                       13      3.1711E+13         2.77634E-01               1.00000
+                                                                       14      3.1711E+13         2.46026E-01               0.99999
+                                                                       15      1.8000E+12         1.47830E+01               0.99732
+                                                                       16      4.4058E+12         3.97979E-02               0.99769
+                                                                       17      5.0737E+13         5.18366E-01               0.99996
+                                                                       18      5.3123E+12         3.96087E-01               1.00000
+
+    MIXTURE MOLECULAR WEIGHT     12.03161     TOTAL ENERGY EXCHANGE RATE   -5.98411E+06       MASS FRACTION SUM    1.00000000
+                                                 (BTU-FT**3/LB**2/SEC)
+
+
+
+
+ __________________________________________________________________
+
+
+     COMPUTER TIME (CPU) REQUIRED: FOR THIS STEP -  0.781250E-02  S     UP TO THIS TIME -  0.781250E-02  S
+
+
+1
+                TIME   4.90543E-04  SEC              AREA   2.60150E+00  SQ FT              AXIAL POSITION   7.48360E-01  FT
+
+
+                    FLOW PROPERTIES                                             INTEGRATION INDICATORS
+
+                      PRESSURE           1.10637E+04                              STEPS FROM LAST PRINT          105
+                       (LB/FT**2)
+                      VELOCITY           1.40722E+03                              AVERAGE STEP SIZE             0.25896E-01
+                       (FT/SEC)
+                      DENSITY            4.10927E-02                              TOTAL NUMBER OF STEPS               260
+                       (LB/FT**3)
+                      TEMPERATURE        2.10652E+03
+                       (DEG R)
+                      MASS FLOW RATE     1.50430E+02
+                       (LB/SEC)
+                      ENTROPY            3.74853E+00                              FUNCT EVALUATIONS                   351
+                       BTU/LB/DEG R)
+                      MACH NUMBER        4.12706E-01                              JACOBIAN EVALUATIONS                 40
+
+                      GAMMA              1.34209E+00
+
+                      ENTHALPY           8.61340E+02
+                       (BTU/LB)
+
+
+          HEAT LOSS(QDOT/MDOT) =    5.4825E+00  BTU/(LB-FT)
+
+
+                                                        CHEMICAL PROPERTIES
+
+
+ SPECIES    CONCENTRATION   MOLE FRACTION   NET SPECIES PRODUCTION  REACTION   RATE CONST   NET REACTION CONV RATE   NET RATE/POSI-
+            (MOLES/FT**3)                    RATE (MOLE/FT**3/SEC)   NUMBER    CGS  UNITS   (MOLE-FT**3/LB**2/SEC)    TIVE DIR RATE
+  H          5.75671E-07     1.69372E-04           8.20820E-01          1      1.6104E+11         9.80264E+02               0.99920
+  O2         1.11563E-03     3.28237E-01          -6.52700E+00          2      4.5868E+11         7.38669E+02               0.99968
+  OH         9.33935E-08     2.74779E-05           1.45305E-01          3      3.1779E+12         6.29906E+03               0.99928
+  O          7.58486E-08     2.23159E-05           1.06721E-01          4      3.9375E+12        -4.13997E-01               0.55962
+  H2         2.23901E-03     6.58755E-01          -1.19170E+01          5      2.3059E+15         3.29551E+03               0.99988
+  H2O        3.73552E-05     1.09905E-02           1.10137E+01          6      1.2296E+14         3.65335E-04               1.00000
+  HO2        3.62063E-06     1.06525E-03           9.47818E-01          7      7.0923E+14         4.99739E-01               1.00000
+  H2O2       2.49090E-06     7.32866E-04          -5.36816E-02          8      6.1333E+15         5.75938E-01               1.00000
+                                                                        9      2.3181E+08         1.78262E+01               1.00000
+                                                                       10      4.1391E+08         6.12011E+01               0.99888
+                                                                       11      9.3289E+04         2.21045E+00               1.00000
+                                                                       12      1.1044E+14         2.18350E+03               1.00000
+                                                                       13      3.2525E+13         8.47286E+01               1.00000
+                                                                       14      3.2525E+13         1.04328E+02               1.00000
+                                                                       15      1.8000E+12         2.23622E+02               0.99907
+                                                                       16      4.6116E+12         1.01729E+01               0.99963
+                                                                       17      5.2041E+13         9.32509E+01               0.99984
+                                                                       18      6.6745E+12         9.07872E+01               1.00000
+
+    MIXTURE MOLECULAR WEIGHT     12.09018     TOTAL ENERGY EXCHANGE RATE   -6.22300E+08       MASS FRACTION SUM    0.99999994
+                                                 (BTU-FT**3/LB**2/SEC)
+
+
+
+
+ __________________________________________________________________
+
+
+     COMPUTER TIME (CPU) REQUIRED: FOR THIS STEP -  0.000000E+00  S     UP TO THIS TIME -  0.781250E-02  S
+
+
+1
+                TIME   4.91009E-04  SEC              AREA   2.63560E+00  SQ FT              AXIAL POSITION   7.49016E-01  FT
+
+
+                    FLOW PROPERTIES                                             INTEGRATION INDICATORS
+
+                      PRESSURE           1.10641E+04                              STEPS FROM LAST PRINT           12
+                       (LB/FT**2)
+                      VELOCITY           1.40698E+03                              AVERAGE STEP SIZE             0.16390E-02
+                       (FT/SEC)
+                      DENSITY            4.05679E-02                              TOTAL NUMBER OF STEPS               272
+                       (LB/FT**3)
+                      TEMPERATURE        2.13629E+03
+                       (DEG R)
+                      MASS FLOW RATE     1.50430E+02
+                       (LB/SEC)
+                      ENTROPY            3.75731E+00                              FUNCT EVALUATIONS                   367
+                       BTU/LB/DEG R)
+                      MACH NUMBER        4.10186E-01                              JACOBIAN EVALUATIONS                 41
+
+                      GAMMA              1.34077E+00
+
+                      ENTHALPY           8.61349E+02
+                       (BTU/LB)
+
+
+          HEAT LOSS(QDOT/MDOT) =    5.5604E+00  BTU/(LB-FT)
+
+
+                                                        CHEMICAL PROPERTIES
+
+
+ SPECIES    CONCENTRATION   MOLE FRACTION   NET SPECIES PRODUCTION  REACTION   RATE CONST   NET REACTION CONV RATE   NET RATE/POSI-
+            (MOLES/FT**3)                    RATE (MOLE/FT**3/SEC)   NUMBER    CGS  UNITS   (MOLE-FT**3/LB**2/SEC)    TIVE DIR RATE
+  H          1.33373E-06     3.97934E-04           3.11742E+00          1      1.7808E+11         2.53060E+03               0.99817
+  O2         1.09675E-03     3.27228E-01          -1.54279E+01          2      4.9063E+11         1.83897E+03               0.99920
+  OH         2.32342E-07     6.93222E-05           5.82015E-01          3      3.3041E+12         1.64353E+04               0.99910
+  O          1.75055E-07     5.22299E-05           4.12321E-01          4      3.9634E+12        -2.70930E-01               0.11513
+  H2         2.20165E-03     6.56890E-01          -3.01127E+01          5      2.2921E+15         7.66893E+03               0.99992
+  H2O        4.50066E-05     1.34283E-02           2.79898E+01          6      1.2165E+14         1.94797E-03               1.00000
+  HO2        4.10659E-06     1.22525E-03           1.32520E+00          7      6.9934E+14         2.69291E+00               1.00000
+  H2O2       2.37582E-06     7.08857E-04          -3.89399E-01          8      5.9635E+15         3.30447E+00               1.00000
+                                                                        9      2.5930E+08         2.28175E+01               1.00000
+                                                                       10      5.4361E+08         7.76504E+01               0.99461
+                                                                       11      1.2070E+05         2.83664E+00               1.00000
+                                                                       12      1.1170E+14         5.95460E+03               1.00000
+                                                                       13      3.2721E+13         2.28940E+02               1.00000
+                                                                       14      3.2721E+13         3.03861E+02               1.00000
+                                                                       15      1.8000E+12         2.95201E+02               0.99917
+                                                                       16      4.6616E+12         2.50385E+01               0.99974
+                                                                       17      5.2353E+13         2.11873E+02               0.99977
+                                                                       18      7.0442E+12         2.17248E+02               1.00000
+
+    MIXTURE MOLECULAR WEIGHT     12.10394     TOTAL ENERGY EXCHANGE RATE   -1.54413E+09       MASS FRACTION SUM    0.99999994
+                                                 (BTU-FT**3/LB**2/SEC)
+
+
+
+
+ __________________________________________________________________
+
+
+     COMPUTER TIME (CPU) REQUIRED: FOR THIS STEP -  0.000000E+00  S     UP TO THIS TIME -  0.781250E-02  S
+
+
+1
+                TIME   4.91242E-04  SEC              AREA   2.67253E+00  SQ FT              AXIAL POSITION   7.49344E-01  FT
+
+
+                    FLOW PROPERTIES                                             INTEGRATION INDICATORS
+
+                      PRESSURE           1.10643E+04                              STEPS FROM LAST PRINT            8
+                       (LB/FT**2)
+                      VELOCITY           1.40686E+03                              AVERAGE STEP SIZE             0.12220E-02
+                       (FT/SEC)
+                      DENSITY            4.00107E-02                              TOTAL NUMBER OF STEPS               280
+                       (LB/FT**3)
+                      TEMPERATURE        2.16864E+03
+                       (DEG R)
+                      MASS FLOW RATE     1.50430E+02
+                       (LB/SEC)
+                      ENTROPY            3.76685E+00                              FUNCT EVALUATIONS                   376
+                       BTU/LB/DEG R)
+                      MACH NUMBER        4.07535E-01                              JACOBIAN EVALUATIONS                 41
+
+                      GAMMA              1.33937E+00
+
+                      ENTHALPY           8.61354E+02
+                       (BTU/LB)
+
+
+          HEAT LOSS(QDOT/MDOT) =    5.6452E+00  BTU/(LB-FT)
+
+
+                                                        CHEMICAL PROPERTIES
+
+
+ SPECIES    CONCENTRATION   MOLE FRACTION   NET SPECIES PRODUCTION  REACTION   RATE CONST   NET REACTION CONV RATE   NET RATE/POSI-
+            (MOLES/FT**3)                    RATE (MOLE/FT**3/SEC)   NUMBER    CGS  UNITS   (MOLE-FT**3/LB**2/SEC)    TIVE DIR RATE
+  H          2.46875E-06     7.47725E-04           7.68003E+00          1      1.9803E+11         5.25008E+03               0.99672
+  O2         1.07678E-03     3.26131E-01          -2.89390E+01          2      5.2691E+11         3.73790E+03               0.99848
+  OH         4.45965E-07     1.35072E-04           1.44501E+00          3      3.4428E+12         3.31692E+04               0.99884
+  O          3.28490E-07     9.94916E-05           1.06063E+00          4      3.9909E+12         1.88744E+00               0.23765
+  H2         2.16160E-03     6.54697E-01          -5.91181E+01          5      2.2777E+15         1.42742E+04               0.99994
+  H2O        5.35082E-05     1.62063E-02           5.49108E+01          6      1.2029E+14         6.86842E-03               1.00000
+  HO2        4.35079E-06     1.31775E-03           1.17188E+00          7      6.8891E+14         9.26912E+00               1.00000
+  H2O2       2.19872E-06     6.65940E-04          -9.41086E-01          8      5.7869E+15         1.16913E+01               1.00000
+                                                                        9      2.9186E+08         2.74644E+01               1.00000
+                                                                       10      7.2492E+08         9.66203E+01               0.98433
+                                                                       11      1.5843E+05         3.68979E+00               0.99999
+                                                                       12      1.1305E+14         1.21502E+04               1.00000
+                                                                       13      3.2928E+13         4.70885E+02               1.00000
+                                                                       14      3.2928E+13         6.39283E+02               1.00000
+                                                                       15      1.8000E+12         3.40646E+02               0.99917
+                                                                       16      4.7150E+12         4.62495E+01               0.99977
+                                                                       17      5.2685E+13         3.80633E+02               0.99970
+                                                                       18      7.4569E+12         4.05006E+02               1.00000
+
+    MIXTURE MOLECULAR WEIGHT     12.11827     TOTAL ENERGY EXCHANGE RATE   -2.99688E+09       MASS FRACTION SUM    0.99999988
+                                                 (BTU-FT**3/LB**2/SEC)
+
+
+
+
+ __________________________________________________________________
+
+
+     COMPUTER TIME (CPU) REQUIRED: FOR THIS STEP -  0.000000E+00  S     UP TO THIS TIME -  0.781250E-02  S
+
+
+1
+                TIME   4.91359E-04  SEC              AREA   2.70350E+00  SQ FT              AXIAL POSITION   7.49508E-01  FT
+
+
+                    FLOW PROPERTIES                                             INTEGRATION INDICATORS
+
+                      PRESSURE           1.10644E+04                              STEPS FROM LAST PRINT            5
+                       (LB/FT**2)
+                      VELOCITY           1.40680E+03                              AVERAGE STEP SIZE             0.99562E-03
+                       (FT/SEC)
+                      DENSITY            3.95541E-02                              TOTAL NUMBER OF STEPS               285
+                       (LB/FT**3)
+                      TEMPERATURE        2.19583E+03
+                       (DEG R)
+                      MASS FLOW RATE     1.50430E+02
+                       (LB/SEC)
+                      ENTROPY            3.77482E+00                              FUNCT EVALUATIONS                   384
+                       BTU/LB/DEG R)
+                      MACH NUMBER        4.05359E-01                              JACOBIAN EVALUATIONS                 42
+
+                      GAMMA              1.33821E+00
+
+                      ENTHALPY           8.61357E+02
+                       (BTU/LB)
+
+
+          HEAT LOSS(QDOT/MDOT) =    5.7164E+00  BTU/(LB-FT)
+
+
+                                                        CHEMICAL PROPERTIES
+
+
+ SPECIES    CONCENTRATION   MOLE FRACTION   NET SPECIES PRODUCTION  REACTION   RATE CONST   NET REACTION CONV RATE   NET RATE/POSI-
+            (MOLES/FT**3)                    RATE (MOLE/FT**3/SEC)   NUMBER    CGS  UNITS   (MOLE-FT**3/LB**2/SEC)    TIVE DIR RATE
+  H          3.61184E-06     1.10764E-03           1.31191E+01          1      2.1600E+11         8.43056E+03               0.99537
+  O2         1.06041E-03     3.25195E-01          -4.27798E+01          2      5.5865E+11         5.95336E+03               0.99777
+  OH         6.60151E-07     2.02448E-04           2.44104E+00          3      3.5605E+12         5.11476E+04               0.99857
+  O          4.90113E-07     1.50303E-04           1.89215E+00          4      4.0135E+12         6.38465E+00               0.35653
+  H2         2.12849E-03     6.52743E-01          -8.93603E+01          5      2.2659E+15         2.09888E+04               0.99994
+  H2O        6.07280E-05     1.86234E-02           8.26875E+01          6      1.1918E+14         1.53092E-02               1.00000
+  HO2        4.41585E-06     1.35421E-03           7.53590E-01          7      6.8038E+14         1.99204E+01               1.00000
+  H2O2       2.03555E-06     6.24240E-04          -1.48415E+00          8      5.6445E+15         2.52416E+01               1.00000
+                                                                        9      3.2149E+08         3.09373E+01               1.00000
+                                                                       10      9.1724E+08         1.13441E+02               0.97133
+                                                                       11      1.9789E+05         4.57285E+00               0.99999
+                                                                       12      1.1417E+14         1.86430E+04               1.00000
+                                                                       13      3.3099E+13         7.33418E+02               1.00000
+                                                                       14      3.3099E+13         9.87866E+02               1.00000
+                                                                       15      1.8000E+12         3.59045E+02               0.99913
+                                                                       16      4.7591E+12         6.54594E+01               0.99977
+                                                                       17      5.2959E+13         5.40732E+02               0.99964
+                                                                       18      7.8122E+12         5.88040E+02               1.00000
+
+    MIXTURE MOLECULAR WEIGHT     12.13004     TOTAL ENERGY EXCHANGE RATE   -4.49953E+09       MASS FRACTION SUM    0.99999994
+                                                 (BTU-FT**3/LB**2/SEC)
+
+
+
+
+ __________________________________________________________________
+
+
+     COMPUTER TIME (CPU) REQUIRED: FOR THIS STEP -  0.000000E+00  S     UP TO THIS TIME -  0.781250E-02  S
+
+
+1
+0(GCKP)     END OF THIS CASE
+
+
+
+                                   TOTAL CPU TIME (INCLUDING I/O) REQUIRED =     0.007813 S
+
+
+
+0(GCKP)     READ DATA FOR NEXT CASE

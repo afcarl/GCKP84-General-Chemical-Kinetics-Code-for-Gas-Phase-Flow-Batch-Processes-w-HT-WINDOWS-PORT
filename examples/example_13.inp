@@ -1,0 +1,24 @@
+  ETHANE PYROLYSIS     DUNKER TEST  CASE A                 CASE 13               
+NEW                                                                             
+               C2H6     >2.0CH3                      1.2E+12   0.       59273.  
+   C2H6    +   CH3      >   C2H5    +   CH4          8.00E+8   0.        11950. 
+               C2H5     >   C2H4    +   H           3.00E+11   0.        34968. 
+   H       +   C2H6     >   C2H5    +   H2           1.3E+11   0.        8987.  
+   H       +   H        >   H2                      6.99E+13   0.        0.     
+                                                                                
+                                                                                
+TIME                                                                            
+ &PROB  EMAX=1.E-6, ATOLSP=1.E-08, RHOCON=T, PSTAT=T, TCON=T,                   
+  PRINT= 1.E-3, 1.E-2,   1.,  10.,   20.,                                       
+   NPRNTS=5, SENCAL=T,  ITPSZ=5,  &END                                          
+ &START   P=.4507,  T=923.,    &END                                             
+C2H6        1.0                                                                 
+END                                                                             
+INIT                                                                            
+C2H6      CH3       C2H5      CH4       C2H4      H         H2        END       
+SENSVAR                                                                         
+H2        H         C2H4      CH4       C2H5      CH3       C2H6                
+                                                                                
+REAC                                                                            
+ &SENRXN  SENSAJ=T, ALLRXN=T,    &END                                           
+FINIS                                                                           

@@ -1,0 +1,718 @@
+ Thermodynamic Data File Name:
+ thermo.inp                                                                     
+                                          
+ Case Input Data File Name:
+ example_13.inp                                                                 
+                                          
+ Transport Data File Name:
+ transport.inp                                                                  
+                                          
+1                                                        **  DATA CARDS  **
+
+                                     1         2         3         4         5         6         7         8
+                        CC  12345678901234567890123456789012345678901234567890123456789012345678901234567890
+
+
+                            NEW                                                                             
+                                           C2H6     >2.0CH3                      1.2E+12   0.       59273.  
+                               C2H6    +   CH3      >   C2H5    +   CH4          8.00E+8   0.        11950. 
+                                           C2H5     >   C2H4    +   H           3.00E+11   0.        34968. 
+                               H       +   C2H6     >   C2H5    +   H2           1.3E+11   0.        8987.  
+                               H       +   H        >   H2                      6.99E+13   0.        0.     
+                                                            -  BLANK CARD  -
+                                                            -  BLANK CARD  -
+                            TIME                                                                            
+                             &PROB  EMAX=1.E-6, ATOLSP=1.E-08, RHOCON=T, PSTAT=T, TCON=T,                   
+                              PRINT= 1.E-3, 1.E-2,   1.,  10.,   20.,                                       
+                               NPRNTS=5, SENCAL=T,  ITPSZ=5,  &END                                          
+                             &START   P=.4507,  T=923.,    &END                                             
+                            C2H6        1.0                                                                 
+                            END                                                                             
+                            INIT                                                                            
+                            C2H6      CH3       C2H5      CH4       C2H4      H         H2        END       
+                            SENSVAR                                                                         
+                            H2        H         C2H4      CH4       C2H5      CH3       C2H6                
+                                                            -  BLANK CARD  -
+                            REAC                                                                            
+                             &SENRXN  SENSAJ=T, ALLRXN=T,    &END                                           
+                            FINIS                                                                           
+1
+
+
+
+     *** THE FOLLOWING  2 ELEMENTS CONSIDERED FOR THIS PROBLEM ***
+
+          C     H   
+
+
+
+     *** THE FOLLOWING  7 REACTING SPECIES CONSIDERED FOR THIS PROBLEM ***
+
+          C2H6      CH3       C2H5      CH4       C2H4      H         H2      
+
+
+     *** NO INERT SPECIES CONSIDERED FOR THIS PROBLEM ***
+
+
+
+
+
+
+                    *** THERMODYNAMIC DATA AND MOLECULAR WEIGHT ***
+
+
+
+    C2H6                        MWT =      30.06940
+   0.47028847E+01   0.14042635E-01  -0.46469377E-05   0.67473738E-09  -0.35089312E-13  -0.12671988E+05  -0.45433950E+01
+   0.15395260E+01   0.15040841E-01   0.66847115E-05  -0.13382948E-07   0.48561398E-11  -0.11248766E+05   0.14107375E+02
+
+
+    CH3                         MWT =      15.03470
+   0.28400328E+01   0.60869087E-02  -0.21740339E-05   0.36042577E-09  -0.22725299E-13   0.16449812E+05   0.55056753E+01
+   0.34666350E+01   0.38301845E-02   0.10116802E-05  -0.18859236E-08   0.66803182E-12   0.16313104E+05   0.24172192E+01
+
+
+    C2H5                        MWT =      29.06150
+   0.42413378E+01   0.12744673E-01  -0.46956420E-05   0.79405016E-09  -0.50427547E-13   0.10884559E+05   0.10516100E+01
+   0.19826775E+01   0.14236782E-01   0.28734748E-05  -0.10576734E-07   0.45178323E-11   0.11803176E+05   0.14025417E+02
+
+
+    CH4                         MWT =      16.04260
+   0.21737833E+01   0.89936592E-02  -0.27855467E-05   0.39775117E-09  -0.19976425E-13  -0.10216566E+05   0.70773563E+01
+   0.29428148E+01   0.25153728E-02   0.79085839E-05  -0.47495483E-08   0.14244910E-12  -0.10056824E+05   0.45714579E+01
+
+
+    C2H4                        MWT =      28.05359
+   0.43843679E+01   0.96509494E-02  -0.31845530E-05   0.46213655E-09  -0.24069342E-13   0.41205039E+04  -0.23853559E+01
+   0.11654673E+01   0.13374992E-01   0.25754771E-05  -0.10187399E-07   0.43603341E-11   0.53428867E+04   0.15699718E+02
+
+
+    H                           MWT =       1.00797
+   0.25000000E+01   0.00000000E+00   0.00000000E+00   0.00000000E+00   0.00000000E+00   0.25474391E+05  -0.45989841E+00
+   0.25000000E+01   0.00000000E+00   0.00000000E+00   0.00000000E+00   0.00000000E+00   0.25474391E+05  -0.45989841E+00
+
+
+    H2                          MWT =       2.01580
+   0.30558124E+01   0.59740403E-03  -0.16747471E-08  -0.21247544E-10   0.25195486E-14  -0.86168475E+03  -0.17207073E+01
+   0.29432328E+01   0.34815508E-02  -0.77713821E-05   0.74997493E-08  -0.25203379E-11  -0.97695410E+03  -0.18186136E+01
+1                TIME-AREA VERSION
++                                                 GENERAL CHEMICAL KINETICS PROGRAM           NASA LEWIS RESEARCH CENTER
+
+
+                          NEW                                                                             
+
+
+     REACTION                               REACTION                                          REACTION RATE VARIABLES
+      NUMBER                                                                                  A                N         ACTIVATION
+                                                                                                                            ENERGY
+         1                         1*C2H6      >    2*CH3                                 1.20000E+12         0.0000       59273.00
+         2                         1*CH3       >    1*C2H5                                8.00000E+08         0.0000       11950.00
++                  1*C2H6      +
++                                                               +    1*CH4     
+         3                         1*C2H5      >    1*C2H4                                3.00000E+11         0.0000       34968.00
++                                                               +    1*H       
+         4                         1*C2H6      >    1*C2H5                                1.30000E+11         0.0000        8987.00
++                  1*H         +
++                                                               +    1*H2      
+         5                         2*H         >    1*H2                                  6.99000E+13         0.0000           0.00
+
+
+
+                                                   ALL THIRD BODY RATIOS ARE 1.0
+
+
+
+                                                        INTEGRATION CONTROLS
+
+               MAXIMUM RELATIVE ERROR   1.00000E-06                    SPECIES ABSOLUTE ERROR   1.00000E-08
+1                                                  ** ASSIGNED VARIABLE PROFILE **
+
+
+                                    THIS IS A V=0 PROBLEM - AN ASSIGNED VARIABLE IS NOT REQUIRED
+
+
+
+                                      THE VOLUME (DENSITY) WILL BE HELD CONSTANT FOR THIS CASE
+
+
+
+                                        THE TEMPERATURE WILL BE HELD CONSTANT FOR THIS CASE
+
+
+
+                                                  NUMBER OF REACTING SPECIES:    7
+
+                                                     NUMBER OF INERT SPECIES:    0
+
+
+                                        NUMBER OF SPECIES ODE'S REQUIRED FOR THIS CASE:    7
+
+                                          TOTAL NUMBER OF ODE'S REQUIRED FOR THIS CASE:    7
+
+
+
+
+                                             **** SENSITIVITY ANALYSIS REQUIRED ****
+
+
+
+                              *** SENSITIVITY OF FOLLOWING   7 VARIABLES WILL BE CALCULATED ***
+
+  H2        H         C2H4      CH4       C2H5      CH3       C2H6    
+
+
+
+                         *** SENSITIVITY WRT INITIAL VALUES OF FOLLOWING   7 VARIABLES REQUIRED ***
+
+  C2H6      CH3       C2H5      CH4       C2H4      H         H2      
+
+
+
+          *** CONSTANT TEMPERATURE CASE SO SENSITIVITY COEFFICIENTS WRT ONLY PREEXPONENTIAL FACTORS WILL BE CALCULATED ***
+
+
+                    ** SENSITIVITY COEFFICIENTS WRT RATE CONSTANT PARAMETERS REQUIRED FOR FOLLOWING    5  REACTIONS **
+
+    1    2    3    4    5
+1                                                    **  INITIAL CONDITIONS  **
+
+
+                TIME   0.00000E+00  SEC              AREA   0.00000E+00  SQ CM              AXIAL POSITION   0.00000E+00  CM
+
+
+                    FLOW PROPERTIES                                             INTEGRATION INDICATORS
+
+                      PRESSURE                0.45070                             STEPS FROM LAST PRINT            0
+                       (ATM)
+                      VELOCITY                0.00                                AVERAGE STEP SIZE             0.00000E+00
+                       (CM/SEC)
+                      DENSITY            1.78937E-04                              TOTAL NUMBER OF STEPS                 0
+                       (GM/CM**3)
+                      TEMPERATURE           923.00
+                       (DEG K)
+                      MASS FLOW RATE     0.00000E+00
+                       (GM/SEC)
+                      ENTROPY                 2.6117                              FUNCT EVALUATIONS                     0
+                       CAL/GM/DEG K)
+                      MACH NUMBER             0.0000                              JACOBIAN EVALUATIONS                  0
+
+                      GAMMA                   1.0762
+
+                      ENTHALPY          -2.27762E+02
+                       (CAL/GM)
+
+
+                                                        CHEMICAL PROPERTIES
+
+
+ SPECIES    CONCENTRATION   MOLE FRACTION   NET SPECIES PRODUCTION  REACTION   RATE CONST   NET REACTION CONV RATE   NET RATE/POSI-
+            (MOLES/CM**3)                    RATE (MOLE/CM**3/SEC)   NUMBER    CGS  UNITS   (MOLE-CM**3/GM**2/SEC)    TIVE DIR RATE
+  C2H6       5.95079E-06     1.00000E+00          -6.59139E-08          1      1.1076E-02         2.05863E+00               1.00000
+  CH3        0.00000E+00     0.00000E+00           1.31828E-07          2      1.1845E+06         0.00000E+00               0.00000
+  C2H5       0.00000E+00     0.00000E+00           0.00000E+00          3      1.5752E+03         0.00000E+00               0.00000
+  CH4        0.00000E+00     0.00000E+00           0.00000E+00          4      9.6824E+08         0.00000E+00               0.00000
+  C2H4       0.00000E+00     0.00000E+00           0.00000E+00          5      6.9900E+13         0.00000E+00               0.00000
+  H          0.00000E+00     0.00000E+00           0.00000E+00
+  H2         0.00000E+00     0.00000E+00           0.00000E+00
+
+    DERIVATIVES (CGS UNITS): T            0.00000E+00    RHO          0.00000E+00
+
+    MIXTURE MOLECULAR WEIGHT     30.06940     TOTAL ENERGY EXCHANGE RATE    1.84624E+05       MASS FRACTION SUM    1.00000000
+                                                 (CAL-CM**3/GM**2/SEC)
+
+
+
+                                   CPU TIME FOR INITIALIZATION OF GCKP86 =     0.000000 S
+
+
+1
+                TIME   1.00000E-03  SEC              AREA   0.00000E+00  SQ CM              AXIAL POSITION   0.00000E+00  CM
+
+
+                    FLOW PROPERTIES                                             INTEGRATION INDICATORS
+
+                      PRESSURE                0.45071                             STEPS FROM LAST PRINT            3
+                       (ATM)
+                      VELOCITY                0.00                                AVERAGE STEP SIZE             0.45822E-03
+                       (CM/SEC)
+                      DENSITY            1.78937E-04                              TOTAL NUMBER OF STEPS                 3
+                       (GM/CM**3)
+                      TEMPERATURE           923.00
+                       (DEG K)
+                      MASS FLOW RATE     0.00000E+00
+                       (GM/SEC)
+                      ENTROPY                 2.6117                              FUNCT EVALUATIONS                     7
+                       CAL/GM/DEG K)
+                      MACH NUMBER             0.0000                              JACOBIAN EVALUATIONS                  3
+
+                      GAMMA                   1.0762
+
+                      ENTHALPY          -2.27728E+02
+                       (CAL/GM)
+
+
+                                                        CHEMICAL PROPERTIES
+
+
+ SPECIES    CONCENTRATION   MOLE FRACTION   NET SPECIES PRODUCTION  REACTION   RATE CONST   NET REACTION CONV RATE   NET RATE/POSI-
+            (MOLES/CM**3)                    RATE (MOLE/CM**3/SEC)   NUMBER    CGS  UNITS   (MOLE-CM**3/GM**2/SEC)    TIVE DIR RATE
+  C2H6       5.95073E-06     9.99977E-01          -6.82277E-08          1      1.1076E-02         2.05860E+00               1.00000
+  CH3        1.30563E-10     2.19402E-05           1.30906E-07          2      1.1845E+06         2.87433E-02               1.00000
+  C2H5       1.00452E-12     1.68803E-07           7.32331E-10          3      1.5752E+03         4.94185E-02               1.00000
+  CH4        1.26257E-12     2.12165E-07           9.20313E-10          4      9.6824E+08         4.35474E-02               1.00000
+  C2H4       2.17195E-12     3.64981E-07           1.58230E-09          5      6.9900E+13         1.27848E-04               1.00000
+  H          2.41996E-13     4.06657E-08           1.79794E-10
+  H2         1.92193E-12     3.22967E-07           1.39841E-09
+
+    DERIVATIVES (CGS UNITS): T            0.00000E+00    RHO          0.00000E+00
+
+    MIXTURE MOLECULAR WEIGHT     30.06906     TOTAL ENERGY EXCHANGE RATE    1.86058E+05       MASS FRACTION SUM    1.00000000
+                                                 (CAL-CM**3/GM**2/SEC)
+
+
+
+
+ __________________________________________________________________
+
+
+     COMPUTER TIME (CPU) REQUIRED: FOR THIS STEP -  0.000000E+00  S     UP TO THIS TIME -  0.000000E+00  S
+
+
+1
+                                             ***** SENSITIVITY CALCULATIONS *****
+
+                                                     TIME =   1.00000D-03
+
+                         SENSITIVITY COEFFICIENTS OF  0-ORDER TIME DERIVATIVE OF DEPENDENT VARIABLES
+
+
+
+ **** SENSITIVITY TO INITIAL CONDITIONS ****
+
+          DZ(I)/DYZERO(J)*F(J)/Z(I), WHERE Z(I)= 0-ORDER TIME DERIV. OF Y(I)
+                                           F(J)= YZERO(J) FOR YZERO(J) NOT EQUAL TO 0
+                                               = 1.0E-4/(INITIAL MWT)  FOR YZERO(J) = 0
+
+
+ IVAR NAME    H2         H          C2H4       CH4        C2H5       CH3        C2H6    
+ 
+ C2H6        2.268D+00  1.267D+00  2.157D+00  1.990D+00  2.157D+00  9.904D-01  1.000D+00
+ CH3         3.245D+00  3.233D+00  3.255D+00  3.290D+00  3.257D+00  4.526D+00 -1.738D-06
+ C2H5        3.387D+02  3.395D+02  3.399D+02 -2.968D-04  5.002D+02 -1.475D-04 -1.085D-04
+ CH4         0.000D+00  0.000D+00  0.000D+00  4.713D+02  0.000D+00  0.000D+00  0.000D+00
+ C2H4        0.000D+00  0.000D+00  2.740D+02  0.000D+00  0.000D+00  0.000D+00  0.000D+00
+ H           4.963D+02  1.154D+03  2.973D+02 -4.342D-04  2.992D+02 -2.158D-04 -1.590D-04
+ H2          3.096D+02  0.000D+00  0.000D+00  0.000D+00  0.000D+00  0.000D+00  0.000D+00
+1
+ **** NORMALIZED SENSITIVITY COEFFICIENTS W.R.T THE PREEXPONENTIAL CONSTANTS ****
+
+          DZ(I)/DA(J)*A(J)/Z(I) WHERE Z(I)= 0-ORDER TIME DERIV. OF Y(I), I=COLUMN, J=ROW
+
+          **** NOTE: FOR CONSTANT TEMPERATURE PROBLEMS NORMALIZED SENSITIVITY COEFFICIENTS W.R.T. N(J) AND E(J) ARE 
+                     THE SAME AS THE NORMALIZED COEFFICIENTS W.R.T. A(J) ****
+
+ 
+ REAC NUM     H2         H          C2H4       CH4        C2H5       CH3        C2H6    
+ 
+      1      9.868D-01  9.830D-01  9.898D-01  1.000D+00  9.898D-01  1.000D+00 -1.160D-05
+      2      9.774D-01  9.736D-01  9.803D-01  9.904D-01  9.803D-01 -9.578D-03 -5.233D-07
+      3      7.852D-01  7.821D-01  7.875D-01 -6.882D-07 -2.125D-01 -3.420D-07 -2.516D-07
+      4      3.039D-01 -6.892D-01  1.872D-01 -2.734D-07  1.872D-01 -1.359D-07 -9.995D-08
+      5     -1.365D-02 -1.760D-02 -1.060D-02  1.549D-08 -1.061D-02  7.696D-09  5.661D-09
+1
+                TIME   1.00000E-02  SEC              AREA   0.00000E+00  SQ CM              AXIAL POSITION   0.00000E+00  CM
+
+
+                    FLOW PROPERTIES                                             INTEGRATION INDICATORS
+
+                      PRESSURE                0.45076                             STEPS FROM LAST PRINT            5
+                       (ATM)
+                      VELOCITY                0.00                                AVERAGE STEP SIZE             0.17608E-02
+                       (CM/SEC)
+                      DENSITY            1.78937E-04                              TOTAL NUMBER OF STEPS                 8
+                       (GM/CM**3)
+                      TEMPERATURE           923.00
+                       (DEG K)
+                      MASS FLOW RATE     0.00000E+00
+                       (GM/SEC)
+                      ENTROPY                 2.6120                              FUNCT EVALUATIONS                    13
+                       CAL/GM/DEG K)
+                      MACH NUMBER             0.0000                              JACOBIAN EVALUATIONS                  3
+
+                      GAMMA                   1.0762
+
+                      ENTHALPY          -2.27400E+02
+                       (CAL/GM)
+
+
+                                                        CHEMICAL PROPERTIES
+
+
+ SPECIES    CONCENTRATION   MOLE FRACTION   NET SPECIES PRODUCTION  REACTION   RATE CONST   NET REACTION CONV RATE   NET RATE/POSI-
+            (MOLES/CM**3)                    RATE (MOLE/CM**3/SEC)   NUMBER    CGS  UNITS   (MOLE-CM**3/GM**2/SEC)    TIVE DIR RATE
+  C2H6       5.94994E-06     9.99718E-01          -1.09323E-07          1      1.1076E-02         2.05833E+00               1.00000
+  CH3        1.27120E-09     2.13590E-04           1.22850E-07          2      1.1845E+06         2.79816E-01               1.00000
+  C2H5       2.56111E-11     4.30321E-06           3.07627E-09          3      1.5752E+03         1.25996E+00               1.00000
+  CH4        4.69835E-11     7.89424E-06           8.95927E-09          4      9.6824E+08         1.07622E+00               1.00000
+  C2H4       1.71962E-10     2.88933E-05           4.03419E-08          5      6.9900E+13         7.81066E-02               1.00000
+  H          5.98143E-12     1.00501E-06           8.81302E-10
+  H2         1.58285E-10     2.65953E-05           3.69597E-08
+
+    DERIVATIVES (CGS UNITS): T            0.00000E+00    RHO          0.00000E+00
+
+    MIXTURE MOLECULAR WEIGHT     30.06524     TOTAL ENERGY EXCHANGE RATE    2.16696E+05       MASS FRACTION SUM    1.00000012
+                                                 (CAL-CM**3/GM**2/SEC)
+
+
+
+
+ __________________________________________________________________
+
+
+     COMPUTER TIME (CPU) REQUIRED: FOR THIS STEP -  0.000000E+00  S     UP TO THIS TIME -  0.000000E+00  S
+
+
+1
+                                             ***** SENSITIVITY CALCULATIONS *****
+
+                                                     TIME =   1.00000D-02
+
+                         SENSITIVITY COEFFICIENTS OF  0-ORDER TIME DERIVATIVE OF DEPENDENT VARIABLES
+
+
+
+ **** SENSITIVITY TO INITIAL CONDITIONS ****
+
+          DZ(I)/DYZERO(J)*F(J)/Z(I), WHERE Z(I)= 0-ORDER TIME DERIV. OF Y(I)
+                                           F(J)= YZERO(J) FOR YZERO(J) NOT EQUAL TO 0
+                                               = 1.0E-4/(INITIAL MWT)  FOR YZERO(J) = 0
+
+
+ IVAR NAME    H2         H          C2H4       CH4        C2H5       CH3        C2H6    
+ 
+ C2H6        2.166D+00  1.105D+00  2.127D+00  1.974D+00  2.086D+00  9.640D-01  1.000D+00
+ CH3         1.054D+00  5.132D-01  1.055D+00  8.609D-01  5.590D-01  4.363D-01 -3.289D-05
+ C2H5        3.107D+01  4.297D+00  3.005D+01 -9.562D-04  4.755D+00 -4.708D-04 -7.889D-04
+ CH4         0.000D+00  0.000D+00  0.000D+00  1.267D+01  0.000D+00  0.000D+00  0.000D+00
+ C2H4        0.000D+00  0.000D+00  3.461D+00  0.000D+00  0.000D+00  0.000D+00  0.000D+00
+ H           3.382D+01  4.941D+00  2.914D+01 -1.100D-03  4.547D+00 -5.409D-04 -8.618D-04
+ H2          3.760D+00  0.000D+00  0.000D+00  0.000D+00  0.000D+00  0.000D+00  0.000D+00
+1
+ **** NORMALIZED SENSITIVITY COEFFICIENTS W.R.T THE PREEXPONENTIAL CONSTANTS ****
+
+          DZ(I)/DA(J)*A(J)/Z(I) WHERE Z(I)= 0-ORDER TIME DERIV. OF Y(I), I=COLUMN, J=ROW
+
+          **** NOTE: FOR CONSTANT TEMPERATURE PROBLEMS NORMALIZED SENSITIVITY COEFFICIENTS W.R.T. N(J) AND E(J) ARE 
+                     THE SAME AS THE NORMALIZED COEFFICIENTS W.R.T. A(J) ****
+
+ 
+ REAC NUM     H2         H          C2H4       CH4        C2H5       CH3        C2H6    
+ 
+      1      8.493D-01  7.151D-01  8.718D-01  9.999D-01  7.927D-01  9.999D-01 -1.394D-04
+      2      8.319D-01  6.955D-01  8.536D-01  9.745D-01  7.707D-01 -3.603D-02 -2.799D-05
+      3      5.390D-01  3.629D-01  5.475D-01 -9.763D-06 -6.042D-01 -4.726D-06 -1.322D-05
+      4      4.846D-01 -3.052D-01  4.019D-01 -7.978D-06  5.223D-01 -3.770D-06 -1.386D-05
+      5     -1.681D-01 -3.045D-01 -1.434D-01  2.560D-06 -2.226D-01  1.191D-06  5.103D-06
+1
+                TIME   1.00000E+00  SEC              AREA   0.00000E+00  SQ CM              AXIAL POSITION   0.00000E+00  CM
+
+
+                    FLOW PROPERTIES                                             INTEGRATION INDICATORS
+
+                      PRESSURE                0.47141                             STEPS FROM LAST PRINT           47
+                       (ATM)
+                      VELOCITY                0.00                                AVERAGE STEP SIZE             0.21730E-01
+                       (CM/SEC)
+                      DENSITY            1.78937E-04                              TOTAL NUMBER OF STEPS                55
+                       (GM/CM**3)
+                      TEMPERATURE           923.00
+                       (DEG K)
+                      MASS FLOW RATE     0.00000E+00
+                       (GM/SEC)
+                      ENTROPY                 2.6901                              FUNCT EVALUATIONS                    78
+                       CAL/GM/DEG K)
+                      MACH NUMBER             0.0000                              JACOBIAN EVALUATIONS                 14
+
+                      GAMMA                   1.0800
+
+                      ENTHALPY          -1.77978E+02
+                       (CAL/GM)
+
+
+                                                        CHEMICAL PROPERTIES
+
+
+ SPECIES    CONCENTRATION   MOLE FRACTION   NET SPECIES PRODUCTION  REACTION   RATE CONST   NET REACTION CONV RATE   NET RATE/POSI-
+            (MOLES/CM**3)                    RATE (MOLE/CM**3/SEC)   NUMBER    CGS  UNITS   (MOLE-CM**3/GM**2/SEC)    TIVE DIR RATE
+  C2H6       5.62244E-06     9.03319E-01          -3.49123E-07          1      1.1076E-02         1.94503E+00               1.00000
+  CH3        1.86829E-08     3.00166E-03           1.26597E-10          2      1.1845E+06         3.88612E+00               1.00000
+  C2H5       1.82113E-10     2.92589E-05          -1.35251E-11          3      1.5752E+03         8.95923E+00               1.00000
+  CH4        1.09739E-07     1.76310E-02           1.24427E-07          4      9.6824E+08         5.07269E+00               1.00000
+  C2H4       2.63960E-07     4.24086E-02           2.86860E-07          5      6.9900E+13         1.94328E+00               1.00000
+  H          2.98352E-11     4.79342E-06          -8.92262E-13
+  H2         2.09167E-07     3.36054E-02           2.24640E-07
+
+    DERIVATIVES (CGS UNITS): T            0.00000E+00    RHO          0.00000E+00
+
+    MIXTURE MOLECULAR WEIGHT     28.74856     TOTAL ENERGY EXCHANGE RATE    2.61097E+05       MASS FRACTION SUM    1.00000000
+                                                 (CAL-CM**3/GM**2/SEC)
+
+
+
+
+ __________________________________________________________________
+
+
+     COMPUTER TIME (CPU) REQUIRED: FOR THIS STEP -  0.000000E+00  S     UP TO THIS TIME -  0.000000E+00  S
+
+
+1
+                                             ***** SENSITIVITY CALCULATIONS *****
+
+                                                     TIME =   1.00000D+00
+
+                         SENSITIVITY COEFFICIENTS OF  0-ORDER TIME DERIVATIVE OF DEPENDENT VARIABLES
+
+
+
+ **** SENSITIVITY TO INITIAL CONDITIONS ****
+
+          DZ(I)/DYZERO(J)*F(J)/Z(I), WHERE Z(I)= 0-ORDER TIME DERIV. OF Y(I)
+                                           F(J)= YZERO(J) FOR YZERO(J) NOT EQUAL TO 0
+                                               = 1.0E-4/(INITIAL MWT)  FOR YZERO(J) = 0
+
+
+ IVAR NAME    H2         H          C2H4       CH4        C2H5       CH3        C2H6    
+ 
+ C2H6        1.470D+00  4.941D-01  1.405D+00  1.157D+00  1.264D+00  7.052D-03  9.811D-01
+ CH3         4.913D-03 -9.990D-05  4.970D-03  5.176D-03 -2.740D-04  3.093D-05 -2.309D-04
+ C2H5        2.453D-02 -4.232D-04  2.036D-02 -9.863D-04 -1.082D-03 -6.013D-06 -8.402D-04
+ CH4         0.000D+00  0.000D+00  0.000D+00  5.423D-03  0.000D+00  0.000D+00  0.000D+00
+ C2H4        0.000D+00  0.000D+00  2.254D-03  0.000D+00  0.000D+00  0.000D+00  0.000D+00
+ H           2.642D-02 -4.579D-04  1.959D-02 -1.068D-03 -1.171D-03 -6.509D-06 -9.093D-04
+ H2          2.845D-03  0.000D+00  0.000D+00  0.000D+00  0.000D+00  0.000D+00  0.000D+00
+1
+ **** NORMALIZED SENSITIVITY COEFFICIENTS W.R.T THE PREEXPONENTIAL CONSTANTS ****
+
+          DZ(I)/DA(J)*A(J)/Z(I) WHERE Z(I)= 0-ORDER TIME DERIV. OF Y(I), I=COLUMN, J=ROW
+
+          **** NOTE: FOR CONSTANT TEMPERATURE PROBLEMS NORMALIZED SENSITIVITY COEFFICIENTS W.R.T. N(J) AND E(J) ARE 
+                     THE SAME AS THE NORMALIZED COEFFICIENTS W.R.T. A(J) ****
+
+ 
+ REAC NUM     H2         H          C2H4       CH4        C2H5       CH3        C2H6    
+ 
+      1      6.018D-01  4.784D-01  6.797D-01  9.768D-01  6.615D-01  9.999D-01 -4.313D-02
+      2      1.110D-01  7.302D-04  1.221D-01  1.642D-01 -2.173D-03 -9.929D-01 -5.684D-03
+      3      1.828D-03 -8.021D-05  1.782D-03 -5.682D-05 -1.000D+00 -3.468D-07 -5.070D-05
+      4      7.186D-01 -1.321D-02  5.663D-01 -1.424D-02  5.323D-01 -8.700D-05 -2.646D-02
+      5     -3.591D-01 -4.934D-01 -2.830D-01  7.116D-03 -2.661D-01  4.347D-05  1.323D-02
+1
+                TIME   1.00000E+01  SEC              AREA   0.00000E+00  SQ CM              AXIAL POSITION   0.00000E+00  CM
+
+
+                    FLOW PROPERTIES                                             INTEGRATION INDICATORS
+
+                      PRESSURE                0.61305                             STEPS FROM LAST PRINT           23
+                       (ATM)
+                      VELOCITY                0.00                                AVERAGE STEP SIZE             0.41087E+00
+                       (CM/SEC)
+                      DENSITY            1.78937E-04                              TOTAL NUMBER OF STEPS                78
+                       (GM/CM**3)
+                      TEMPERATURE           923.00
+                       (DEG K)
+                      MASS FLOW RATE     0.00000E+00
+                       (GM/SEC)
+                      ENTROPY                 3.1058                              FUNCT EVALUATIONS                   106
+                       CAL/GM/DEG K)
+                      MACH NUMBER             0.0000                              JACOBIAN EVALUATIONS                 18
+
+                      GAMMA                   1.1063
+
+                      ENTHALPY           1.36312E+02
+                       (CAL/GM)
+
+
+                                                        CHEMICAL PROPERTIES
+
+
+ SPECIES    CONCENTRATION   MOLE FRACTION   NET SPECIES PRODUCTION  REACTION   RATE CONST   NET REACTION CONV RATE   NET RATE/POSI-
+            (MOLES/CM**3)                    RATE (MOLE/CM**3/SEC)   NUMBER    CGS  UNITS   (MOLE-CM**3/GM**2/SEC)    TIVE DIR RATE
+  C2H6       3.31884E-06     4.10017E-01          -1.83980E-07          1      1.1076E-02         1.14812E+00               1.00000
+  CH3        1.87019E-08     2.31048E-03           1.50076E-15          2      1.1845E+06         2.29625E+00               1.00000
+  C2H5       9.34658E-11     1.15470E-05          -6.42734E-12          3      1.5752E+03         4.59814E+00               1.00000
+  CH4        9.76638E-07     1.20656E-01           7.35221E-08          4      9.6824E+08         2.30169E+00               1.00000
+  C2H4       2.13419E-06     2.63663E-01           1.47225E-07          5      6.9900E+13         1.14823E+00               1.00000
+  H          2.29338E-11     2.83330E-06          -6.97810E-13
+  H2         1.64591E-06     2.03339E-01           1.10461E-07
+
+    DERIVATIVES (CGS UNITS): T            0.00000E+00    RHO          0.00000E+00
+
+    MIXTURE MOLECULAR WEIGHT     22.10626     TOTAL ENERGY EXCHANGE RATE    1.31535E+05       MASS FRACTION SUM    0.99999988
+                                                 (CAL-CM**3/GM**2/SEC)
+
+
+
+
+ __________________________________________________________________
+
+
+     COMPUTER TIME (CPU) REQUIRED: FOR THIS STEP -  0.000000E+00  S     UP TO THIS TIME -  0.000000E+00  S
+
+
+1
+                                             ***** SENSITIVITY CALCULATIONS *****
+
+                                                     TIME =   1.00000D+01
+
+                         SENSITIVITY COEFFICIENTS OF  0-ORDER TIME DERIVATIVE OF DEPENDENT VARIABLES
+
+
+
+ **** SENSITIVITY TO INITIAL CONDITIONS ****
+
+          DZ(I)/DYZERO(J)*F(J)/Z(I), WHERE Z(I)= 0-ORDER TIME DERIV. OF Y(I)
+                                           F(J)= YZERO(J) FOR YZERO(J) NOT EQUAL TO 0
+                                               = 1.0E-4/(INITIAL MWT)  FOR YZERO(J) = 0
+
+
+ IVAR NAME    H2         H          C2H4       CH4        C2H5       CH3        C2H6    
+ 
+ C2H6        1.284D+00  4.377D-01  1.209D+00  9.552D-01  1.094D+00 -1.371D-07  8.753D-01
+ CH3         3.664D-04 -1.031D-04  3.713D-04  3.879D-04 -2.578D-04 -8.569D-10 -2.062D-04
+ C2H5        2.177D-03 -3.748D-04  1.632D-03 -8.175D-04 -9.373D-04  1.167D-10 -7.496D-04
+ CH4         0.000D+00  0.000D+00  0.000D+00  6.093D-04  0.000D+00  0.000D+00  0.000D+00
+ C2H4        0.000D+00  0.000D+00  2.788D-04  0.000D+00  0.000D+00  0.000D+00  0.000D+00
+ H           2.342D-03 -4.056D-04  1.464D-03 -8.848D-04 -1.014D-03  1.264D-10 -8.112D-04
+ H2          3.616D-04  0.000D+00  0.000D+00  0.000D+00  0.000D+00  0.000D+00  0.000D+00
+1
+ **** NORMALIZED SENSITIVITY COEFFICIENTS W.R.T THE PREEXPONENTIAL CONSTANTS ****
+
+          DZ(I)/DA(J)*A(J)/Z(I) WHERE Z(I)= 0-ORDER TIME DERIV. OF Y(I), I=COLUMN, J=ROW
+
+          **** NOTE: FOR CONSTANT TEMPERATURE PROBLEMS NORMALIZED SENSITIVITY COEFFICIENTS W.R.T. N(J) AND E(J) ARE 
+                     THE SAME AS THE NORMALIZED COEFFICIENTS W.R.T. A(J) ****
+
+ 
+ REAC NUM     H2         H          C2H4       CH4        C2H5       CH3        C2H6    
+ 
+      1      3.873D-01  2.852D-01  4.812D-01  7.977D-01  2.126D-01  1.000D+00 -4.296D-01
+      2      7.809D-03 -2.556D-03  9.176D-03  1.378D-02 -6.391D-03 -1.000D+00 -5.111D-03
+      3      1.237D-04 -6.121D-05  1.072D-04 -4.406D-05 -1.000D+00  5.846D-12 -3.430D-05
+      4      5.518D-01 -1.196D-01  3.988D-01 -1.172D-01  2.016D-01  1.439D-08 -2.392D-01
+      5     -2.759D-01 -4.402D-01 -1.994D-01  5.858D-02 -1.008D-01 -7.193D-09  1.196D-01
+1
+                TIME   2.00000E+01  SEC              AREA   0.00000E+00  SQ CM              AXIAL POSITION   0.00000E+00  CM
+
+
+                    FLOW PROPERTIES                                             INTEGRATION INDICATORS
+
+                      PRESSURE                0.69448                             STEPS FROM LAST PRINT            9
+                       (ATM)
+                      VELOCITY                0.00                                AVERAGE STEP SIZE             0.10758E+01
+                       (CM/SEC)
+                      DENSITY            1.78937E-04                              TOTAL NUMBER OF STEPS                87
+                       (GM/CM**3)
+                      TEMPERATURE           923.00
+                       (DEG K)
+                      MASS FLOW RATE     0.00000E+00
+                       (GM/SEC)
+                      ENTROPY                 3.3127                              FUNCT EVALUATIONS                   116
+                       CAL/GM/DEG K)
+                      MACH NUMBER             0.0000                              JACOBIAN EVALUATIONS                 19
+
+                      GAMMA                   1.1220
+
+                      ENTHALPY           3.13525E+02
+                       (CAL/GM)
+
+
+                                                        CHEMICAL PROPERTIES
+
+
+ SPECIES    CONCENTRATION   MOLE FRACTION   NET SPECIES PRODUCTION  REACTION   RATE CONST   NET REACTION CONV RATE   NET RATE/POSI-
+            (MOLES/CM**3)                    RATE (MOLE/CM**3/SEC)   NUMBER    CGS  UNITS   (MOLE-CM**3/GM**2/SEC)    TIVE DIR RATE
+  C2H6       1.95920E-06     2.13663E-01          -9.85286E-08          1      1.1076E-02         6.77767E-01               1.00000
+  CH3        1.87019E-08     2.03957E-03           1.02639E-15          2      1.1845E+06         1.35553E+00               1.00000
+  C2H5       4.87760E-11     5.31934E-06          -2.96084E-12          3      1.5752E+03         2.39958E+00               1.00000
+  CH4        1.54566E-06     1.68564E-01           4.34020E-08          4      9.6824E+08         1.04395E+00               1.00000
+  C2H4       3.20937E-06     3.50003E-01           7.68306E-08          5      6.9900E+13         6.77820E-01               1.00000
+  H          1.76205E-11     1.92163E-06          -4.76667E-13
+  H2         2.43656E-06     2.65723E-01           5.51284E-08
+
+    DERIVATIVES (CGS UNITS): T            0.00000E+00    RHO          0.00000E+00
+
+    MIXTURE MOLECULAR WEIGHT     19.51424     TOTAL ENERGY EXCHANGE RATE    6.74044E+04       MASS FRACTION SUM    0.99999982
+                                                 (CAL-CM**3/GM**2/SEC)
+
+
+
+
+ __________________________________________________________________
+
+
+     COMPUTER TIME (CPU) REQUIRED: FOR THIS STEP -  0.000000E+00  S     UP TO THIS TIME -  0.000000E+00  S
+
+
+1
+                                             ***** SENSITIVITY CALCULATIONS *****
+
+                                                     TIME =   2.00000D+01
+
+                         SENSITIVITY COEFFICIENTS OF  0-ORDER TIME DERIVATIVE OF DEPENDENT VARIABLES
+
+
+
+ **** SENSITIVITY TO INITIAL CONDITIONS ****
+
+          DZ(I)/DYZERO(J)*F(J)/Z(I), WHERE Z(I)= 0-ORDER TIME DERIV. OF Y(I)
+                                           F(J)= YZERO(J) FOR YZERO(J) NOT EQUAL TO 0
+                                               = 1.0E-4/(INITIAL MWT)  FOR YZERO(J) = 0
+
+
+ IVAR NAME    H2         H          C2H4       CH4        C2H5       CH3        C2H6    
+ 
+ C2H6        1.226D+00  3.970D-01  1.150D+00  9.112D-01  9.668D-01  1.400D-07  7.941D-01
+ CH3         1.631D-04 -9.354D-05  1.654D-04  1.726D-04 -2.278D-04  1.073D-12 -1.871D-04
+ C2H5        1.164D-03 -3.400D-04  7.884D-04 -7.801D-04 -8.280D-04 -1.199D-10 -6.800D-04
+ CH4         0.000D+00  0.000D+00  0.000D+00  3.850D-04  0.000D+00  0.000D+00  0.000D+00
+ C2H4        0.000D+00  0.000D+00  1.854D-04  0.000D+00  0.000D+00  0.000D+00  0.000D+00
+ H           1.249D-03 -3.680D-04  6.526D-04 -8.442D-04 -8.960D-04 -1.297D-10 -7.359D-04
+ H2          2.442D-04  0.000D+00  0.000D+00  0.000D+00  0.000D+00  0.000D+00  0.000D+00
+1
+ **** NORMALIZED SENSITIVITY COEFFICIENTS W.R.T THE PREEXPONENTIAL CONSTANTS ****
+
+          DZ(I)/DA(J)*A(J)/Z(I) WHERE Z(I)= 0-ORDER TIME DERIV. OF Y(I), I=COLUMN, J=ROW
+
+          **** NOTE: FOR CONSTANT TEMPERATURE PROBLEMS NORMALIZED SENSITIVITY COEFFICIENTS W.R.T. N(J) AND E(J) ARE 
+                     THE SAME AS THE NORMALIZED COEFFICIENTS W.R.T. A(J) ****
+
+ 
+ REAC NUM     H2         H          C2H4       CH4        C2H5       CH3        C2H6    
+ 
+      1      2.267D-01  1.001D-01  3.287D-01  6.504D-01 -1.914D-01  1.000D+00 -7.998D-01
+      2      3.181D-03 -2.318D-03  4.080D-03  6.913D-03 -5.646D-03 -1.000D+00 -4.637D-03
+      3      5.367D-05 -4.635D-05  3.906D-05 -3.855D-05 -1.000D+00 -4.569D-12 -2.389D-05
+      4      4.451D-01 -2.013D-01  2.918D-01 -1.913D-01 -5.508D-02 -6.084D-08 -4.026D-01
+      5     -2.225D-01 -3.994D-01 -1.459D-01  9.566D-02  2.753D-02  3.042D-08  2.013D-01
+1
+0(GCKP)     END OF THIS CASE
+
+
+
+
+               WORK REQUIRED BY SENSITIVITY ROUTINE: 
+
+                    NO. STEPS =              87
+                    NO. FUNC. EVAL. =        87
+                    NO. JAC. EVAL. =         87
+                    TOTAL REAL    SPACE USED =        696
+                    TOTAL INTEGER SPACE USED =         54
+
+
+
+                                   TOTAL CPU TIME (INCLUDING I/O) REQUIRED =     0.011719 S
+
+
+
+0(GCKP)     READ DATA FOR NEXT CASE

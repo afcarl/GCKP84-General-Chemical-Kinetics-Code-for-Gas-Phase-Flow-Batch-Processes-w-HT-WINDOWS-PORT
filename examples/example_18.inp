@@ -1,0 +1,132 @@
+  BENZENE - OXYGEN - AR SHOCK IGNITION                     CASE 18               
+NEW                                                                             
+   C6H6    +   O2       =   C6H5    +   HO2         6.31E+13  0.         60000. 
+               C6H6     =   C6H5    +   H           5.00E+15  0.         108000.
+   C6H6    +   H        =   C6H5    +   H2           2.5E+14  0.         16000. 
+   C6H6    +   O        =   C6H5    +   OH         2.783E+13   0.        4910.  
+   C6H6    +   OH       =   C6H5    +   H2O        2.132E+13   0.        4580.  
+   M       +   C4H3     =   C4H2    +   H           3.31E+51   -10.      63000. 
+               C6H5O    =   C5H5    +   CO          2.51E+11   0.        43900. 
+   C6H5    +   O2       =   C6H5O   +   O            4.5E+12   0.        15000. 
+               C6H5     =   C4H3    +   C2H2        1.58E+15   0.        82000. 
+               C6H5OH   =   C6H5O   +   H            6.0E+13   0.        88000. 
+   C5H6    +   O        =   C5H5O   +   H            5.0E+12   0.        10000. 
+   C6H5OH  +   OH       =   C6H5O   +   H2O          8.0E+12   0.        5000.  
+   C5H5    +   C6H6     =   C6H5    +   C5H6         2.0E+11   0.        10000. 
+   M       +   C5H5O    =   C4H5    +   CO         7.586E+13   0.        15000. 
+   C5H5    +   O2       =   C5H5O   +   O            2.0E+12   0.        20000. 
+               C4H5     =   C2H3    +   C2H2         1.4E+13   0.        32900. 
+   C4H2    +   O        =   C2HO    +   C2H          1.0E+13   0.         0.    
+   C4H2    +   OH       =   HCO     +   C3H2         3.0E+13    0.       0.     
+   C4H2    +   O        =   CO      +   C3H2         1.2E+12    0.       0.     
+   M       +   C2H4     =   C2H2    +   H2         9.333E+16    0.       77200. 
+   C2H4    +   OH       =   C2H3    +   H2O        4.786E+12   0.         1230. 
+   C2H4    +   O        =   CH3     +   HCO        3.311E+12   0.         1130. 
+   C2H4    +   O        =   CH2O    +   CH2        2.512E+13   0.         5000. 
+   C2H4    +   OH       =   CH3     +   CH2O       1.995E+12   0.         960.  
+   M       +   C2H3     =   C2H2    +   H          7.943E+14   0.        31500. 
+   C2H3    +   O2       =   C2H2    +   HO2         1.58E+13   0.        10000. 
+   C2H3    +   H        =   C2H2    +   H2           6.0E+12  0.            0.  
+   C2H3    +   OH       =   C2H2    +   H2O        5.012E+12   0.        0.     
+   C2H3    +   CH2      =   C2H2    +   CH3        3.020E+13    0.        0.    
+   C2H3    +   C2H      =2.0C2H2                   3.020E+13   0.         0.    
+   C2H3    +   O        =   C2H2O   +   H            3.3E+13   0.        0.     
+   CH2     +   CH2      =   C2H2    +   H2           4.0E+13   0.         0.    
+   CH2     +   CH2      =   C2H3    +   H          5.012E+12   0.        0.     
+   CH2     +   OH       =   CH      +   H2O         2.51E+11   .67       25700. 
+   CH2     +   O        =   CH      +   OH           2.0E+11   .68       25000. 
+   CH2     +   O2       =   CO2     +2.0H           1.59E+12   0.        1000.  
+   M       +   C2H2     =   C2H     +   H          4.169E+16   0.        107000.
+   C2H2    +   C2H2     =   C4H3    +   H            2.0E+12   0.        45900. 
+   C2H2    +   O2       =   C2HO    +   OH          2.00E+08   1.5       30100. 
+   C2H2    +   O        =   C2H     +   OH          3.16E+15   -.6       15000. 
+   C2H2    +   O        =   CH2     +   CO         2.188E+10   1.0        2580. 
+   C2H2    +   O        =   C2HO    +   H           3.548E+4   2.7        1390. 
+   C2H2    +   OH       =   C2H     +   H2O        6.310E+12    0.        7000. 
+   C2H2    +   OH       =   C2H2O   +   H            3.2E+11   0.         200.  
+   C2H2    +   C2H      =   C4H2    +   H            3.0E+13   0.        0.     
+   C2H2    +   CH2      =   C3H3    +   H            1.0E+12    0.       0.     
+   C3H3    +   H        =   C3H4    +   M            2.0E+13   0.        0.     
+   C2H2O   +   OH       =   CH2O    +   HCO          2.8E+13    0.        0.    
+   C2H2O   +   OH       =   C2HO    +   H2O          7.5E+12    0.       3000.  
+   C2H2O   +   H        =   CH3     +   CO          1.13E+13   0.        3428.  
+   C2H2O   +   H        =   C2HO    +   H2           7.5E+13   0.        8000.  
+   C2H2O   +   O        =   C2HO    +   OH           5.0E+13    0.       8000.  
+   C2H2O   +   O        =   CH2O    +   CO           2.0E+13   0.         0.    
+   M       +   C2H2O    =   CH2     +   CO           2.0E+16   0.        60000. 
+   C2HO    +   O2       =2.0CO      +   OH          1.46E+12   0.        2500.  
+   C2HO    +   O        =2.0CO      +   H          1.202E+12    0.        0.    
+   C2HO    +   OH       =2.0HCO                      1.0E+13   0.        0.     
+   C2HO    +   H        =   CH2     +   CO           5.0E+13    0.       0.     
+   C2HO    +   CH2      =   C2H3    +   CO           3.0E+13    0.        0.    
+   C2HO    +   CH2      =   CH2O    +   C2H          1.0E+13   0.        2000.  
+            2.0C2HO     =   C2H2    +2.0CO           1.0E+13    0.        0.    
+   C2H     +   OH       =   C2HO    +   H            2.0E+13    0.        0.    
+   C2H     +   O2       =   C2HO    +   O           5.00E+13    0.       1500.  
+   C2H     +   O        =   CO      +   CH         5.012E+13   0.         0.    
+   C2H     +   H2       =   C2H2    +   H            4.09E+6  2.39       864.   
+   M       +   CH4      =   CH3     +   H          1.995E+17   0.        88000. 
+   CH4     +   O2       =   CH3     +   HO2        7.943E+13   0.        56000. 
+   CH4     +   H        =   CH3     +   H2          1.26E+14   0.        11900. 
+   OH      +   CH4      =   CH3     +   H2O          2.5E+13  0.         5010.  
+   O       +   CH4      =   CH3     +   OH           1.9E+14   0.       11720.  
+   M       +   CH3O     =   CH2O    +   H          5.012E+13   0.        21000. 
+   CH3O    +   O2       =   CH2O    +   HO2          1.0E+12   0.         6000. 
+   CH3O    +   H        =   CH2O    +   H2         1.995E+13    0.        0.    
+   CH3     +   O2       =   CH3O    +   O          4.786E+13    0.       29000. 
+   CH3     +   CH3      =   C2H4    +   H2           1.0E+16   0.        32000. 
+   CH3     +   O        =   CH2O    +   H          1.288E+14   0.        2000.  
+   CH3     +   OH       =   CH2O    +   H2         3.981E+12   0.         0.    
+   CH3     +   OH       =   CH3O    +   H          1.995E+16   0.        27410. 
+   CH3     +   CH2O     =   CH4     +   HCO          1.0E+10   0.5        6000. 
+   CH3     +   HCO      =   CH4     +   CO         3.020E+11   .5         0.    
+   CH3     +   HO2      =   CH3O    +   OH         1.995E+13   0.         0.    
+   M       +   CH2O     =   HCO     +   H          3.311E+16   0.        81000. 
+   CH2O    +   OH       =   HCO     +   H2O        7.586E+12    0.        170.  
+   CH2O    +   H        =   HCO     +   H2         3.311E+14   0.        10500. 
+   CH2O    +   O        =   HCO     +   OH         5.012E+13   0.        4600.  
+   HCO     +   HO2      =   CH2O    +   O2           1.0E+14   0.        3000.  
+   M       +   HCO      =   H       +   CO          2.94E+14   0.        15569. 
+   HCO     +   O2       =   CO      +   HO2        3.311E+12   0.        7000.  
+   HCO     +   OH       =   CO      +   H2O          1.0E+14    0.        0.    
+   HCO     +   H        =   CO      +   H2         1.995E+14   0.        0.     
+   HCO     +   O        =   CO      +   OH           1.0E+14   0.        0.     
+   CH      +   O2       =   HCO     +   O            1.0E+13   0.        0.     
+   CO      +   O        =   CO2     +   M          5.888E+15   0.        4100.  
+   CO      +   O2       =   CO2     +   O          2.512E+12   0.        47690. 
+   CO      +   OH       =   CO2     +   H          4.169E+11   0.         1000. 
+   CO      +   HO2      =   CO2     +   OH         5.754E+13   0.        22930. 
+   O       +   H2O      =   OH      +   OH         6.761E+13    0.       18360. 
+   O       +   H2       =   OH      +   H          2.951E+13   0.        9800.  
+   H2      +   O2       =2.0OH                     2.512E+12   0.        38950. 
+   O       +   HO2      =   OH      +   O2         5.012E+13   0.        1000.  
+   HO2     +   OH       =   H2O     +   O2         5.012E+13   0.        1000.  
+   HO2     +   H        =   H2O     +   O          5.012E+13   0.        1000.  
+   H       +   HO2      =2.0OH                     2.512E+14   0.        1900.  
+   H2      +   OH       =   H2O     +   H          2.089E+13   0.        5150.  
+   H       +   O2       =   HO2     +   M          1.514E+15   0.        -1000. 
+   H       +   OH       =   H2O     +   M          1.413E+23   -2.        0.    
+   H       +   O        =   OH      +   M            1.0E+16   0.        0.     
+   H       +   H        =   H2      +   M          3.020E+15   0.        0.     
+   H       +   O2       =   OH      +   O          1.259E+14   0.        16300. 
+   O       +   O        =   O2      +   M          1.905E+13   0.        -1790. 
+                                                                                
+AR                                                                              
+TIME                                                                            
+ &PROB  ITPSZ =5,  EMAX=1.E-4,  ATOLSP=1.E-13, IPRINT=25,                       
+     RHOCON =T, SENCAL=T, TINY=1.E-7,   END=3.E-4,   &END                       
+ &START  T= 1405.,  P=2.3868,       &END                                        
+C6H6       .01690                                                               
+O2         .12582                                                               
+AR         .85728                                                               
+END                                                                             
+SENSVAR                                                                         
+C6H6      C6H5      H2O       CO        C2H2      C6H5OH    C5H6      TEMP      
+DENSITY   PRESSURE  END                                                         
+INIT                                                                            
+C6H6      OH        AR        TEMP      DENSITY                                 
+                                                                                
+REAC                                                                            
+ &SENRXN  SENSAJ=T, SENSNJ=T, SENSEJ=T, RXNUM=1,2,3,4,5,6,7,8,9,10,11,12,       
+   13,14,15,16,17,18,19,20,95,105,109,   &END                                   
+FINIS                                                                           
